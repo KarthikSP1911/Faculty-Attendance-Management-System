@@ -9,6 +9,7 @@ import { logger } from './logger';
 import { errorHandler, notFound } from './middleware/errorHandler';
 import { requestId } from './middleware/requestId';
 import { authRoutes } from './routes/auth';
+import { departmentRoutes, facultyRoutes, holidayRoutes, ruleRoutes, shiftRoutes } from './routes/resources';
 import { createAuthService } from './services/authService';
 import { fail, ok } from './utils/response';
 
@@ -44,6 +45,12 @@ export function createApp(options: AppOptions = {}) {
     }),
     authRoutes(cfg, createAuthService(cfg)),
   );
+
+  api.use('/departments', departmentRoutes(cfg));
+  api.use('/faculty', facultyRoutes(cfg));
+  api.use('/shifts', shiftRoutes(cfg));
+  api.use('/rules', ruleRoutes(cfg));
+  api.use('/holidays', holidayRoutes(cfg));
 
   app.use('/api/v1', api);
   app.use(notFound);
