@@ -10,6 +10,8 @@ import { errorHandler, notFound } from './middleware/errorHandler';
 import { requestId } from './middleware/requestId';
 import { attendanceRoutes } from './routes/attendance';
 import { authRoutes } from './routes/auth';
+import { reportRoutes, dashboardRoutes } from './routes/reports';
+import { auditRoutes, docsRoutes, notificationRoutes } from './routes/system';
 import { leaveRoutes, regularizationRoutes } from './routes/leave';
 import { departmentRoutes, facultyRoutes, holidayRoutes, ruleRoutes, shiftRoutes } from './routes/resources';
 import { createAuthService } from './services/authService';
@@ -28,6 +30,7 @@ export function createApp(options: AppOptions = {}) {
   app.disable('x-powered-by');
   app.use(requestId);
   app.use(pinoHttp({ logger, genReqId: (_req, res) => String(res.getHeader('x-request-id')) }));
+  app.use('/api/docs', docsRoutes()); // Swagger UI needs inline scripts, so it sits before helmet's CSP
   app.use(helmet());
   app.use(cors({ origin: [cfg.clientUrl], credentials: true }));
   app.use(express.json({ limit: '100kb' }));
@@ -56,6 +59,10 @@ export function createApp(options: AppOptions = {}) {
   api.use('/attendance', attendanceRoutes(cfg));
   api.use('/leave', leaveRoutes(cfg));
   api.use('/regularization', regularizationRoutes(cfg));
+  api.use('/reports', reportRoutes(cfg));
+  api.use('/dashboard', dashboardRoutes(cfg));
+  api.use('/notifications', notificationRoutes(cfg));
+  api.use('/audit', auditRoutes(cfg));
 
   app.use('/api/v1', api);
   app.use(notFound);

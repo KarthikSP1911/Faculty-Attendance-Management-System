@@ -4,4 +4,5 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['<rootDir>/tests/unit'],
   testTimeout: 10000,
+  moduleNameMapper: { '^pdfkit$': '<rootDir>/../../node_modules/pdfkit/js/pdfkit.standalone.js' },
 };
