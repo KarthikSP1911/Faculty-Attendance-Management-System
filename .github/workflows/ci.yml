@@ -4,15 +4,25 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1' # weekly mutation run (Mondays 03:00 UTC)
+
+# Secrets (Settings > Secrets > Actions): TEST_DATABASE_URL, TEST_DIRECT_URL (include &schema=fams_test),
+# JWT_ACCESS_SECRET, JWT_REFRESH_SECRET. Never echo them.
+env:
+  DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
+  DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
+  TEST_DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
+  TEST_DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
+  JWT_ACCESS_SECRET: ${{ secrets.JWT_ACCESS_SECRET }}
+  JWT_REFRESH_SECRET: ${{ secrets.JWT_REFRESH_SECRET }}
+  CLIENT_URL: http://localhost:3000
 
 jobs:
   test:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
-    env:
-      DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
-      DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
-      TEST_DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
-      TEST_DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,4 +30,49 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
-      # Further steps (migrate, jest, build, playwright, artifacts) are enabled as each slice lands.
+      - name: Migrate test schema
+        run: npx prisma migrate deploy
+        working-directory: apps/api
+      - name: Jest (unit + integration, coverage thresholds enforced)
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Seed demo data (synthetic) for E2E
+        run: npm run db:seed
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox webkit
+        working-directory: apps/web
+      - name: Playwright
+        run: npm run test:e2e
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-artifacts
+          if-no-files-found: ignore
+          path: |
+            apps/web/playwright-report
+            apps/web/test-results
+            apps/api/coverage
+
+  mutation:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - name: Generate Prisma client
+        run: npx prisma generate
+        working-directory: apps/api
+      - name: Stryker (unit config)
+        run: npm run test:mutation
+      - name: Upload mutation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mutation-report
+          if-no-files-found: ignore
+          path: apps/api/reports
