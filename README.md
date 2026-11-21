@@ -16,3 +16,12 @@ _(Full docs, architecture diagram, demo credentials and badges are added as slic
 
 ## Portfolio
 [01 Test Plan](01_Test_Plan) · [02 Test Case Design](02_Test_Case_Design) · [03 Execution](03_Test_Execution) · [04 Defects](04_Defect_Reports) · [05 Automation](05_Test_Automation) · [06 Reports](06_Test_Reports) · [07 Screenshots](07_Screenshots)
+
+## Demo credentials (synthetic seed data)
+| Role | Email | Password |
+|---|---|---|
+| Admin | `admin@fams.test` | `Demo@1234` |
+| HOD (CSE) | `hod.cse@fams.test` | `Demo@1234` |
+| Faculty (CSE) | `cse.faculty1@fams.test` | `Demo@1234` |
+
+Seed: 1 admin, 4 departments (CSE, ECE, MECH, CIVIL), 4 HODs, 40 faculty, 90 days of attendance, 7 holidays, leave requests in every state.

@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "description": "Faculty Attendance Management System (FAMS) + Software Testing Portfolio",
-  "workspaces": ["apps/*"],
-  "engines": { "node": ">=20" },
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "npm run dev --workspace apps/api",
     "build": "npm run build --workspaces --if-present",
@@ -19,5 +23,12 @@
     "db:reset": "npm run db:reset --workspace apps/api",
     "db:studio": "npm run db:studio --workspace apps/api",
     "screenshots": "npm run screenshots --workspace apps/web"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "bcrypt@6.0.0": true,
+    "esbuild@0.28.2": true,
+    "prisma@6.19.3": true
   }
 }

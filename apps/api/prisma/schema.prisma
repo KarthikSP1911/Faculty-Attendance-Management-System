@@ -8,4 +8,292 @@ datasource db {
   directUrl = env("DIRECT_URL")   // Neon direct URL, used by prisma migrate
 }
 
-// Full models are added in build step 3.
+enum Role {
+  ADMIN
+  HOD
+  FACULTY
+}
+
+enum Designation {
+  ASSISTANT_PROFESSOR
+  ASSOCIATE_PROFESSOR
+  PROFESSOR
+  LECTURER
+}
+
+enum FacultyStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum AttendanceStatus {
+  PENDING // checked in, day not finished yet
+  PRESENT
+  LATE
+  HALF_DAY
+  ABSENT
+  ON_LEAVE
+  HOLIDAY
+  WEEKLY_OFF
+}
+
+enum LeaveStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  CANCELLED
+}
+
+enum HalfDay {
+  NONE
+  FIRST_HALF
+  SECOND_HALF
+}
+
+enum RequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum HolidayType {
+  NATIONAL
+  INSTITUTIONAL
+  OPTIONAL
+}
+
+model User {
+  id                  String    @id @default(cuid())
+  email               String    @unique
+  passwordHash        String
+  role                Role
+  isActive            Boolean   @default(true)
+  failedLoginAttempts Int       @default(0)
+  lockedUntil         DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  faculty             Faculty?
+  refreshTokens       RefreshToken[]
+  resetTokens         PasswordResetToken[]
+  notifications       Notification[]
+  auditLogs           AuditLog[]
+  reviewedLeaves      LeaveRequest[]          @relation("LeaveReviewer")
+  reviewedRegs        RegularizationRequest[] @relation("RegReviewer")
+}
+
+model Department {
+  id        String   @id @default(cuid())
+  name      String
+  code      String   @unique // 2-6 uppercase letters
+  hodId     String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  hod       Faculty?  @relation("DepartmentHod", fields: [hodId], references: [id])
+  faculty   Faculty[] @relation("DepartmentMembers")
+}
+
+model Shift {
+  id          String   @id @default(cuid())
+  name        String
+  startTime   String   @default("09:00") // HH:mm, Asia/Kolkata
+  endTime     String   @default("17:00")
+  workingDays Int[]    // ISO weekdays, 1 = Monday ... 6 = Saturday
+  isDefault   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  faculty     Faculty[]
+}
+
+model AttendanceRule {
+  id                  String   @id @default(cuid())
+  graceMinutes        Int      @default(15) // 0-60
+  lateCutoffTime      String   @default("10:30")
+  checkInOpenTime     String   @default("07:00")
+  checkInCloseTime    String   @default("12:00")
+  checkOutCloseTime   String   @default("23:00")
+  presentMinMinutes   Int      @default(420) // 7h
+  halfDayMinMinutes   Int      @default(240) // 4h
+  lateLimitPerMonth   Int      @default(3)
+  updatedAt           DateTime @updatedAt
+}
+
+model Faculty {
+  id            String        @id @default(cuid())
+  employeeId    String        @unique // FAC-0001
+  userId        String        @unique
+  fullName      String
+  phone         String
+  departmentId  String
+  designation   Designation
+  dateOfJoining DateTime      @db.Date
+  shiftId       String
+  status        FacultyStatus @default(ACTIVE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  user          User          @relation(fields: [userId], references: [id])
+  department    Department    @relation("DepartmentMembers", fields: [departmentId], references: [id])
+  headOf        Department?   @relation("DepartmentHod")
+  shift         Shift         @relation(fields: [shiftId], references: [id])
+
+  attendance      AttendanceRecord[]
+  leaveBalances   LeaveBalance[]
+  leaveRequests   LeaveRequest[]
+  regularizations RegularizationRequest[]
+
+  @@index([departmentId, status])
+}
+
+model AttendanceRecord {
+  id            String           @id @default(cuid())
+  facultyId     String
+  date          DateTime         @db.Date
+  checkInAt     DateTime?
+  checkOutAt    DateTime?
+  workedMinutes Int?
+  status        AttendanceStatus @default(PENDING)
+  regularized   Boolean          @default(false)
+  lateDeduction Boolean          @default(false) // 3rd late of the month
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+
+  faculty       Faculty          @relation(fields: [facultyId], references: [id])
+
+  @@unique([facultyId, date])
+  @@index([date, status])
+}
+
+model LeaveType {
+  id          String  @id @default(cuid())
+  code        String  @unique // CL, SL, EL, OD
+  name        String
+  yearlyQuota Int?    // null = unlimited (On Duty)
+  requiresReason Boolean @default(false)
+
+  balances    LeaveBalance[]
+  requests    LeaveRequest[]
+}
+
+model LeaveBalance {
+  id          String  @id @default(cuid())
+  facultyId   String
+  leaveTypeId String
+  year        Int
+  allotted    Decimal @db.Decimal(5, 1)
+  used        Decimal @default(0) @db.Decimal(5, 1)
+
+  faculty     Faculty   @relation(fields: [facultyId], references: [id])
+  leaveType   LeaveType @relation(fields: [leaveTypeId], references: [id])
+
+  @@unique([facultyId, leaveTypeId, year])
+}
+
+model LeaveRequest {
+  id            String      @id @default(cuid())
+  facultyId     String
+  leaveTypeId   String
+  startDate     DateTime    @db.Date
+  endDate       DateTime    @db.Date
+  days          Decimal     @db.Decimal(4, 1)
+  halfDay       HalfDay     @default(NONE)
+  reason        String
+  status        LeaveStatus @default(DRAFT)
+  reviewedById  String?
+  reviewComment String?
+  reviewedAt    DateTime?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  faculty       Faculty     @relation(fields: [facultyId], references: [id])
+  leaveType     LeaveType   @relation(fields: [leaveTypeId], references: [id])
+  reviewedBy    User?       @relation("LeaveReviewer", fields: [reviewedById], references: [id])
+
+  @@index([facultyId, startDate, endDate])
+  @@index([status])
+}
+
+model RegularizationRequest {
+  id                 String        @id @default(cuid())
+  facultyId          String
+  date               DateTime      @db.Date
+  requestedCheckIn   DateTime?
+  requestedCheckOut  DateTime?
+  reason             String
+  status             RequestStatus @default(PENDING)
+  reviewedById       String?
+  reviewComment      String?
+  reviewedAt         DateTime?
+  createdAt          DateTime      @default(now())
+
+  faculty            Faculty       @relation(fields: [facultyId], references: [id])
+  reviewedBy         User?         @relation("RegReviewer", fields: [reviewedById], references: [id])
+
+  @@index([facultyId, createdAt])
+}
+
+model Holiday {
+  id        String      @id @default(cuid())
+  date      DateTime    @unique @db.Date
+  name      String
+  type      HolidayType
+  createdAt DateTime    @default(now())
+}
+
+model Notification {
+  id        String    @id @default(cuid())
+  userId    String
+  type      String
+  title     String
+  message   String
+  readAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id])
+
+  @@index([userId, readAt])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String   // CREATE | UPDATE | DELETE | CORRECTION
+  entity    String
+  entityId  String
+  oldValue  Json?
+  newValue  Json?
+  ip        String?
+  createdAt DateTime @default(now())
+
+  actor     User?    @relation(fields: [actorId], references: [id])
+
+  @@index([entity, entityId])
+  @@index([createdAt])
+}
+
+model RefreshToken {
+  id         String    @id @default(cuid())
+  userId     String
+  tokenHash  String    @unique
+  expiresAt  DateTime
+  revokedAt  DateTime?
+  replacedBy String?
+  createdAt  DateTime  @default(now())
+
+  user       User      @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime  // 30 minutes after creation
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id])
+}
