@@ -8,6 +8,7 @@ import { loadConfig, type Config } from './config';
 import { logger } from './logger';
 import { errorHandler, notFound } from './middleware/errorHandler';
 import { requestId } from './middleware/requestId';
+import { attendanceRoutes } from './routes/attendance';
 import { authRoutes } from './routes/auth';
 import { departmentRoutes, facultyRoutes, holidayRoutes, ruleRoutes, shiftRoutes } from './routes/resources';
 import { createAuthService } from './services/authService';
@@ -51,6 +52,7 @@ export function createApp(options: AppOptions = {}) {
   api.use('/shifts', shiftRoutes(cfg));
   api.use('/rules', ruleRoutes(cfg));
   api.use('/holidays', holidayRoutes(cfg));
+  api.use('/attendance', attendanceRoutes(cfg));
 
   app.use('/api/v1', api);
   app.use(notFound);
