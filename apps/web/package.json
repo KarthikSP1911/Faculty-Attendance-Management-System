@@ -1,0 +1,10 @@
+{
+  "name": "@fams/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"web added in step 9\"",
+    "test:e2e": "echo \"playwright added in step 11\"",
+    "screenshots": "echo \"screenshots added in step 11\""
+  }
+}

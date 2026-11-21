@@ -1,0 +1,22 @@
+{
+  "name": "@fams/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"api dev server added in step 4\"",
+    "build": "echo \"api build added in step 4\"",
+    "lint": "echo \"lint added in step 4\"",
+    "typecheck": "echo \"typecheck added in step 4\"",
+    "test": "echo \"jest added in step 4\"",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "prisma db seed",
+    "db:reset": "prisma migrate reset",
+    "db:studio": "prisma studio"
+  },
+  "devDependencies": {
+    "prisma": "^6.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0"
+  }
+}

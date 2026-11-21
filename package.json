@@ -1,0 +1,23 @@
+{
+  "name": "software-testing-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Faculty Attendance Management System (FAMS) + Software Testing Portfolio",
+  "workspaces": ["apps/*"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "npm run dev --workspace apps/api",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspace apps/api",
+    "test:e2e": "npm run test:e2e --workspace apps/web",
+    "test:mutation": "npm run test:mutation --workspace apps/api",
+    "test:mutation:changed": "npm run test:mutation:changed --workspace apps/api",
+    "db:migrate": "npm run db:migrate --workspace apps/api",
+    "db:seed": "npm run db:seed --workspace apps/api",
+    "db:reset": "npm run db:reset --workspace apps/api",
+    "db:studio": "npm run db:studio --workspace apps/api",
+    "screenshots": "npm run screenshots --workspace apps/web"
+  }
+}
