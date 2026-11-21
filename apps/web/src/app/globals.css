@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 245 245 247; /* #F5F5F7 */
+  --surface: 255 255 255;
+  --surface-2: 240 240 243;
+  --fg: 29 29 31;
+  --muted: 99 99 106;
+  --line: 217 217 222;
+  --primary: 0 113 227; /* #0071E3 */
+  --primary-fg: 255 255 255;
+  --danger: 200 30 30;
+  --st-present: 21 128 61;
+  --st-late: 180 100 0;
+  --st-half: 194 65 12;
+  --st-absent: 200 30 30;
+  --st-leave: 0 113 227;
+  --st-holiday: 126 34 206;
+  --st-off: 100 100 110;
+}
+
+:root[data-theme='dark'] {
+  --bg: 18 18 20;
+  --surface: 30 30 33;
+  --surface-2: 42 42 46;
+  --fg: 245 245 247;
+  --muted: 170 170 178;
+  --line: 62 62 68;
+  --primary: 41 151 255;
+  --primary-fg: 0 20 40;
+  --danger: 255 105 97;
+  --st-present: 74 222 128;
+  --st-late: 251 191 36;
+  --st-half: 251 146 60;
+  --st-absent: 255 105 97;
+  --st-leave: 96 165 250;
+  --st-holiday: 192 132 252;
+  --st-off: 170 170 180;
+}
+
+html {
+  color-scheme: light;
+}
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid rgb(var(--primary));
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.frosted {
+  background: rgb(var(--surface) / 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
