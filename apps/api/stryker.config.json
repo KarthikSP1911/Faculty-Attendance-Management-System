@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stryker-mutator/stryker/master/packages/core/schema/stryker-core.json",
+  "packageManager": "npm",
+  "testRunner": "jest",
+  "jest": { "configFile": "jest.unit.config.js" },
+  "checkers": ["typescript"],
+  "tsconfigFile": "tsconfig.json",
+  "mutate": [
+    "src/services/passwordPolicy.ts",
+    "src/services/lockout.ts",
+    "src/services/employeeId.ts",
+    "src/services/csvImport.ts",
+    "src/services/shiftRules.ts",
+    "src/services/attendanceRules.ts",
+    "src/services/leaveRules.ts",
+    "src/services/regularizationRules.ts",
+    "src/services/reportRules.ts",
+    "src/utils/dates.ts"
+  ],
+  "thresholds": { "high": 85, "low": 70, "break": 65 },
+  "reporters": ["html", "clear-text", "progress", "json"],
+  "htmlReporter": { "fileName": "reports/mutation/index.html" },
+  "jsonReporter": { "fileName": "reports/mutation/mutation.json" },
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "coverageAnalysis": "perTest",
+  "timeoutMS": 10000,
+  "concurrency": 2
+}
