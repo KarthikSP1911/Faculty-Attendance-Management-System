@@ -21,6 +21,24 @@ export class LeavePage {
     await this.page.getByTestId('leave-reason').fill(reason);
     await this.page.getByTestId('leave-apply-submit').click();
   }
+  /** Applies on a random future weekday; if it overlaps an existing leave (server rejects it) tries another. Returns the date used. */
+  async applyOnFreeDate(reason: string, pick: () => string, uiDate: (iso: string) => string): Promise<string> {
+    for (let attempt = 0; attempt < 8; attempt++) {
+      const date = pick();
+      await this.apply(date, reason);
+      const ok = this.page.getByTestId('toast-success');
+      const error = this.page.getByTestId('leave-error');
+      await ok.or(error).first().waitFor({ state: 'visible', timeout: 15_000 });
+      if (await error.isVisible()) {
+        const message = (await error.textContent()) ?? '';
+        if (/already have a leave|overlap/i.test(message)) continue; // random date collided with an existing leave
+        throw new Error(`leave application rejected: ${message}`);
+      }
+      await this.row(uiDate(date)).first().waitFor({ state: 'visible', timeout: 15_000 });
+      return date;
+    }
+    throw new Error('could not find a free future weekday to apply leave');
+  }
   row(text: string) { return this.page.getByTestId('leave-table').locator('tr').filter({ hasText: text }); }
 }
 

@@ -45,10 +45,7 @@ test('TC-LEAVE-042 leave balance on dashboard matches API after apply, approve a
 
   const leave = new LeavePage(fac);
   await leave.goto();
-  const date = futureWeekday();
-  await leave.apply(date, reason);
-  const row = leave.row(uiDate(date)).first();
-  await expect(row).toBeVisible();
+  const date = await leave.applyOnFreeDate(reason, futureWeekday, uiDate);
   await assertCardsMatchApi(); // step 1: applied (pending)
 
   const hod = await asRole(browser, 'hod', baseURL);
@@ -263,3 +260,49 @@ test('REG-DEF-002 admin dashboard pending KPI tiles are not links', async ({ bro
   await expect(page.locator('a[href^="/admin/approvals"]')).toHaveCount(0);
 });
 
+
+// ---------- TC-LEAVE-034 / TC-REG-015: state transition guards (API level, through the web origin) ----------
+test('TC-LEAVE-034 approving an already approved leave is refused with 409', async ({ browser, baseURL }) => {
+  const fac = await asRole(browser, 'faculty', baseURL);
+  const hod = await asRole(browser, 'hod', baseURL);
+  const types = (await (await fac.request.get('/api/v1/leave/types')).json()).data as { id: string }[];
+  // random future weekday; retry with another one if it overlaps an existing leave (409)
+  let created = null as Awaited<ReturnType<typeof fac.request.post>> | null;
+  for (let attempt = 0; attempt < 8 && !(created && created.status() === 201); attempt++) {
+    const date = futureWeekday();
+    created = await fac.request.post('/api/v1/leave', {
+      data: { leaveTypeId: types[0].id, startDate: date, endDate: date, halfDay: 'NONE', reason: 'E2E state transition check TC-LEAVE-034' },
+    });
+  }
+  expect(created!.status(), await created!.text()).toBe(201);
+  const id = (await created!.json()).data.id as string;
+  const first = await hod.request.post(`/api/v1/leave/${id}/approve`, { data: {} });
+  expect(first.status(), await first.text()).toBe(200);
+  const second = await hod.request.post(`/api/v1/leave/${id}/approve`, { data: {} });
+  expect(second.status()).toBe(409);
+  // clean up so the leave balance is not consumed by this test
+  const cancel = await fac.request.post(`/api/v1/leave/${id}/cancel`);
+  expect(cancel.ok()).toBeTruthy();
+});
+
+test('TC-REG-015 reviewing an already reviewed regularization request returns 409 INVALID_TRANSITION', async ({ browser, baseURL }) => {
+  const fac = await asRole(browser, 'faculty', baseURL);
+  const hod = await asRole(browser, 'hod', baseURL);
+  // Regularization is allowed only for the last 7 days: try each recent weekday until one is accepted.
+  let created = null as Awaited<ReturnType<typeof fac.request.post>> | null;
+  for (let back = 1; back <= 7 && !(created && created.status() === 201); back++) {
+    const d = new Date(Date.now() - back * 86400000);
+    if ([0, 6].includes(d.getUTCDay())) continue;
+    created = await fac.request.post('/api/v1/regularization', {
+      data: { date: d.toISOString().slice(0, 10), requestedCheckIn: '09:05', requestedCheckOut: '17:10', reason: 'E2E state transition check TC-REG-015' },
+    });
+  }
+  test.skip(!created || created.status() !== 201, 'no free weekday in the last 7 days (a request already exists for each); re-run after reseeding');
+  expect(created!.status(), await created!.text()).toBe(201);
+  const id = (await created!.json()).data.id as string;
+  const first = await hod.request.post(`/api/v1/regularization/${id}/approve`, { data: {} });
+  expect(first.status(), await first.text()).toBe(200);
+  const second = await hod.request.post(`/api/v1/regularization/${id}/reject`, { data: { comment: "second review attempt" } });
+  expect(second.status()).toBe(409);
+  expect(await second.text()).toContain('INVALID_TRANSITION');
+});

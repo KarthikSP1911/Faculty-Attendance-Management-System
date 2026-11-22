@@ -15,7 +15,7 @@ export default defineConfig({
     ['json', { outputFile: 'test-results/results.json' }],
   ],
   outputDir: 'test-results/artifacts',
-  use: { baseURL: WEB, trace: 'on-first-retry', screenshot: 'only-on-failure', video: 'retain-on-failure' },
+  use: { baseURL: WEB, actionTimeout: 15_000, trace: 'on-first-retry', screenshot: 'only-on-failure', video: 'retain-on-failure' },
   webServer: [
     { command: 'npm run dev --workspace apps/api', cwd: '../..', url: 'http://localhost:4000/api/v1/health', env: { AUTH_RATE_LIMIT: '1000' }, reuseExistingServer: true, timeout: 120_000 },
     { command: 'npm run dev --workspace apps/web', cwd: '../..', url: WEB, reuseExistingServer: true, timeout: 120_000 },

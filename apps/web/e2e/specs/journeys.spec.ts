@@ -55,9 +55,7 @@ test('J4 leave: faculty applies, HOD approves', async ({ browser, baseURL }) => 
   const fac = await asRole(browser, 'faculty', baseURL);
   const leave = new LeavePage(fac);
   await leave.goto();
-  const date = futureWeekday();
-  await leave.apply(date, reason);
-  await expect(leave.row(uiDate(date)).first()).toBeVisible();
+  const date = await leave.applyOnFreeDate(reason, futureWeekday, uiDate);
 
   const hod = await asRole(browser, 'hod', baseURL);
   const approvals = new ApprovalsPage(hod);
