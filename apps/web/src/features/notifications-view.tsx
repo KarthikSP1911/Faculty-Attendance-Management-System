@@ -57,10 +57,10 @@ export function NotificationsView() {
         <>
           <ul className="space-y-2" data-testid="notifications-list">
             {data?.items.map((n) => (
-              <li key={n.id} data-testid={`notification-${n.id}`} className={cn('flex items-start gap-3 rounded-2xl border border-line p-4', n.readAt ? 'bg-surface' : 'bg-primary/5')}>
+              <li key={n.id} data-testid={`notification-${n.id}`} className={cn('lift animate-slide-up flex items-start gap-3 rounded-2xl border p-4 transition-colors', n.readAt ? 'border-line bg-surface' : 'border-primary/30 bg-primary/5')}>
                 <div className="flex-1">
                   <p className="font-medium">
-                    {!n.readAt && <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary" aria-label="Unread" />}
+                    {!n.readAt && <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary pop-in"aria-label="Unread" />}
                     {n.title}
                   </p>
                   <p className="text-sm text-muted">{n.message}</p>

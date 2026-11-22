@@ -19,9 +19,11 @@ export function SkeletonRows({ rows = 5 }: { rows?: number }) {
 
 export function EmptyState({ title, hint, action, testid = 'empty-state' }: { title: string; hint?: string; action?: ReactNode; testid?: string }) {
   return (
-    <div data-testid={testid} className="flex flex-col items-center gap-2 rounded-2xl border border-dashed border-line px-4 py-10 text-center">
-      <Inbox className="h-8 w-8 text-muted" aria-hidden />
-      <p className="font-medium">{title}</p>
+    <div data-testid={testid} className="flex flex-col items-center gap-2 rounded-lg border border-dashed border-line bg-surface-2/40 px-4 py-10 text-center">
+      <span className="grid h-12 w-12 place-items-center rounded-full bg-primary/10 text-primary" aria-hidden>
+        <Inbox className="h-6 w-6" />
+      </span>
+      <p className="font-semibold">{title}</p>
       {hint && <p className="max-w-sm text-sm text-muted">{hint}</p>}
       {action}
     </div>

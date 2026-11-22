@@ -313,7 +313,7 @@ export function FacultyView({ admin }: { admin: boolean }) {
         }
       />
 
-      <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-6" role="search">
+      <div className="mb-4 grid gap-3 rounded-xl border border-line bg-surface p-3 sm:grid-cols-2 lg:grid-cols-6" role="search">
         <Field label="Search" className="lg:col-span-2">
           <Input type="search" placeholder="Name, ID or email" value={q} onChange={(e) => setQ(e.target.value)} data-testid="faculty-search" />
         </Field>
@@ -360,6 +360,7 @@ export function FacultyView({ admin }: { admin: boolean }) {
         <EmptyState title="No faculty match these filters" testid="faculty-empty" />
       ) : (
         <>
+          <div className="animate-slide-up">
           <Table caption="Faculty" data-testid="faculty-table">
             <THead>
               <TR>
@@ -405,6 +406,7 @@ export function FacultyView({ admin }: { admin: boolean }) {
               ))}
             </TBody>
           </Table>
+          </div>
           {list.data && (
             <div className="flex flex-wrap items-center justify-between gap-2">
               <Pagination page={page} pageSize={pageSize} total={list.data.total} onPage={setPage} testid="faculty-pagination" />

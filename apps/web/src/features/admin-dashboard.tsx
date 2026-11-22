@@ -1,13 +1,15 @@
 'use client';
 
-import Link from 'next/link';
 import { useQuery } from '@tanstack/react-query';
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Building2, CalendarClock, ClipboardCheck, Clock3, PlaneTakeoff, UserCheck, UserMinus, UserX, Users } from 'lucide-react';
+import dynamic from 'next/dynamic';
 import { Card, CardTitle, PageHeader, Stat } from '@/components/ui/card';
 import { DemoNote, EmptyState, ErrorState, Skeleton } from '@/components/ui/feedback';
 import { TBody, TD, TH, THead, TR, Table } from '@/components/ui/table';
 import { api, errorMessage } from '@/lib/api';
 import type { AdminDashboard } from '@/lib/types';
+
+const DeptBarChart = dynamic(() => import('./charts').then((m) => m.DeptBarChart), { ssr: false, loading: () => <Skeleton className="h-full w-full" /> });
 
 export function AdminDashboardView() {
   const { data, isLoading, error, refetch } = useQuery({ queryKey: ['dashboard', 'admin'], queryFn: () => api.get<AdminDashboard>('/dashboard/admin') });
@@ -20,19 +22,19 @@ export function AdminDashboardView() {
     <>
       <PageHeader title="Admin dashboard" subtitle="Institution overview. Percentages are month to date." actions={<DemoNote />} />
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5" data-testid="admin-kpis">
-        <Stat label="Faculty" value={k.totalFaculty} data-testid="kpi-total-faculty" />
-        <Stat label="Departments" value={k.departments} data-testid="kpi-departments" />
-        <Stat label="Present today" value={k.today.present} data-testid="kpi-present" />
-        <Stat label="Late today" value={k.today.late} data-testid="kpi-late" />
-        <Stat label="Half day today" value={k.today.halfDay} data-testid="kpi-half-day" />
-        <Stat label="Absent today" value={k.today.absent} data-testid="kpi-absent" />
-        <Stat label="On leave today" value={k.today.onLeave} data-testid="kpi-on-leave" />
-        <Link href="/admin/approvals?tab=leave" data-testid="kpi-pending-leaves-link" className="rounded-2xl">
-          <Stat label="Pending leave" value={k.pendingLeaves} data-testid="kpi-pending-leaves" />
-        </Link>
-        <Link href="/admin/approvals?tab=regularization" data-testid="kpi-pending-reg-link" className="rounded-2xl">
-          <Stat label="Pending regularization" value={k.pendingRegularizations} data-testid="kpi-pending-regularizations" />
-        </Link>
+        <Stat label="Faculty" icon={Users} tone="brand" value={k.totalFaculty} data-testid="kpi-total-faculty" />
+        <Stat label="Departments" icon={Building2} tone="holiday" value={k.departments} data-testid="kpi-departments" />
+        <Stat label="Present today" icon={UserCheck} tone="present" value={k.today.present} data-testid="kpi-present" />
+        <Stat label="Late today" icon={Clock3} tone="late" value={k.today.late} data-testid="kpi-late" />
+        <Stat label="Half day today" icon={CalendarClock} tone="half" value={k.today.halfDay} data-testid="kpi-half-day" />
+        <Stat label="Absent today" icon={UserX} tone="absent" value={k.today.absent} data-testid="kpi-absent" />
+        <Stat label="On leave today" icon={UserMinus} tone="leave" value={k.today.onLeave} data-testid="kpi-on-leave" />
+        <div data-testid="kpi-pending-leaves-link">
+          <Stat label="Pending leave" icon={PlaneTakeoff} tone="late" value={k.pendingLeaves} data-testid="kpi-pending-leaves" />
+        </div>
+        <div data-testid="kpi-pending-reg-link">
+          <Stat label="Pending regularization" icon={ClipboardCheck} tone="half" value={k.pendingRegularizations} data-testid="kpi-pending-regularizations" />
+        </div>
       </div>
 
       <div className="mt-5 grid gap-4 lg:grid-cols-2">
@@ -45,15 +47,7 @@ export function AdminDashboardView() {
           ) : (
             <figure aria-label="Bar chart of attendance percentage by department" data-testid="dept-chart">
               <div className="h-64 w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data.departmentComparison} margin={{ left: -16, right: 8, top: 8 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="rgb(var(--line))" vertical={false} />
-                    <XAxis dataKey="department" tick={{ fontSize: 11, fill: 'rgb(var(--muted))' }} />
-                    <YAxis domain={[0, 100]} unit="%" tick={{ fontSize: 11, fill: 'rgb(var(--muted))' }} />
-                    <Tooltip formatter={(v) => `${v}%`} contentStyle={{ background: 'rgb(var(--surface))', border: '1px solid rgb(var(--line))', borderRadius: 12 }} />
-                    <Bar dataKey="percentage" name="Attendance" fill="rgb(var(--primary))" radius={[6, 6, 0, 0]} />
-                  </BarChart>
-                </ResponsiveContainer>
+                <DeptBarChart data={data.departmentComparison} />
               </div>
               <table className="sr-only">
                 <caption>Attendance percentage by department</caption>

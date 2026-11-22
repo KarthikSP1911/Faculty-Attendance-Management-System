@@ -81,7 +81,7 @@ function ShiftForm({ shift, onClose }: { shift: Shift; onClose: () => void }) {
         <legend className="mb-1.5 text-sm font-medium">Working days</legend>
         <div className="flex flex-wrap gap-2">
           {DAYS.map((d) => (
-            <label key={d.n} className="flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border border-line px-3 text-sm">
+            <label key={d.n} className="flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border border-line px-3 text-sm transition-colors hover:bg-surface-2">
               <input
                 type="checkbox"
                 checked={days.includes(d.n)}
@@ -157,7 +157,7 @@ export function RulesView() {
   return (
     <>
       <PageHeader title="Shifts and rules" subtitle="Working hours and attendance rules." />
-      <div className="space-y-5">
+      <div className="animate-slide-up space-y-5">
         <Card>
           <CardTitle>Shifts</CardTitle>
           {shifts.isLoading ? (

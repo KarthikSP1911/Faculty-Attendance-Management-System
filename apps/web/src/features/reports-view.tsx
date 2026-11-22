@@ -58,7 +58,7 @@ export function ReportsView() {
     <>
       <PageHeader title="Reports" subtitle="Demo data. Percentages follow the formula in the test plan." />
       <Card className="mb-4">
-        <div className="flex flex-wrap items-end gap-3" data-testid="report-filters">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end" data-testid="report-filters">
           <Field label="Report">
             <Select value={kind} onChange={(e) => setKind(e.target.value as Kind)} data-testid="report-kind">
               {KINDS.map((k) => (
@@ -117,7 +117,7 @@ export function ReportsView() {
         !muster?.rows.length ? (
           <EmptyState title="No data for this selection" testid="report-empty" />
         ) : (
-          <div className="overflow-x-auto" data-testid="report-table">
+          <div className="animate-slide-up overflow-x-auto" data-testid="report-table">
             <Table caption="Muster roll. P present, L late, HD half day, A absent, OL on leave, H holiday, WO weekly off.">
               <THead>
                 <TR>
@@ -151,7 +151,7 @@ export function ReportsView() {
       ) : rows.length === 0 ? (
         <EmptyState title="No data for this selection" testid="report-empty" />
       ) : kind === 'daily' ? (
-        <div className="overflow-x-auto" data-testid="report-table">
+        <div className="animate-slide-up overflow-x-auto" data-testid="report-table">
           <Table caption="Daily attendance">
             <THead>
               <TR>
@@ -176,7 +176,7 @@ export function ReportsView() {
           </Table>
         </div>
       ) : (
-        <div className="overflow-x-auto" data-testid="report-table">
+        <div className="animate-slide-up overflow-x-auto" data-testid="report-table">
           <Table caption="Attendance summary">
             <THead>
               <TR>

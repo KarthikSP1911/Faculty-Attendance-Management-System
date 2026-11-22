@@ -40,7 +40,7 @@ function Content() {
   return (
     <>
       <PageHeader title="Change password" />
-      <Card className="max-w-md">
+      <Card className="max-w-md animate-slide-up">
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-4" data-testid="change-password-form">
           {error && (
             <p role="alert" data-testid="change-password-error" className="rounded-xl bg-danger/10 p-3 text-sm text-danger">

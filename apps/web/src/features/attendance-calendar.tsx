@@ -38,12 +38,12 @@ export function AttendanceView() {
         <CheckInCard />
       </div>
 
-      <Card>
+      <Card className="animate-slide-up">
         <div className="mb-4 flex items-center justify-between">
           <Button variant="secondary" size="sm" onClick={() => setMonth(shiftMonth(month, -1))} aria-label="Previous month" data-testid="calendar-prev">
             <ChevronLeft className="h-4 w-4" aria-hidden />
           </Button>
-          <h2 className="font-semibold" data-testid="calendar-month" aria-live="polite">
+          <h2 className="font-display text-lg font-semibold" data-testid="calendar-month" aria-live="polite">
             {label}
           </h2>
           <Button variant="secondary" size="sm" onClick={() => setMonth(shiftMonth(month, 1))} aria-label="Next month" data-testid="calendar-next">
@@ -77,7 +77,7 @@ export function AttendanceView() {
                   data-status={status ?? 'NONE'}
                   aria-label={`${fmtDate(date)}: ${hol ? `${hol.name}, ` : ''}${text}`}
                   title={hol ? hol.name : text}
-                  className={cn('flex min-h-14 flex-col items-center justify-center rounded-xl border border-line p-1', status ? STATUS_CLASS[status] : 'bg-surface', date === today && 'ring-2 ring-primary')}
+                  className={cn('flex min-h-14 flex-col items-center justify-center rounded-xl border border-line p-1 transition-transform duration-150 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary', status ? STATUS_CLASS[status] : 'bg-surface', date === today && 'ring-2 ring-primary ring-offset-2 ring-offset-surface')}
                 >
                   <span className="font-semibold tabular-nums">{Number(date.slice(8))}</span>
                   <span className="hidden text-[10px] leading-tight sm:block">{status ? STATUS_LABEL[status] : ''}</span>
@@ -89,7 +89,7 @@ export function AttendanceView() {
 
         <ul className="mt-4 flex flex-wrap gap-2 text-xs" aria-label="Legend" data-testid="calendar-legend">
           {LEGEND.map((s) => (
-            <li key={s} className={cn('rounded-full px-2.5 py-0.5 font-medium', STATUS_CLASS[s])}>
+            <li key={s} className={cn('rounded-full border border-line px-3 py-1 font-medium', STATUS_CLASS[s])}>
               {STATUS_LABEL[s]}
             </li>
           ))}

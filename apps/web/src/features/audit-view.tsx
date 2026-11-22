@@ -37,7 +37,7 @@ export function AuditView() {
   return (
     <>
       <PageHeader title="Audit log" subtitle="Every create, update, delete and correction, newest first." />
-      <div className="mb-4 flex flex-wrap gap-3" data-testid="audit-filters">
+      <div className="mb-4 flex flex-col gap-3 rounded-xl border border-line bg-surface p-3 sm:flex-row sm:flex-wrap sm:items-end" data-testid="audit-filters">
         <Field label="Entity">
           <Select value={entity} onChange={(e) => { setEntity(e.target.value); setPage(1); }} data-testid="audit-entity">
             <option value="">All</option>
@@ -63,7 +63,7 @@ export function AuditView() {
         <EmptyState title="No audit entries" testid="audit-empty" />
       ) : (
         <>
-          <div className="overflow-x-auto" data-testid="audit-table">
+          <div className="animate-slide-up overflow-x-auto" data-testid="audit-table">
             <Table caption="Audit log">
               <THead>
                 <TR>
@@ -76,7 +76,7 @@ export function AuditView() {
               </THead>
               <TBody>
                 {data.items.map((a) => (
-                  <TR key={a.id} data-testid={`audit-row-${a.id}`}>
+                  <TR key={a.id} data-testid={`audit-row-${a.id}`} className="transition-colors hover:bg-surface-2/60">
                     <TD className="whitespace-nowrap">{fmtDateTime(a.createdAt)}</TD>
                     <TD>{a.actor?.email ?? 'system'}</TD>
                     <TD>
@@ -85,7 +85,7 @@ export function AuditView() {
                     <TD>{a.entity}</TD>
                     <TD>
                       <details>
-                        <summary className="cursor-pointer text-primary">View</summary>
+                        <summary className="cursor-pointer text-primary hover:underline">View</summary>
                         <pre className="mt-1 max-w-md overflow-auto rounded-lg bg-surface-2 p-2 text-xs">{JSON.stringify({ old: a.oldValue, new: a.newValue }, null, 2)}</pre>
                       </details>
                     </TD>

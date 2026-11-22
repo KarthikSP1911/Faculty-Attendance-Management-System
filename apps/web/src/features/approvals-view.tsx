@@ -89,7 +89,7 @@ export function ApprovalsView() {
     <>
       <PageHeader title="Approvals" subtitle="Review leave and regularization requests." />
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <div role="tablist" aria-label="Request type" className="inline-flex rounded-xl bg-surface-2 p-1">
+        <div role="tablist" aria-label="Request type" className="inline-flex rounded-xl border border-line bg-surface-2 p-1 shadow-sm">
           {(['leave', 'regularization'] as Tab[]).map((t) => (
             <button
               key={t}
@@ -101,7 +101,10 @@ export function ApprovalsView() {
                 setTab(t);
                 setPage(1);
               }}
-              className={cn('rounded-lg px-4 py-2 text-sm font-medium', tab === t ? 'bg-surface shadow-sm' : 'text-muted')}
+              className={cn(
+                'rounded-lg px-4 py-2 text-sm font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary',
+                tab === t ? 'bg-surface text-primary shadow-sm' : 'text-muted hover:bg-surface/60 hover:text-foreground',
+              )}
             >
               {humanize(t)}
             </button>
@@ -130,9 +133,11 @@ export function ApprovalsView() {
       ) : active.error ? (
         <ErrorState message={errorMessage(active.error)} onRetry={() => active.refetch()} />
       ) : items.length === 0 ? (
-        <EmptyState title={`No ${status.toLowerCase()} ${tab} requests`} testid="approvals-empty" />
+        <div className="animate-slide-up">
+          <EmptyState title={`No ${status.toLowerCase()} ${tab} requests`} testid="approvals-empty" />
+        </div>
       ) : (
-        <>
+        <div className="animate-slide-up">
           <Table caption={`${tab} requests`} data-testid={`approvals-table-${tab}`}>
             <THead>
               <TR>
@@ -175,7 +180,7 @@ export function ApprovalsView() {
             </TBody>
           </Table>
           {active.data && <Pagination page={page} pageSize={10} total={active.data.total} onPage={setPage} testid="approvals-pagination" />}
-        </>
+        </div>
       )}
 
       <Dialog

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useId, useRef, type ReactNode } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
 const FOCUSABLE = 'a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
@@ -54,11 +53,11 @@ export function Dialog({ open, onClose, title, description, children, testid = '
   }, [open, onClose]);
 
   return (
-    <AnimatePresence>
+    <>
       {open && (
-        <motion.div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-          <div className="absolute inset-0 bg-black/40" onClick={onClose} aria-hidden />
-          <motion.div
+        <div className="animate-fade-in fixed inset-0 z-50 flex items-end justify-center sm:items-center">
+          <div className="absolute inset-0 bg-black/40 dark:bg-black/60" onClick={onClose} aria-hidden />
+          <div
             ref={ref}
             role="dialog"
             aria-modal="true"
@@ -66,10 +65,7 @@ export function Dialog({ open, onClose, title, description, children, testid = '
             aria-describedby={description ? descId : undefined}
             tabIndex={-1}
             data-testid={testid}
-            initial={{ y: 24, scale: 0.98 }}
-            animate={{ y: 0, scale: 1 }}
-            exit={{ y: 24, scale: 0.98 }}
-            className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-2xl bg-surface p-5 shadow-xl sm:rounded-2xl"
+            className="animate-slide-up relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-lg border border-line bg-surface p-6 elev-2 sm:rounded-lg"
           >
             <div className="mb-4 flex items-start justify-between gap-3">
               <div>
@@ -87,9 +83,9 @@ export function Dialog({ open, onClose, title, description, children, testid = '
               </button>
             </div>
             {children}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
-    </AnimatePresence>
+    </>
   );
 }

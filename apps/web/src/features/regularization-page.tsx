@@ -57,7 +57,7 @@ export function RegularizationView() {
       <div className="grid gap-5 lg:grid-cols-5">
         <Card className="lg:col-span-2">
           <CardTitle>New request</CardTitle>
-          <form onSubmit={handleSubmit((v) => create.mutate(v))} noValidate className="flex flex-col gap-4" data-testid="regularization-form">
+          <form onSubmit={handleSubmit((v) => create.mutate(v))} noValidate className="flex flex-col gap-4 lg:gap-5" data-testid="regularization-form">
             {error && (
               <p role="alert" data-testid="regularization-error" className="rounded-xl bg-danger/10 p-3 text-sm text-danger">
                 {error}
@@ -90,7 +90,9 @@ export function RegularizationView() {
           ) : list.error ? (
             <ErrorState message={errorMessage(list.error)} onRetry={() => list.refetch()} />
           ) : list.data && list.data.items.length === 0 ? (
-            <EmptyState title="No regularization requests" testid="regularization-empty" />
+            <div className="animate-slide-up">
+              <EmptyState title="No regularization requests" testid="regularization-empty" />
+            </div>
           ) : (
             <>
               <Table caption="My regularization requests" data-testid="regularization-table">

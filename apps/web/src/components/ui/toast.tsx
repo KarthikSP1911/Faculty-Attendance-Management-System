@@ -1,7 +1,6 @@
 'use client';
 
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { CheckCircle2, AlertCircle, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -35,16 +34,12 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     <ToastContext.Provider value={api}>
       {children}
       <div aria-live="polite" role="status" className="pointer-events-none fixed inset-x-0 bottom-20 z-[60] flex flex-col items-center gap-2 px-4 md:bottom-6">
-        <AnimatePresence>
           {items.map((t) => (
-            <motion.div
+            <div
               key={t.id}
               data-testid={`toast-${t.kind}`}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
               className={cn(
-                'pointer-events-auto flex w-full max-w-md items-start gap-2 rounded-xl border bg-surface p-3 text-sm shadow-lg',
+                'animate-slide-up pointer-events-auto flex w-full max-w-md items-start gap-2 rounded-xl border bg-surface p-3 text-sm shadow-lg',
                 t.kind === 'error' ? 'border-danger' : 'border-st-present',
               )}
             >
@@ -53,9 +48,8 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               <button type="button" onClick={() => dismiss(t.id)} aria-label="Dismiss notification" data-testid={`toast-dismiss-${t.id}`}>
                 <X className="h-4 w-4" aria-hidden />
               </button>
-            </motion.div>
+            </div>
           ))}
-        </AnimatePresence>
       </div>
     </ToastContext.Provider>
   );

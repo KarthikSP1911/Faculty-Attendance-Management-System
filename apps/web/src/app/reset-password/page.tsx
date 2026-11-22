@@ -3,6 +3,7 @@
 import { Suspense, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { CheckCircle2 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { z } from 'zod';
@@ -47,7 +48,8 @@ function ResetForm() {
   }
   if (done) {
     return (
-      <div className="flex flex-col gap-4" data-testid="reset-success">
+      <div className="pop-in flex flex-col gap-4" data-testid="reset-success">
+        <CheckCircle2 className="h-10 w-10 text-primary" aria-hidden />
         <p role="status" className="text-sm">
           {done}
         </p>

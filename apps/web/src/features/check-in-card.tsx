@@ -70,35 +70,37 @@ export function CheckInCard() {
     data.dayType === 'HOLIDAY' ? `Holiday: ${data.holidayName ?? ''}` : data.dayType === 'WEEKLY_OFF' ? 'Weekly off' : data.onLeave === 'FULL' ? 'On approved leave' : '';
 
   return (
-    <Card data-testid="checkin-card">
+    <Card data-testid="checkin-card" className="animate-slide-up border-t-4 border-t-primary">
       <CardTitle action={<StatusBadge status={rec?.status ?? (data.dayType === 'WORKING' ? null : data.dayType)} />}>Today, {fmtDate(data.date)}</CardTitle>
-      <p className="text-xs text-muted">Server time (IST)</p>
-      <p className="text-4xl font-semibold tabular-nums" data-testid="server-time" aria-live="off">
-        {now ? now.toLocaleTimeString('en-IN', { hour12: true, timeZone: 'Asia/Kolkata' }) : '--:--:--'}
-      </p>
+      <div className="rounded-xl bg-primary/5 px-4 py-5 text-center">
+        <p className="text-xs font-medium uppercase tracking-wide text-muted">Server time (IST)</p>
+        <p className="font-display text-5xl font-bold tabular-nums tracking-tight text-primary sm:text-6xl" data-testid="server-time" aria-live="off">
+          {now ? now.toLocaleTimeString('en-IN', { hour12: true, timeZone: 'Asia/Kolkata' }) : '--:--:--'}
+        </p>
+      </div>
 
       {blocked && (
-        <p className="mt-3 text-sm text-muted" data-testid="checkin-blocked">
+        <p className="pop-in mt-3 rounded-xl bg-surface-2 p-3 text-sm text-muted" data-testid="checkin-blocked">
           {blocked}. Check-in is not available today.
         </p>
       )}
 
       <dl className="mt-4 grid grid-cols-3 gap-3 text-sm">
-        <div>
-          <dt className="text-muted">Check-in</dt>
-          <dd className="font-medium" data-testid="checkin-time">
+        <div className="rounded-xl bg-surface-2 p-3 text-center">
+          <dt className="text-xs text-muted">Check-in</dt>
+          <dd className="font-display text-base font-semibold tabular-nums" data-testid="checkin-time">
             {fmtTime(rec?.checkInAt)}
           </dd>
         </div>
-        <div>
-          <dt className="text-muted">Check-out</dt>
-          <dd className="font-medium" data-testid="checkout-time">
+        <div className="rounded-xl bg-surface-2 p-3 text-center">
+          <dt className="text-xs text-muted">Check-out</dt>
+          <dd className="font-display text-base font-semibold tabular-nums" data-testid="checkout-time">
             {fmtTime(rec?.checkOutAt)}
           </dd>
         </div>
-        <div>
-          <dt className="text-muted">Worked</dt>
-          <dd className="font-medium" data-testid="worked-time">
+        <div className="rounded-xl bg-surface-2 p-3 text-center">
+          <dt className="text-xs text-muted">Worked</dt>
+          <dd className="font-display text-base font-semibold tabular-nums" data-testid="worked-time">
             {fmtMinutes(rec?.workedMinutes)}
           </dd>
         </div>
@@ -110,7 +112,7 @@ export function CheckInCard() {
         </p>
       )}
 
-      <div className="mt-4 flex flex-wrap gap-3">
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 [&>button]:w-full">
         <Button onClick={() => checkIn.mutate()} loading={checkIn.isPending} disabled={!!blocked || !!rec?.checkInAt} data-testid="checkin-button" size="lg">
           <LogIn className="h-5 w-5" aria-hidden />
           Check in

@@ -91,7 +91,7 @@ export function LeaveView() {
       <section aria-label="Leave balances" className="mb-5 grid grid-cols-2 gap-3 md:grid-cols-4" data-testid="leave-balances">
         {balances.isLoading && <SkeletonRows rows={1} />}
         {balances.data?.map((b) => (
-          <Card key={b.id} className="p-4" data-testid={`leave-balance-${b.leaveType.code.toLowerCase()}`}>
+          <Card key={b.id} className="lift animate-slide-up p-4"data-testid={`leave-balance-${b.leaveType.code.toLowerCase()}`}>
             <p className="text-xs font-medium uppercase tracking-wide text-muted">{b.leaveType.name}</p>
             <p className="mt-1 text-2xl font-semibold tabular-nums">{num(b.allotted) - num(b.used)}</p>
             <p className="text-xs text-muted">
@@ -104,7 +104,7 @@ export function LeaveView() {
       <div className="grid gap-5 lg:grid-cols-5">
         <Card className="lg:col-span-2">
           <CardTitle>Apply for leave</CardTitle>
-          <form onSubmit={send(false)} noValidate className="flex flex-col gap-4" data-testid="leave-form">
+          <form onSubmit={send(false)} noValidate className="flex flex-col gap-4 lg:gap-5" data-testid="leave-form">
             {error && (
               <p role="alert" data-testid="leave-error" className="rounded-xl bg-danger/10 p-3 text-sm text-danger">
                 {error}
@@ -179,7 +179,9 @@ export function LeaveView() {
           ) : list.error ? (
             <ErrorState message={errorMessage(list.error)} onRetry={() => list.refetch()} />
           ) : list.data && list.data.items.length === 0 ? (
-            <EmptyState title="No leave requests" hint="Requests you submit will appear here." testid="leave-empty" />
+            <div className="animate-slide-up">
+              <EmptyState title="No leave requests" hint="Requests you submit will appear here." testid="leave-empty" />
+            </div>
           ) : (
             <>
               <Table caption="My leave requests" data-testid="leave-table">

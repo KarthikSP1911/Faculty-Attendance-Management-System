@@ -147,6 +147,7 @@ export function DepartmentsView() {
       ) : data && data.length === 0 ? (
         <EmptyState title="No departments yet" testid="departments-empty" />
       ) : (
+        <div className="animate-slide-up">
         <Table caption="Departments" data-testid="departments-table">
           <THead>
             <TR>
@@ -159,7 +160,7 @@ export function DepartmentsView() {
           </THead>
           <TBody>
             {data?.map((d) => (
-              <TR key={d.id} data-testid={`department-row-${d.code}`}>
+              <TR key={d.id} data-testid={`department-row-${d.code}`} className="transition-colors hover:bg-surface-2/60">
                 <TD>{d.code}</TD>
                 <TD>{d.name}</TD>
                 <TD>{d.hod ? `${d.hod.fullName} (${d.hod.employeeId})` : 'Not assigned'}</TD>
@@ -181,6 +182,7 @@ export function DepartmentsView() {
             ))}
           </TBody>
         </Table>
+        </div>
       )}
 
       <Dialog open={!!form} onClose={() => setForm(null)} title={form?.editing ? 'Edit department' : 'Add department'} testid="department-dialog">

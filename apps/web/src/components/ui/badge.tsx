@@ -2,7 +2,7 @@ import { cn, STATUS_CLASS, STATUS_LABEL, humanize } from '@/lib/utils';
 import type { AttendanceStatus } from '@/lib/types';
 
 export function Badge({ className, children }: { className?: string; children: React.ReactNode }) {
-  return <span className={cn('inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium', className)}>{children}</span>;
+  return <span className={cn('inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold', className)}>{children}</span>;
 }
 
 export function StatusBadge({ status }: { status: AttendanceStatus | null | undefined }) {

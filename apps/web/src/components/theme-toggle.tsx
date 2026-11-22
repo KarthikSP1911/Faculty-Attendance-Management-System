@@ -29,7 +29,7 @@ export function ThemeToggle() {
       onClick={toggle}
       data-testid="theme-toggle"
       aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-      className="rounded-xl p-2.5 text-fg hover:bg-surface-2"
+      className="rounded-md p-2.5 text-fg hover:bg-surface-2"
     >
       {theme === 'dark' ? <Sun className="h-5 w-5" aria-hidden /> : <Moon className="h-5 w-5" aria-hidden />}
     </button>

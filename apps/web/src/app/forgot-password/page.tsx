@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { MailCheck } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { z } from 'zod';
@@ -35,7 +36,8 @@ export default function ForgotPasswordPage() {
   return (
     <AuthLayout title="Forgot password" subtitle="Enter your email and we will send a reset link.">
       {message ? (
-        <div className="flex flex-col gap-4" data-testid="forgot-success">
+        <div className="pop-in flex flex-col gap-4" data-testid="forgot-success">
+          <MailCheck className="h-10 w-10 text-primary" aria-hidden />
           <p role="status" className="text-sm">
             {message}
           </p>
@@ -50,7 +52,7 @@ export default function ForgotPasswordPage() {
               {error}
             </p>
           )}
-          <Field label="Email" error={errors.email?.message}>
+          <Field label="Email" error={errors.email?.message} hint="Use the email address registered with your account.">
             <Input type="email" autoComplete="email" data-testid="forgot-email" {...register('email')} />
           </Field>
           <Button type="submit" loading={isSubmitting} data-testid="forgot-submit">

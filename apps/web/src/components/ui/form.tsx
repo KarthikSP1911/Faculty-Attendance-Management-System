@@ -4,15 +4,15 @@ import { cloneElement, forwardRef, useId, type InputHTMLAttributes, type ReactEl
 import { cn } from '@/lib/utils';
 
 const control =
-  'w-full rounded-xl border border-line bg-surface px-3 text-sm text-fg placeholder:text-muted disabled:opacity-50 aria-[invalid=true]:border-danger';
+  'w-full rounded-md border border-line border-b-fg/50 bg-surface px-3 text-sm text-fg placeholder:text-muted transition-colors hover:border-fg/40 focus:border-primary focus:border-b-primary disabled:opacity-50 aria-[invalid=true]:border-danger';
 
 export const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(function Input({ className, ...props }, ref) {
-  return <input ref={ref} className={cn(control, 'h-11', className)} {...props} />;
+  return <input ref={ref} className={cn(control, 'h-10', className)} {...props} />;
 });
 
 export const Select = forwardRef<HTMLSelectElement, SelectHTMLAttributes<HTMLSelectElement>>(function Select({ className, children, ...props }, ref) {
   return (
-    <select ref={ref} className={cn(control, 'h-11', className)} {...props}>
+    <select ref={ref} className={cn(control, 'h-10', className)} {...props}>
       {children}
     </select>
   );
@@ -37,7 +37,7 @@ export function Field({ label, error, hint, className, children }: FieldProps) {
   const describedBy = error || hint ? msgId : undefined;
   return (
     <div className={cn('flex flex-col gap-1.5', className)}>
-      <label htmlFor={id} className="text-sm font-medium">
+      <label htmlFor={id} className="text-sm font-semibold">
         {label}
       </label>
       {cloneElement(children, { id, 'aria-describedby': describedBy, 'aria-invalid': error ? true : undefined })}

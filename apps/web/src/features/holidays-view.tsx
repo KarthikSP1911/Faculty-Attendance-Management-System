@@ -44,7 +44,7 @@ export function HolidaysView() {
       ) : data && data.length === 0 ? (
         <EmptyState title={`No holidays listed for ${year}`} testid="holidays-empty" />
       ) : (
-        <Table caption="Holidays" data-testid="holidays-table">
+        <Table caption="Holidays" data-testid="holidays-table" className="animate-slide-up">
           <THead>
             <TR>
               <TH>Date</TH>
@@ -55,8 +55,8 @@ export function HolidaysView() {
           <TBody>
             {data?.map((h) => (
               <TR key={h.id} data-testid={`holiday-row-${h.date}`}>
-                <TD>{fmtDate(h.date)}</TD>
-                <TD>{h.name}</TD>
+                <TD className="whitespace-nowrap tabular-nums">{fmtDate(h.date)}</TD>
+                <TD className="font-medium">{h.name}</TD>
                 <TD>
                   <Badge className={HOLIDAY_CLASS[h.type]}>{humanize(h.type)}</Badge>
                 </TD>

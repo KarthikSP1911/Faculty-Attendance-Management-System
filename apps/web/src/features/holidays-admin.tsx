@@ -124,6 +124,7 @@ export function HolidaysAdminView() {
       ) : data && data.length === 0 ? (
         <EmptyState title={`No holidays for ${year}`} testid="holidays-empty" />
       ) : (
+        <div className="animate-slide-up">
         <Table caption="Holidays" data-testid="holidays-table">
           <THead>
             <TR>
@@ -135,7 +136,7 @@ export function HolidaysAdminView() {
           </THead>
           <TBody>
             {data?.map((h) => (
-              <TR key={h.id} data-testid={`holiday-row-${h.date}`}>
+              <TR key={h.id} data-testid={`holiday-row-${h.date}`} className="transition-colors hover:bg-surface-2/60">
                 <TD>{fmtDate(h.date)}</TD>
                 <TD>{h.name}</TD>
                 <TD>
@@ -155,6 +156,7 @@ export function HolidaysAdminView() {
             ))}
           </TBody>
         </Table>
+        </div>
       )}
 
       <Dialog open={!!form} onClose={() => setForm(null)} title={form?.editing ? 'Edit holiday' : 'Add holiday'} testid="holiday-dialog">

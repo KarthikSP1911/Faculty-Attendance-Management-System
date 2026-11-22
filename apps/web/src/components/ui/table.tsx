@@ -5,7 +5,7 @@ import { Button } from './button';
 
 export function Table({ className, caption, ...props }: HTMLAttributes<HTMLTableElement> & { caption?: string }) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-line">
+    <div className="overflow-x-auto rounded-lg border border-line bg-surface">
       <table className={cn('w-full border-collapse text-left text-sm', className)} {...props}>
         {caption && <caption className="sr-only">{caption}</caption>}
         {props.children}
@@ -14,13 +14,15 @@ export function Table({ className, caption, ...props }: HTMLAttributes<HTMLTable
   );
 }
 
-export const THead = (p: HTMLAttributes<HTMLTableSectionElement>) => <thead className="bg-surface-2 text-xs uppercase tracking-wide text-muted" {...p} />;
-export const TBody = (p: HTMLAttributes<HTMLTableSectionElement>) => <tbody className="divide-y divide-line" {...p} />;
-export const TR = (p: HTMLAttributes<HTMLTableRowElement>) => <tr className="bg-surface" {...p} />;
-export const TH = ({ className, ...p }: ThHTMLAttributes<HTMLTableCellElement>) => (
-  <th scope="col" className={cn('whitespace-nowrap px-3 py-2.5 font-medium', className)} {...p} />
+export const THead = (p: HTMLAttributes<HTMLTableSectionElement>) => (
+  <thead className="border-b border-line bg-surface-2 text-xs font-semibold text-muted" {...p} />
 );
-export const TD = ({ className, ...p }: TdHTMLAttributes<HTMLTableCellElement>) => <td className={cn('px-3 py-2.5 align-middle', className)} {...p} />;
+export const TBody = (p: HTMLAttributes<HTMLTableSectionElement>) => <tbody className="divide-y divide-line" {...p} />;
+export const TR = (p: HTMLAttributes<HTMLTableRowElement>) => <tr className="bg-surface transition-colors hover:bg-surface-2/70" {...p} />;
+export const TH = ({ className, ...p }: ThHTMLAttributes<HTMLTableCellElement>) => (
+  <th scope="col" className={cn('whitespace-nowrap px-4 py-2.5 font-semibold', className)} {...p} />
+);
+export const TD = ({ className, ...p }: TdHTMLAttributes<HTMLTableCellElement>) => <td className={cn('px-4 py-2.5 align-middle', className)} {...p} />;
 
 export function Pagination({
   page,
