@@ -1,249 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="440" failures="0" errors="0" time="13.936">
-  <testsuite name="shifts and rules (REQ-RULE-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:14" time="3.035" tests="13">
-    <testcase classname="shifts and rules (REQ-RULE-01) lists the default shift for any authenticated user" name="shifts and rules (REQ-RULE-01) lists the default shift for any authenticated user" time="0.02">
+<testsuites name="jest tests" tests="440" failures="0" errors="0" time="14.582">
+  <testsuite name="shifts and rules (REQ-RULE-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:09" time="3.527" tests="13">
+    <testcase classname="shifts and rules (REQ-RULE-01) lists the default shift for any authenticated user" name="shifts and rules (REQ-RULE-01) lists the default shift for any authenticated user" time="0.017">
     </testcase>
     <testcase classname="shifts and rules (REQ-RULE-01) updates a shift (admin) and audits it" name="shifts and rules (REQ-RULE-01) updates a shift (admin) and audits it" time="0.031">
     </testcase>
     <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;S&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;S&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" time="0.007">
     </testcase>
-    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;17:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;17:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1]} (400)" time="0.006">
+    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;17:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;17:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1]} (400)" time="0.008">
     </testcase>
-    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[0]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[0]} (400)" time="0.007">
+    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[0]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[0]} (400)" time="0.006">
     </testcase>
-    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;9am&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;9am&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" time="0.005">
+    <testcase classname="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;9am&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" name="shifts and rules (REQ-RULE-01) rejects invalid shift {&quot;name&quot;:&quot;Shift&quot;,&quot;startTime&quot;:&quot;9am&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1]} (400)" time="0.007">
     </testcase>
     <testcase classname="shifts and rules (REQ-RULE-01) enforces access and existence on shift updates" name="shifts and rules (REQ-RULE-01) enforces access and existence on shift updates" time="0.012">
     </testcase>
-    <testcase classname="shifts and rules (REQ-RULE-01) reads the default 15-minute grace and updates it within 0-60" name="shifts and rules (REQ-RULE-01) reads the default 15-minute grace and updates it within 0-60" time="0.084">
+    <testcase classname="shifts and rules (REQ-RULE-01) reads the default 15-minute grace and updates it within 0-60" name="shifts and rules (REQ-RULE-01) reads the default 15-minute grace and updates it within 0-60" time="0.08">
     </testcase>
-    <testcase classname="shifts and rules (REQ-RULE-01) creates a rules row on first read when none exists" name="shifts and rules (REQ-RULE-01) creates a rules row on first read when none exists" time="0.01">
+    <testcase classname="shifts and rules (REQ-RULE-01) creates a rules row on first read when none exists" name="shifts and rules (REQ-RULE-01) creates a rules row on first read when none exists" time="0.012">
     </testcase>
     <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) is readable by every role but writable by admin only" name="holidays (REQ-HOL-01, REQ-HOL-02) is readable by every role but writable by admin only" time="0.021">
     </testcase>
-    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) creates, lists, updates and deletes with audit entries" name="holidays (REQ-HOL-01, REQ-HOL-02) creates, lists, updates and deletes with audit entries" time="0.045">
+    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) creates, lists, updates and deletes with audit entries" name="holidays (REQ-HOL-01, REQ-HOL-02) creates, lists, updates and deletes with audit entries" time="0.048">
     </testcase>
-    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) rejects duplicate dates (409) and invalid input (400)" name="holidays (REQ-HOL-01, REQ-HOL-02) rejects duplicate dates (409) and invalid input (400)" time="0.156">
+    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) rejects duplicate dates (409) and invalid input (400)" name="holidays (REQ-HOL-01, REQ-HOL-02) rejects duplicate dates (409) and invalid input (400)" time="0.138">
     </testcase>
-    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) filters the calendar by year and month" name="holidays (REQ-HOL-01, REQ-HOL-02) filters the calendar by year and month" time="0.048">
+    <testcase classname="holidays (REQ-HOL-01, REQ-HOL-02) filters the calendar by year and month" name="holidays (REQ-HOL-01, REQ-HOL-02) filters the calendar by year and month" time="0.043">
     </testcase>
   </testsuite>
-  <testsuite name="create faculty (REQ-FAC-01, REQ-FAC-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:17" time="1.688" tests="31">
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) creates a faculty member with an auto-generated employee ID, balances and a temporary password" name="create faculty (REQ-FAC-01, REQ-FAC-02) creates a faculty member with an auto-generated employee ID, balances and a temporary password" time="0.057">
+  <testsuite name="create faculty (REQ-FAC-01, REQ-FAC-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:13" time="1.687" tests="31">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) creates a faculty member with an auto-generated employee ID, balances and a temporary password" name="create faculty (REQ-FAC-01, REQ-FAC-02) creates a faculty member with an auto-generated employee ID, balances and a temporary password" time="0.054">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) assigns consecutive employee IDs" name="create faculty (REQ-FAC-01, REQ-FAC-02) assigns consecutive employee IDs" time="0.047">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) assigns consecutive employee IDs" name="create faculty (REQ-FAC-01, REQ-FAC-02) assigns consecutive employee IDs" time="0.046">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) uses a supplied password and does not echo it" name="create faculty (REQ-FAC-01, REQ-FAC-02) uses a supplied password and does not echo it" time="0.037">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) uses a supplied password and does not echo it" name="create faculty (REQ-FAC-01, REQ-FAC-02) uses a supplied password and does not echo it" time="0.039">
     </testcase>
     <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) can create an inactive faculty member who cannot log in" name="create faculty (REQ-FAC-01, REQ-FAC-02) can create an inactive faculty member who cannot log in" time="0.028">
     </testcase>
     <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects short name with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects short name with 400" time="0.006">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects digit in name with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects digit in name with 400" time="0.006">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects digit in name with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects digit in name with 400" time="0.015">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad phone with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad phone with 400" time="0.006">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad phone with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad phone with 400" time="0.005">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad email with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad email with 400" time="0.004">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad email with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad email with 400" time="0.006">
     </testcase>
     <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects future joining date with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects future joining date with 400" time="0.005">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad designation with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad designation with 400" time="0.006">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad designation with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects bad designation with 400" time="0.005">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects weak password with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects weak password with 400" time="0.005">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) rejects weak password with 400" name="create faculty (REQ-FAC-01, REQ-FAC-02) rejects weak password with 400" time="0.006">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) returns 409 for a duplicate email and 404 for unknown department or shift" name="create faculty (REQ-FAC-01, REQ-FAC-02) returns 409 for a duplicate email and 404 for unknown department or shift" time="0.024">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) returns 409 for a duplicate email and 404 for unknown department or shift" name="create faculty (REQ-FAC-01, REQ-FAC-02) returns 409 for a duplicate email and 404 for unknown department or shift" time="0.022">
     </testcase>
-    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) is admin only" name="create faculty (REQ-FAC-01, REQ-FAC-02) is admin only" time="0.012">
+    <testcase classname="create faculty (REQ-FAC-01, REQ-FAC-02) is admin only" name="create faculty (REQ-FAC-01, REQ-FAC-02) is admin only" time="0.013">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) paginates with 10 per page by default and reports totals" name="list, search, filter, sort, paginate (REQ-FAC-03) paginates with 10 per page by default and reports totals" time="0.055">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) paginates with 10 per page by default and reports totals" name="list, search, filter, sort, paginate (REQ-FAC-03) paginates with 10 per page by default and reports totals" time="0.038">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) supports page sizes 25 and 50 only" name="list, search, filter, sort, paginate (REQ-FAC-03) supports page sizes 25 and 50 only" time="0.029">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) supports page sizes 25 and 50 only" name="list, search, filter, sort, paginate (REQ-FAC-03) supports page sizes 25 and 50 only" time="0.028">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) searches by name, employee ID and email (case-insensitive)" name="list, search, filter, sort, paginate (REQ-FAC-03) searches by name, employee ID and email (case-insensitive)" time="0.028">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) searches by name, employee ID and email (case-insensitive)" name="list, search, filter, sort, paginate (REQ-FAC-03) searches by name, employee ID and email (case-insensitive)" time="0.029">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) filters by department and status" name="list, search, filter, sort, paginate (REQ-FAC-03) filters by department and status" time="0.019">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) filters by department and status" name="list, search, filter, sort, paginate (REQ-FAC-03) filters by department and status" time="0.018">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) sorts ascending and descending" name="list, search, filter, sort, paginate (REQ-FAC-03) sorts ascending and descending" time="0.032">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) sorts ascending and descending" name="list, search, filter, sort, paginate (REQ-FAC-03) sorts ascending and descending" time="0.036">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) limits an HOD to their own department regardless of the filter" name="list, search, filter, sort, paginate (REQ-FAC-03) limits an HOD to their own department regardless of the filter" time="0.009">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) limits an HOD to their own department regardless of the filter" name="list, search, filter, sort, paginate (REQ-FAC-03) limits an HOD to their own department regardless of the filter" time="0.011">
     </testcase>
-    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) forbids faculty from listing (403)" name="list, search, filter, sort, paginate (REQ-FAC-03) forbids faculty from listing (403)" time="0.006">
+    <testcase classname="list, search, filter, sort, paginate (REQ-FAC-03) forbids faculty from listing (403)" name="list, search, filter, sort, paginate (REQ-FAC-03) forbids faculty from listing (403)" time="0.005">
     </testcase>
     <testcase classname="read one (REQ-RBAC-02, REQ-RBAC-03) lets a faculty member read themselves but nobody else" name="read one (REQ-RBAC-02, REQ-RBAC-03) lets a faculty member read themselves but nobody else" time="0.018">
     </testcase>
     <testcase classname="read one (REQ-RBAC-02, REQ-RBAC-03) lets an HOD read own department only" name="read one (REQ-RBAC-02, REQ-RBAC-03) lets an HOD read own department only" time="0.015">
     </testcase>
-    <testcase classname="read one (REQ-RBAC-02, REQ-RBAC-03) lets an admin read anyone; unknown id is 404" name="read one (REQ-RBAC-02, REQ-RBAC-03) lets an admin read anyone; unknown id is 404" time="0.014">
+    <testcase classname="read one (REQ-RBAC-02, REQ-RBAC-03) lets an admin read anyone; unknown id is 404" name="read one (REQ-RBAC-02, REQ-RBAC-03) lets an admin read anyone; unknown id is 404" time="0.016">
     </testcase>
-    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) updates fields including email and department, and audits old/new values" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) updates fields including email and department, and audits old/new values" time="0.026">
+    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) updates fields including email and department, and audits old/new values" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) updates fields including email and department, and audits old/new values" time="0.028">
     </testcase>
-    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) validates updates and handles conflicts" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) validates updates and handles conflicts" time="0.11">
+    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) validates updates and handles conflicts" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) validates updates and handles conflicts" time="0.126">
     </testcase>
-    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) keeps the HOD in place: moving or deactivating or deleting an HOD is a 409" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) keeps the HOD in place: moving or deactivating or deleting an HOD is a 409" time="0.029">
+    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) keeps the HOD in place: moving or deactivating or deleting an HOD is a 409" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) keeps the HOD in place: moving or deactivating or deleting an HOD is a 409" time="0.032">
     </testcase>
-    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) deactivation blocks login and revokes sessions but keeps history; reactivation restores access" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) deactivation blocks login and revokes sessions but keeps history; reactivation restores access" time="0.122">
+    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) deactivation blocks login and revokes sessions but keeps history; reactivation restores access" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) deactivation blocks login and revokes sessions but keeps history; reactivation restores access" time="0.128">
     </testcase>
-    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) refuses to delete faculty with history (409) but deletes a clean record" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) refuses to delete faculty with history (409) but deletes a clean record" time="0.115">
+    <testcase classname="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) refuses to delete faculty with history (409) but deletes a clean record" name="update, deactivate, delete (REQ-FAC-01, REQ-FAC-05) refuses to delete faculty with history (409) but deletes a clean record" time="0.117">
     </testcase>
-    <testcase classname="CSV bulk import (REQ-FAC-04) imports valid rows and reports row-level errors" name="CSV bulk import (REQ-FAC-04) imports valid rows and reports row-level errors" time="0.05">
+    <testcase classname="CSV bulk import (REQ-FAC-04) imports valid rows and reports row-level errors" name="CSV bulk import (REQ-FAC-04) imports valid rows and reports row-level errors" time="0.041">
     </testcase>
-    <testcase classname="CSV bulk import (REQ-FAC-04) rejects empty files, missing columns, header-only files and oversized files with 400" name="CSV bulk import (REQ-FAC-04) rejects empty files, missing columns, header-only files and oversized files with 400" time="0.029">
+    <testcase classname="CSV bulk import (REQ-FAC-04) rejects empty files, missing columns, header-only files and oversized files with 400" name="CSV bulk import (REQ-FAC-04) rejects empty files, missing columns, header-only files and oversized files with 400" time="0.031">
     </testcase>
-    <testcase classname="CSV bulk import (REQ-FAC-04) imports nothing when every row is invalid, and is admin only" name="CSV bulk import (REQ-FAC-04) imports nothing when every row is invalid, and is admin only" time="0.019">
+    <testcase classname="CSV bulk import (REQ-FAC-04) imports nothing when every row is invalid, and is admin only" name="CSV bulk import (REQ-FAC-04) imports nothing when every row is invalid, and is admin only" time="0.02">
     </testcase>
   </testsuite>
-  <testsuite name="types and balances (REQ-LEAVE-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:19" time="1.612" tests="26">
-    <testcase classname="types and balances (REQ-LEAVE-01) requires authentication" name="types and balances (REQ-LEAVE-01) requires authentication" time="0.006">
+  <testsuite name="types and balances (REQ-LEAVE-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:14" time="1.657" tests="26">
+    <testcase classname="types and balances (REQ-LEAVE-01) requires authentication" name="types and balances (REQ-LEAVE-01) requires authentication" time="0.007">
     </testcase>
-    <testcase classname="types and balances (REQ-LEAVE-01) lists the four types and creates yearly balances from quotas" name="types and balances (REQ-LEAVE-01) lists the four types and creates yearly balances from quotas" time="0.024">
+    <testcase classname="types and balances (REQ-LEAVE-01) lists the four types and creates yearly balances from quotas" name="types and balances (REQ-LEAVE-01) lists the four types and creates yearly balances from quotas" time="0.026">
     </testcase>
-    <testcase classname="types and balances (REQ-LEAVE-01) limits who can read another balance" name="types and balances (REQ-LEAVE-01) limits who can read another balance" time="0.042">
+    <testcase classname="types and balances (REQ-LEAVE-01) limits who can read another balance" name="types and balances (REQ-LEAVE-01) limits who can read another balance" time="0.048">
     </testcase>
     <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) rejects invalid input with field details" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) rejects invalid input with field details" time="0.04">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) an admin has no faculty profile to apply with" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) an admin has no faculty profile to apply with" time="0.005">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) an admin has no faculty profile to apply with" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) an admin has no faculty profile to apply with" time="0.006">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) creates a pending request counting working days (Sunday excluded)" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) creates a pending request counting working days (Sunday excluded)" time="0.048">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) creates a pending request counting working days (Sunday excluded)" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) creates a pending request counting working days (Sunday excluded)" time="0.049">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses an overlapping request with 409" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses an overlapping request with 409" time="0.054">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses an overlapping request with 409" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses an overlapping request with 409" time="0.059">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses a request above the balance, counting pending days" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses a request above the balance, counting pending days" time="0.051">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses a request above the balance, counting pending days" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) refuses a request above the balance, counting pending days" time="0.056">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) On Duty has no quota; half day counts 0.5" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) On Duty has no quota; half day counts 0.5" time="0.074">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) On Duty has no quota; half day counts 0.5" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) On Duty has no quota; half day counts 0.5" time="0.076">
     </testcase>
-    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) saves a draft and submits it later" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) saves a draft and submits it later" time="0.082">
+    <testcase classname="applying (REQ-LEAVE-02, REQ-LEAVE-03) saves a draft and submits it later" name="applying (REQ-LEAVE-02, REQ-LEAVE-03) saves a draft and submits it later" time="0.083">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) faculty cannot approve; an HOD of another department cannot either" name="review and balances (REQ-LEAVE-04, 05, 06) faculty cannot approve; an HOD of another department cannot either" time="0.053">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) faculty cannot approve; an HOD of another department cannot either" name="review and balances (REQ-LEAVE-04, 05, 06) faculty cannot approve; an HOD of another department cannot either" time="0.051">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) rejecting needs a comment and notifies the faculty" name="review and balances (REQ-LEAVE-04, 05, 06) rejecting needs a comment and notifies the faculty" time="0.066">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) rejecting needs a comment and notifies the faculty" name="review and balances (REQ-LEAVE-04, 05, 06) rejecting needs a comment and notifies the faculty" time="0.064">
     </testcase>
     <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) the HOD approves their own department and the balance drops" name="review and balances (REQ-LEAVE-04, 05, 06) the HOD approves their own department and the balance drops" time="0.035">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an approved future leave can be cancelled and the balance is restored" name="review and balances (REQ-LEAVE-04, 05, 06) an approved future leave can be cancelled and the balance is restored" time="0.039">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an approved future leave can be cancelled and the balance is restored" name="review and balances (REQ-LEAVE-04, 05, 06) an approved future leave can be cancelled and the balance is restored" time="0.041">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an approved leave that has started cannot be cancelled" name="review and balances (REQ-LEAVE-04, 05, 06) an approved leave that has started cannot be cancelled" time="0.06">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an approved leave that has started cannot be cancelled" name="review and balances (REQ-LEAVE-04, 05, 06) an approved leave that has started cannot be cancelled" time="0.055">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an HOD cannot approve their own leave but an admin can" name="review and balances (REQ-LEAVE-04, 05, 06) an HOD cannot approve their own leave but an admin can" time="0.058">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) an HOD cannot approve their own leave but an admin can" name="review and balances (REQ-LEAVE-04, 05, 06) an HOD cannot approve their own leave but an admin can" time="0.063">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) scopes the list by role and filters by status" name="review and balances (REQ-LEAVE-04, 05, 06) scopes the list by role and filters by status" time="0.046">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) scopes the list by role and filters by status" name="review and balances (REQ-LEAVE-04, 05, 06) scopes the list by role and filters by status" time="0.045">
     </testcase>
-    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) approved leave is recorded in the audit trail" name="review and balances (REQ-LEAVE-04, 05, 06) approved leave is recorded in the audit trail" time="0.002">
+    <testcase classname="review and balances (REQ-LEAVE-04, 05, 06) approved leave is recorded in the audit trail" name="review and balances (REQ-LEAVE-04, 05, 06) approved leave is recorded in the audit trail" time="0.001">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) validates the date window and reason" name="regularization (REQ-REG-01, 02, 03) validates the date window and reason" time="0.028">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) validates the date window and reason" name="regularization (REQ-REG-01, 02, 03) validates the date window and reason" time="0.025">
     </testcase>
     <testcase classname="regularization (REQ-REG-01, 02, 03) refuses a holiday, weekly off or leave day" name="regularization (REQ-REG-01, 02, 03) refuses a holiday, weekly off or leave day" time="0.011">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) creates a request and refuses a duplicate pending one" name="regularization (REQ-REG-01, 02, 03) creates a request and refuses a duplicate pending one" time="0.034">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) creates a request and refuses a duplicate pending one" name="regularization (REQ-REG-01, 02, 03) creates a request and refuses a duplicate pending one" time="0.031">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) only the department HOD or an admin can review" name="regularization (REQ-REG-01, 02, 03) only the department HOD or an admin can review" time="0.02">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) only the department HOD or an admin can review" name="regularization (REQ-REG-01, 02, 03) only the department HOD or an admin can review" time="0.019">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) approval creates the record, recomputes the status and audits a correction" name="regularization (REQ-REG-01, 02, 03) approval creates the record, recomputes the status and audits a correction" time="0.048">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) approval creates the record, recomputes the status and audits a correction" name="regularization (REQ-REG-01, 02, 03) approval creates the record, recomputes the status and audits a correction" time="0.045">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) rejection leaves attendance unchanged" name="regularization (REQ-REG-01, 02, 03) rejection leaves attendance unchanged" time="0.04">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) rejection leaves attendance unchanged" name="regularization (REQ-REG-01, 02, 03) rejection leaves attendance unchanged" time="0.039">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) allows at most three requests in a month" name="regularization (REQ-REG-01, 02, 03) allows at most three requests in a month" time="0.031">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) allows at most three requests in a month" name="regularization (REQ-REG-01, 02, 03) allows at most three requests in a month" time="0.027">
     </testcase>
-    <testcase classname="regularization (REQ-REG-01, 02, 03) lists by role" name="regularization (REQ-REG-01, 02, 03) lists by role" time="0.028">
+    <testcase classname="regularization (REQ-REG-01, 02, 03) lists by role" name="regularization (REQ-REG-01, 02, 03) lists by role" time="0.024">
     </testcase>
   </testsuite>
-  <testsuite name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:20" time="1.3" tests="24">
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) requires authentication" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) requires authentication" time="0.008">
+  <testsuite name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:16" time="1.345" tests="24">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) requires authentication" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) requires authentication" time="0.009">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) an admin has no faculty profile to check in with" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) an admin has no faculty profile to check in with" time="0.008">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) an admin has no faculty profile to check in with" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) an admin has no faculty profile to check in with" time="0.006">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks in using the server clock and ignores any client time" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks in using the server clock and ignores any client time" time="0.028">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks in using the server clock and ignores any client time" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks in using the server clock and ignores any client time" time="0.032">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) shows the open record on /today" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) shows the open record on /today" time="0.022">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) shows the open record on /today" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) shows the open record on /today" time="0.03">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-in the same day is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-in the same day is refused" time="0.019">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-in the same day is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-in the same day is refused" time="0.014">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out in the same minute as check-in is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out in the same minute as check-in is refused" time="0.01">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out in the same minute as check-in is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out in the same minute as check-in is refused" time="0.009">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks out and computes a Present day" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks out and computes a Present day" time="0.017">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks out and computes a Present day" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) checks out and computes a Present day" time="0.018">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-out is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-out is refused" time="0.009">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-out is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) a second check-out is refused" time="0.01">
     </testcase>
-    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out without a check-in is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out without a check-in is refused" time="0.011">
+    <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out without a check-in is refused" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) check-out without a check-in is refused" time="0.008">
     </testcase>
     <testcase classname="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) lists the month for the signed-in faculty only" name="check-in and check-out (REQ-ATT-01, REQ-ATT-04, REQ-ATT-05) lists the month for the signed-in faculty only" time="0.029">
     </testcase>
-    <testcase classname="punch windows (REQ-ATT-02) refuses check-in before 07:00" name="punch windows (REQ-ATT-02) refuses check-in before 07:00" time="0.01">
+    <testcase classname="punch windows (REQ-ATT-02) refuses check-in before 07:00" name="punch windows (REQ-ATT-02) refuses check-in before 07:00" time="0.012">
     </testcase>
-    <testcase classname="punch windows (REQ-ATT-02) refuses check-in after 12:00" name="punch windows (REQ-ATT-02) refuses check-in after 12:00" time="0.013">
+    <testcase classname="punch windows (REQ-ATT-02) refuses check-in after 12:00" name="punch windows (REQ-ATT-02) refuses check-in after 12:00" time="0.01">
     </testcase>
-    <testcase classname="punch windows (REQ-ATT-02) accepts check-in at exactly 12:00 and refuses check-out after 23:00" name="punch windows (REQ-ATT-02) accepts check-in at exactly 12:00 and refuses check-out after 23:00" time="0.024">
+    <testcase classname="punch windows (REQ-ATT-02) accepts check-in at exactly 12:00 and refuses check-out after 23:00" name="punch windows (REQ-ATT-02) accepts check-in at exactly 12:00 and refuses check-out after 23:00" time="0.023">
     </testcase>
-    <testcase classname="days without check-in (REQ-ATT-03) refuses check-in on a holiday" name="days without check-in (REQ-ATT-03) refuses check-in on a holiday" time="0.024">
+    <testcase classname="days without check-in (REQ-ATT-03) refuses check-in on a holiday" name="days without check-in (REQ-ATT-03) refuses check-in on a holiday" time="0.022">
     </testcase>
-    <testcase classname="days without check-in (REQ-ATT-03) refuses check-in on Sunday" name="days without check-in (REQ-ATT-03) refuses check-in on Sunday" time="0.009">
+    <testcase classname="days without check-in (REQ-ATT-03) refuses check-in on Sunday" name="days without check-in (REQ-ATT-03) refuses check-in on Sunday" time="0.01">
     </testcase>
-    <testcase classname="days without check-in (REQ-ATT-03) allows Saturday for the default Monday-Saturday shift" name="days without check-in (REQ-ATT-03) allows Saturday for the default Monday-Saturday shift" time="0.014">
+    <testcase classname="days without check-in (REQ-ATT-03) allows Saturday for the default Monday-Saturday shift" name="days without check-in (REQ-ATT-03) allows Saturday for the default Monday-Saturday shift" time="0.012">
     </testcase>
     <testcase classname="days without check-in (REQ-ATT-03) refuses check-in during approved leave" name="days without check-in (REQ-ATT-03) refuses check-in during approved leave" time="0.03">
     </testcase>
-    <testcase classname="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) flags the third Late of the month as a deduction" name="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) flags the third Late of the month as a deduction" time="0.096">
+    <testcase classname="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) flags the third Late of the month as a deduction" name="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) flags the third Late of the month as a deduction" time="0.114">
     </testcase>
     <testcase classname="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) an arrival after 10:30 is a Half Day and not counted as Late" name="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) an arrival after 10:30 is a Half Day and not counted as Late" time="0.03">
     </testcase>
     <testcase classname="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) a short day is a Half Day and under four hours is Absent" name="late arrivals and the third-late deduction (REQ-RULE-02, REQ-RULE-06) a short day is a Half Day and under four hours is Absent" time="0.058">
     </testcase>
-    <testcase classname="absent job (REQ-RULE-04) only an admin can trigger it, and not for the future" name="absent job (REQ-RULE-04) only an admin can trigger it, and not for the future" time="0.019">
+    <testcase classname="absent job (REQ-RULE-04) only an admin can trigger it, and not for the future" name="absent job (REQ-RULE-04) only an admin can trigger it, and not for the future" time="0.021">
     </testcase>
-    <testcase classname="absent job (REQ-RULE-04) marks absentees, leave and missed check-outs, and is safe to run twice" name="absent job (REQ-RULE-04) marks absentees, leave and missed check-outs, and is safe to run twice" time="0.078">
+    <testcase classname="absent job (REQ-RULE-04) marks absentees, leave and missed check-outs, and is safe to run twice" name="absent job (REQ-RULE-04) marks absentees, leave and missed check-outs, and is safe to run twice" time="0.08">
     </testcase>
-    <testcase classname="absent job (REQ-RULE-04) skips holidays and weekly offs, and inactive faculty" name="absent job (REQ-RULE-04) skips holidays and weekly offs, and inactive faculty" time="0.077">
+    <testcase classname="absent job (REQ-RULE-04) skips holidays and weekly offs, and inactive faculty" name="absent job (REQ-RULE-04) skips holidays and weekly offs, and inactive faculty" time="0.078">
     </testcase>
-    <testcase classname="absent job (REQ-RULE-04) does not mark faculty absent before their joining date" name="absent job (REQ-RULE-04) does not mark faculty absent before their joining date" time="0.034">
+    <testcase classname="absent job (REQ-RULE-04) does not mark faculty absent before their joining date" name="absent job (REQ-RULE-04) does not mark faculty absent before their joining date" time="0.031">
     </testcase>
   </testsuite>
-  <testsuite name="POST /auth/login (REQ-AUTH-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:22" time="1.239" tests="29">
-    <testcase classname="POST /auth/login (REQ-AUTH-01) logs in and sets httpOnly cookies" name="POST /auth/login (REQ-AUTH-01) logs in and sets httpOnly cookies" time="0.036">
+  <testsuite name="POST /auth/login (REQ-AUTH-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:17" time="1.15" tests="29">
+    <testcase classname="POST /auth/login (REQ-AUTH-01) logs in and sets httpOnly cookies" name="POST /auth/login (REQ-AUTH-01) logs in and sets httpOnly cookies" time="0.027">
     </testcase>
-    <testcase classname="POST /auth/login (REQ-AUTH-01) normalises email case" name="POST /auth/login (REQ-AUTH-01) normalises email case" time="0.015">
+    <testcase classname="POST /auth/login (REQ-AUTH-01) normalises email case" name="POST /auth/login (REQ-AUTH-01) normalises email case" time="0.017">
     </testcase>
-    <testcase classname="POST /auth/login (REQ-AUTH-01) rejects a wrong password with 401" name="POST /auth/login (REQ-AUTH-01) rejects a wrong password with 401" time="0.01">
+    <testcase classname="POST /auth/login (REQ-AUTH-01) rejects a wrong password with 401" name="POST /auth/login (REQ-AUTH-01) rejects a wrong password with 401" time="0.011">
     </testcase>
-    <testcase classname="POST /auth/login (REQ-AUTH-01) gives the same 401 for an unknown email" name="POST /auth/login (REQ-AUTH-01) gives the same 401 for an unknown email" time="0.008">
+    <testcase classname="POST /auth/login (REQ-AUTH-01) gives the same 401 for an unknown email" name="POST /auth/login (REQ-AUTH-01) gives the same 401 for an unknown email" time="0.007">
     </testcase>
-    <testcase classname="POST /auth/login (REQ-AUTH-01) blocks deactivated accounts with 403" name="POST /auth/login (REQ-AUTH-01) blocks deactivated accounts with 403" time="0.007">
+    <testcase classname="POST /auth/login (REQ-AUTH-01) blocks deactivated accounts with 403" name="POST /auth/login (REQ-AUTH-01) blocks deactivated accounts with 403" time="0.006">
     </testcase>
     <testcase classname="POST /auth/login (REQ-AUTH-01) returns 400 with field details for invalid input" name="POST /auth/login (REQ-AUTH-01) returns 400 with field details for invalid input" time="0.003">
     </testcase>
     <testcase classname="POST /auth/login (REQ-AUTH-01) returns 400 for malformed JSON" name="POST /auth/login (REQ-AUTH-01) returns 400 for malformed JSON" time="0.006">
     </testcase>
-    <testcase classname="GET /auth/me and logout requires authentication (401)" name="GET /auth/me and logout requires authentication (401)" time="0.007">
+    <testcase classname="GET /auth/me and logout requires authentication (401)" name="GET /auth/me and logout requires authentication (401)" time="0.006">
     </testcase>
-    <testcase classname="GET /auth/me and logout returns the profile when logged in, and logout clears the session" name="GET /auth/me and logout returns the profile when logged in, and logout clears the session" time="0.039">
+    <testcase classname="GET /auth/me and logout returns the profile when logged in, and logout clears the session" name="GET /auth/me and logout returns the profile when logged in, and logout clears the session" time="0.038">
     </testcase>
     <testcase classname="GET /auth/me and logout logout without a session is still 204" name="GET /auth/me and logout logout without a session is still 204" time="0.002">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) locks after 5 failures for 15 minutes, then unlocks" name="lockout (REQ-AUTH-05) locks after 5 failures for 15 minutes, then unlocks" time="0.078">
     </testcase>
-    <testcase classname="lockout (REQ-AUTH-05) a successful login resets the failure counter" name="lockout (REQ-AUTH-05) a successful login resets the failure counter" time="0.104">
+    <testcase classname="lockout (REQ-AUTH-05) a successful login resets the failure counter" name="lockout (REQ-AUTH-05) a successful login resets the failure counter" time="0.101">
     </testcase>
-    <testcase classname="refresh token rotation (REQ-AUTH-02) rotates, rejects the old token, and revokes all sessions on re-use" name="refresh token rotation (REQ-AUTH-02) rotates, rejects the old token, and revokes all sessions on re-use" time="0.048">
+    <testcase classname="refresh token rotation (REQ-AUTH-02) rotates, rejects the old token, and revokes all sessions on re-use" name="refresh token rotation (REQ-AUTH-02) rotates, rejects the old token, and revokes all sessions on re-use" time="0.046">
     </testcase>
     <testcase classname="refresh token rotation (REQ-AUTH-02) rejects a missing or unknown refresh token" name="refresh token rotation (REQ-AUTH-02) rejects a missing or unknown refresh token" time="0.006">
     </testcase>
     <testcase classname="refresh token rotation (REQ-AUTH-02) rejects an expired refresh token" name="refresh token rotation (REQ-AUTH-02) rejects an expired refresh token" time="0.021">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) forgot-password is generic for known and unknown emails" name="forgot / reset password (REQ-AUTH-03) forgot-password is generic for known and unknown emails" time="0.021">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) forgot-password is generic for known and unknown emails" name="forgot / reset password (REQ-AUTH-03) forgot-password is generic for known and unknown emails" time="0.029">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) resets with a valid token, which is single use, and the new password works" name="forgot / reset password (REQ-AUTH-03) resets with a valid token, which is single use, and the new password works" time="0.05">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) resets with a valid token, which is single use, and the new password works" name="forgot / reset password (REQ-AUTH-03) resets with a valid token, which is single use, and the new password works" time="0.052">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) rejects an expired token (30 minute window)" name="forgot / reset password (REQ-AUTH-03) rejects an expired token (30 minute window)" time="0.016">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) rejects an expired token (30 minute window)" name="forgot / reset password (REQ-AUTH-03) rejects an expired token (30 minute window)" time="0.015">
     </testcase>
     <testcase classname="forgot / reset password (REQ-AUTH-03) accepts a token one minute before expiry" name="forgot / reset password (REQ-AUTH-03) accepts a token one minute before expiry" time="0.022">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) a new request invalidates the previous token" name="forgot / reset password (REQ-AUTH-03) a new request invalidates the previous token" time="0.025">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) a new request invalidates the previous token" name="forgot / reset password (REQ-AUTH-03) a new request invalidates the previous token" time="0.022">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) rejects weak passwords and unknown tokens" name="forgot / reset password (REQ-AUTH-03) rejects weak passwords and unknown tokens" time="0.007">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) rejects weak passwords and unknown tokens" name="forgot / reset password (REQ-AUTH-03) rejects weak passwords and unknown tokens" time="0.006">
     </testcase>
-    <testcase classname="forgot / reset password (REQ-AUTH-03) does not issue tokens for unknown or inactive users" name="forgot / reset password (REQ-AUTH-03) does not issue tokens for unknown or inactive users" time="0.008">
+    <testcase classname="forgot / reset password (REQ-AUTH-03) does not issue tokens for unknown or inactive users" name="forgot / reset password (REQ-AUTH-03) does not issue tokens for unknown or inactive users" time="0.007">
     </testcase>
-    <testcase classname="POST /auth/change-password (REQ-AUTH-04) requires authentication" name="POST /auth/change-password (REQ-AUTH-04) requires authentication" time="0.003">
+    <testcase classname="POST /auth/change-password (REQ-AUTH-04) requires authentication" name="POST /auth/change-password (REQ-AUTH-04) requires authentication" time="0.002">
     </testcase>
-    <testcase classname="POST /auth/change-password (REQ-AUTH-04) changes the password and keeps the session valid" name="POST /auth/change-password (REQ-AUTH-04) changes the password and keeps the session valid" time="0.063">
+    <testcase classname="POST /auth/change-password (REQ-AUTH-04) changes the password and keeps the session valid" name="POST /auth/change-password (REQ-AUTH-04) changes the password and keeps the session valid" time="0.064">
     </testcase>
     <testcase classname="POST /auth/change-password (REQ-AUTH-04) rejects a wrong current password (422), same password (422) and weak password (400)" name="POST /auth/change-password (REQ-AUTH-04) rejects a wrong current password (422), same password (422) and weak password (400)" time="0.038">
     </testcase>
@@ -251,97 +251,97 @@
     </testcase>
     <testcase classname="platform behaviour (REQ-NFR-01, REQ-NFR-02) unknown routes return a 404 envelope" name="platform behaviour (REQ-NFR-01, REQ-NFR-02) unknown routes return a 404 envelope" time="0.002">
     </testcase>
-    <testcase classname="platform behaviour (REQ-NFR-01, REQ-NFR-02) rate limits /auth/* with 429" name="platform behaviour (REQ-NFR-01, REQ-NFR-02) rate limits /auth/* with 429" time="0.028">
+    <testcase classname="platform behaviour (REQ-NFR-01, REQ-NFR-02) rate limits /auth/* with 429" name="platform behaviour (REQ-NFR-01, REQ-NFR-02) rate limits /auth/* with 429" time="0.027">
     </testcase>
-    <testcase classname="platform behaviour (REQ-NFR-01, REQ-NFR-02) only allows the configured CORS origin" name="platform behaviour (REQ-NFR-01, REQ-NFR-02) only allows the configured CORS origin" time="0.004">
+    <testcase classname="platform behaviour (REQ-NFR-01, REQ-NFR-02) only allows the configured CORS origin" name="platform behaviour (REQ-NFR-01, REQ-NFR-02) only allows the configured CORS origin" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="access control" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:23" time="1.098" tests="22">
+  <testsuite name="access control" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:19" time="1.051" tests="22">
     <testcase classname="access control requires authentication and the admin or HOD role" name="access control requires authentication and the admin or HOD role" time="0.015">
     </testcase>
-    <testcase classname="access control an HOD sees only their department and cannot ask for another" name="access control an HOD sees only their department and cannot ask for another" time="0.021">
+    <testcase classname="access control an HOD sees only their department and cannot ask for another" name="access control an HOD sees only their department and cannot ask for another" time="0.022">
     </testcase>
-    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) counts statuses, skips weekly off and holidays, and applies the late deduction" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) counts statuses, skips weekly off and holidays, and applies the late deduction" time="0.012">
+    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) counts statuses, skips weekly off and holidays, and applies the late deduction" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) counts statuses, skips weekly off and holidays, and applies the late deduction" time="0.011">
     </testcase>
-    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) treats a past working day with no record as Absent, and today as open" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) treats a past working day with no record as Absent, and today as open" time="0.01">
+    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) treats a past working day with no record as Absent, and today as open" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) treats a past working day with no record as Absent, and today as open" time="0.012">
     </testcase>
-    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) filters by department and faculty" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) filters by department and faculty" time="0.022">
+    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) filters by department and faculty" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) filters by department and faculty" time="0.019">
     </testcase>
     <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) does not count days before the joining date" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) does not count days before the joining date" time="0.015">
     </testcase>
-    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) validates dates and range length" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) validates dates and range length" time="0.021">
+    <testcase classname="range report and percentage (REQ-RPT-01, REQ-RPT-04) validates dates and range length" name="range report and percentage (REQ-RPT-01, REQ-RPT-04) validates dates and range length" time="0.022">
     </testcase>
-    <testcase classname="daily and monthly reports daily lists every faculty with status and punches" name="daily and monthly reports daily lists every faculty with status and punches" time="0.014">
+    <testcase classname="daily and monthly reports daily lists every faculty with status and punches" name="daily and monthly reports daily lists every faculty with status and punches" time="0.013">
     </testcase>
-    <testcase classname="daily and monthly reports monthly reports the whole month" name="daily and monthly reports monthly reports the whole month" time="0.016">
+    <testcase classname="daily and monthly reports monthly reports the whole month" name="daily and monthly reports monthly reports the whole month" time="0.017">
     </testcase>
-    <testcase classname="muster roll (REQ-RPT-02) uses the status codes for every day of the month" name="muster roll (REQ-RPT-02) uses the status codes for every day of the month" time="0.009">
+    <testcase classname="muster roll (REQ-RPT-02) uses the status codes for every day of the month" name="muster roll (REQ-RPT-02) uses the status codes for every day of the month" time="0.011">
     </testcase>
-    <testcase classname="exports (REQ-RPT-03) returns CSV with an attachment name" name="exports (REQ-RPT-03) returns CSV with an attachment name" time="0.012">
+    <testcase classname="exports (REQ-RPT-03) returns CSV with an attachment name" name="exports (REQ-RPT-03) returns CSV with an attachment name" time="0.01">
     </testcase>
-    <testcase classname="exports (REQ-RPT-03) returns a PDF" name="exports (REQ-RPT-03) returns a PDF" time="0.028">
+    <testcase classname="exports (REQ-RPT-03) returns a PDF" name="exports (REQ-RPT-03) returns a PDF" time="0.027">
     </testcase>
-    <testcase classname="exports (REQ-RPT-03) rejects an unknown format" name="exports (REQ-RPT-03) rejects an unknown format" time="0.005">
+    <testcase classname="exports (REQ-RPT-03) rejects an unknown format" name="exports (REQ-RPT-03) rejects an unknown format" time="0.006">
     </testcase>
-    <testcase classname="dashboards (REQ-DASH-01..03) faculty: today, month figures and balances" name="dashboards (REQ-DASH-01..03) faculty: today, month figures and balances" time="0.039">
+    <testcase classname="dashboards (REQ-DASH-01..03) faculty: today, month figures and balances" name="dashboards (REQ-DASH-01..03) faculty: today, month figures and balances" time="0.041">
     </testcase>
-    <testcase classname="dashboards (REQ-DASH-01..03) hod: department today, approvals and a 30-day trend" name="dashboards (REQ-DASH-01..03) hod: department today, approvals and a 30-day trend" time="0.042">
+    <testcase classname="dashboards (REQ-DASH-01..03) hod: department today, approvals and a 30-day trend" name="dashboards (REQ-DASH-01..03) hod: department today, approvals and a 30-day trend" time="0.045">
     </testcase>
     <testcase classname="dashboards (REQ-DASH-01..03) admin: KPIs, department comparison and defaulters below 75%" name="dashboards (REQ-DASH-01..03) admin: KPIs, department comparison and defaulters below 75%" time="0.02">
     </testcase>
     <testcase classname="notifications (REQ-NOT-01) lists only my notifications with the unread count" name="notifications (REQ-NOT-01) lists only my notifications with the unread count" time="0.011">
     </testcase>
-    <testcase classname="notifications (REQ-NOT-01) marks one read, and cannot touch someone else’s" name="notifications (REQ-NOT-01) marks one read, and cannot touch someone else’s" time="0.042">
+    <testcase classname="notifications (REQ-NOT-01) marks one read, and cannot touch someone else’s" name="notifications (REQ-NOT-01) marks one read, and cannot touch someone else’s" time="0.028">
     </testcase>
-    <testcase classname="notifications (REQ-NOT-01) marks everything read" name="notifications (REQ-NOT-01) marks everything read" time="0.016">
+    <testcase classname="notifications (REQ-NOT-01) marks everything read" name="notifications (REQ-NOT-01) marks everything read" time="0.017">
     </testcase>
     <testcase classname="audit viewer and docs (REQ-AUD-01) is admin only" name="audit viewer and docs (REQ-AUD-01) is admin only" time="0.012">
     </testcase>
-    <testcase classname="audit viewer and docs (REQ-AUD-01) records changes with the actor and filters them" name="audit viewer and docs (REQ-AUD-01) records changes with the actor and filters them" time="0.067">
+    <testcase classname="audit viewer and docs (REQ-AUD-01) records changes with the actor and filters them" name="audit viewer and docs (REQ-AUD-01) records changes with the actor and filters them" time="0.072">
     </testcase>
     <testcase classname="audit viewer and docs (REQ-AUD-01) serves the OpenAPI document and Swagger UI" name="audit viewer and docs (REQ-AUD-01) serves the OpenAPI document and Swagger UI" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="departments (REQ-DEPT-01..03)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:24" time="0.954" tests="15">
-    <testcase classname="departments (REQ-DEPT-01..03) requires authentication (401) and lets any role read" name="departments (REQ-DEPT-01..03) requires authentication (401) and lets any role read" time="0.049">
+  <testsuite name="departments (REQ-DEPT-01..03)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:20" time="0.977" tests="15">
+    <testcase classname="departments (REQ-DEPT-01..03) requires authentication (401) and lets any role read" name="departments (REQ-DEPT-01..03) requires authentication (401) and lets any role read" time="0.039">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) only admin can create (403 for HOD and faculty)" name="departments (REQ-DEPT-01..03) only admin can create (403 for HOD and faculty)" time="0.009">
+    <testcase classname="departments (REQ-DEPT-01..03) only admin can create (403 for HOD and faculty)" name="departments (REQ-DEPT-01..03) only admin can create (403 for HOD and faculty)" time="0.011">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) creates, updates and audits a department" name="departments (REQ-DEPT-01..03) creates, updates and audits a department" time="0.034">
+    <testcase classname="departments (REQ-DEPT-01..03) creates, updates and audits a department" name="departments (REQ-DEPT-01..03) creates, updates and audits a department" time="0.029">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;AB&quot;} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;AB&quot;} with field details (400)" time="0.006">
+    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;AB&quot;} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;AB&quot;} with field details (400)" time="0.005">
     </testcase>
     <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;cse&quot;} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;cse&quot;} with field details (400)" time="0.005">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;TOOLONGCODE&quot;} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;TOOLONGCODE&quot;} with field details (400)" time="0.005">
+    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;TOOLONGCODE&quot;} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;TOOLONGCODE&quot;} with field details (400)" time="0.006">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {} with field details (400)" time="0.006">
+    <testcase classname="departments (REQ-DEPT-01..03) rejects invalid input {} with field details (400)" name="departments (REQ-DEPT-01..03) rejects invalid input {} with field details (400)" time="0.004">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) rejects a duplicate code with 409 on create and update" name="departments (REQ-DEPT-01..03) rejects a duplicate code with 409 on create and update" time="0.082">
+    <testcase classname="departments (REQ-DEPT-01..03) rejects a duplicate code with 409 on create and update" name="departments (REQ-DEPT-01..03) rejects a duplicate code with 409 on create and update" time="0.078">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) returns 404 when updating or deleting an unknown department" name="departments (REQ-DEPT-01..03) returns 404 when updating or deleting an unknown department" time="0.014">
+    <testcase classname="departments (REQ-DEPT-01..03) returns 404 when updating or deleting an unknown department" name="departments (REQ-DEPT-01..03) returns 404 when updating or deleting an unknown department" time="0.012">
     </testcase>
     <testcase classname="departments (REQ-DEPT-01..03) cannot delete a department with active faculty (409), but can delete an empty one" name="departments (REQ-DEPT-01..03) cannot delete a department with active faculty (409), but can delete an empty one" time="0.04">
     </testcase>
-    <testcase classname="departments (REQ-DEPT-01..03) blocks deletion when only inactive faculty (history) remain" name="departments (REQ-DEPT-01..03) blocks deletion when only inactive faculty (history) remain" time="0.017">
+    <testcase classname="departments (REQ-DEPT-01..03) blocks deletion when only inactive faculty (history) remain" name="departments (REQ-DEPT-01..03) blocks deletion when only inactive faculty (history) remain" time="0.016">
     </testcase>
-    <testcase classname="HOD assignment (REQ-DEPT-02) assigns one HOD per department and swaps roles" name="HOD assignment (REQ-DEPT-02) assigns one HOD per department and swaps roles" time="0.079">
+    <testcase classname="HOD assignment (REQ-DEPT-02) assigns one HOD per department and swaps roles" name="HOD assignment (REQ-DEPT-02) assigns one HOD per department and swaps roles" time="0.076">
     </testcase>
-    <testcase classname="HOD assignment (REQ-DEPT-02) rejects a faculty from another department, an inactive one and an unknown one" name="HOD assignment (REQ-DEPT-02) rejects a faculty from another department, an inactive one and an unknown one" time="0.042">
+    <testcase classname="HOD assignment (REQ-DEPT-02) rejects a faculty from another department, an inactive one and an unknown one" name="HOD assignment (REQ-DEPT-02) rejects a faculty from another department, an inactive one and an unknown one" time="0.04">
     </testcase>
-    <testcase classname="HOD assignment (REQ-DEPT-02) a faculty member cannot be HOD of two departments (409)" name="HOD assignment (REQ-DEPT-02) a faculty member cannot be HOD of two departments (409)" time="0.01">
+    <testcase classname="HOD assignment (REQ-DEPT-02) a faculty member cannot be HOD of two departments (409)" name="HOD assignment (REQ-DEPT-02) a faculty member cannot be HOD of two departments (409)" time="0.009">
     </testcase>
-    <testcase classname="HOD assignment (REQ-DEPT-02) is admin only (403)" name="HOD assignment (REQ-DEPT-02) is admin only (403)" time="0.005">
+    <testcase classname="HOD assignment (REQ-DEPT-02) is admin only (403)" name="HOD assignment (REQ-DEPT-02) is admin only (403)" time="0.006">
     </testcase>
   </testsuite>
-  <testsuite name="authentication required (REQ-RBAC-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:25" time="0.878" tests="35">
+  <testsuite name="authentication required (REQ-RBAC-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:21" time="0.911" tests="35">
     <testcase classname="authentication required (REQ-RBAC-01) POST /api/v1/departments -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) POST /api/v1/departments -&gt; 401 without a session" time="0.003">
     </testcase>
     <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x/hod -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x/hod -&gt; 401 without a session" time="0.003">
+    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x/hod -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/departments/x/hod -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) DELETE /api/v1/departments/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) DELETE /api/v1/departments/x -&gt; 401 without a session" time="0.002">
+    <testcase classname="authentication required (REQ-RBAC-01) DELETE /api/v1/departments/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) DELETE /api/v1/departments/x -&gt; 401 without a session" time="0.003">
     </testcase>
     <testcase classname="authentication required (REQ-RBAC-01) POST /api/v1/faculty -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) POST /api/v1/faculty -&gt; 401 without a session" time="0.002">
     </testcase>
@@ -351,63 +351,113 @@
     </testcase>
     <testcase classname="authentication required (REQ-RBAC-01) PATCH /api/v1/faculty/x/status -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PATCH /api/v1/faculty/x/status -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) DELETE /api/v1/faculty/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) DELETE /api/v1/faculty/x -&gt; 401 without a session" time="0.003">
+    <testcase classname="authentication required (REQ-RBAC-01) DELETE /api/v1/faculty/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) DELETE /api/v1/faculty/x -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/shifts/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/shifts/x -&gt; 401 without a session" time="0.002">
+    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/shifts/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/shifts/x -&gt; 401 without a session" time="0.003">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/rules -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/rules -&gt; 401 without a session" time="0.003">
+    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/rules -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/rules -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) POST /api/v1/holidays -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) POST /api/v1/holidays -&gt; 401 without a session" time="0.002">
+    <testcase classname="authentication required (REQ-RBAC-01) POST /api/v1/holidays -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) POST /api/v1/holidays -&gt; 401 without a session" time="0.003">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/holidays/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/holidays/x -&gt; 401 without a session" time="0.002">
+    <testcase classname="authentication required (REQ-RBAC-01) PUT /api/v1/holidays/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) PUT /api/v1/holidays/x -&gt; 401 without a session" time="0.003">
     </testcase>
     <testcase classname="authentication required (REQ-RBAC-01) DELETE /api/v1/holidays/x -&gt; 401 without a session" name="authentication required (REQ-RBAC-01) DELETE /api/v1/holidays/x -&gt; 401 without a session" time="0.002">
     </testcase>
-    <testcase classname="authentication required (REQ-RBAC-01) rejects a tampered or expired access token" name="authentication required (REQ-RBAC-01) rejects a tampered or expired access token" time="0.002">
+    <testcase classname="authentication required (REQ-RBAC-01) rejects a tampered or expired access token" name="authentication required (REQ-RBAC-01) rejects a tampered or expired access token" time="0.003">
     </testcase>
     <testcase classname="admin-only endpoints (REQ-RBAC-01) #1 POST -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #1 POST -&gt; 403 for faculty and HOD" time="0.011">
     </testcase>
     <testcase classname="admin-only endpoints (REQ-RBAC-01) #2 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #2 PUT -&gt; 403 for faculty and HOD" time="0.01">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #3 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #3 PUT -&gt; 403 for faculty and HOD" time="0.008">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #3 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #3 PUT -&gt; 403 for faculty and HOD" time="0.011">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #4 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #4 DELETE -&gt; 403 for faculty and HOD" time="0.011">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #4 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #4 DELETE -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
     <testcase classname="admin-only endpoints (REQ-RBAC-01) #5 POST -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #5 POST -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
     <testcase classname="admin-only endpoints (REQ-RBAC-01) #6 POST -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #6 POST -&gt; 403 for faculty and HOD" time="0.01">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #7 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #7 PUT -&gt; 403 for faculty and HOD" time="0.01">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #7 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #7 PUT -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #8 PATCH -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #8 PATCH -&gt; 403 for faculty and HOD" time="0.009">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #8 PATCH -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #8 PATCH -&gt; 403 for faculty and HOD" time="0.011">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #9 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #9 DELETE -&gt; 403 for faculty and HOD" time="0.011">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #9 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #9 DELETE -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #10 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #10 PUT -&gt; 403 for faculty and HOD" time="0.009">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #10 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #10 PUT -&gt; 403 for faculty and HOD" time="0.01">
     </testcase>
     <testcase classname="admin-only endpoints (REQ-RBAC-01) #11 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #11 PUT -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #12 POST -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #12 POST -&gt; 403 for faculty and HOD" time="0.011">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #12 POST -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #12 POST -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #13 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #13 PUT -&gt; 403 for faculty and HOD" time="0.009">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #13 PUT -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #13 PUT -&gt; 403 for faculty and HOD" time="0.011">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) #14 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #14 DELETE -&gt; 403 for faculty and HOD" time="0.011">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) #14 DELETE -&gt; 403 for faculty and HOD" name="admin-only endpoints (REQ-RBAC-01) #14 DELETE -&gt; 403 for faculty and HOD" time="0.009">
     </testcase>
-    <testcase classname="admin-only endpoints (REQ-RBAC-01) denied calls leave no audit trail and change nothing" name="admin-only endpoints (REQ-RBAC-01) denied calls leave no audit trail and change nothing" time="0.003">
+    <testcase classname="admin-only endpoints (REQ-RBAC-01) denied calls leave no audit trail and change nothing" name="admin-only endpoints (REQ-RBAC-01) denied calls leave no audit trail and change nothing" time="0.005">
     </testcase>
-    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) a faculty member cannot read colleagues in the same or another department" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) a faculty member cannot read colleagues in the same or another department" time="0.017">
+    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) a faculty member cannot read colleagues in the same or another department" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) a faculty member cannot read colleagues in the same or another department" time="0.014">
     </testcase>
-    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) an HOD cannot read another department and sees only their own in lists" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) an HOD cannot read another department and sees only their own in lists" time="0.042">
+    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) an HOD cannot read another department and sees only their own in lists" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) an HOD cannot read another department and sees only their own in lists" time="0.039">
     </testcase>
-    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) an admin can read every department" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) an admin can read every department" time="0.011">
+    <testcase classname="data isolation (REQ-RBAC-02, REQ-RBAC-03) an admin can read every department" name="data isolation (REQ-RBAC-02, REQ-RBAC-03) an admin can read every department" time="0.01">
     </testcase>
-    <testcase classname="role changes take effect immediately a demoted HOD loses HOD-only list access on the next request" name="role changes take effect immediately a demoted HOD loses HOD-only list access on the next request" time="0.031">
+    <testcase classname="role changes take effect immediately a demoted HOD loses HOD-only list access on the next request" name="role changes take effect immediately a demoted HOD loses HOD-only list access on the next request" time="0.029">
     </testcase>
-    <testcase classname="role changes take effect immediately a deactivated user is refused even with a valid token" name="role changes take effect immediately a deactivated user is refused even with a valid token" time="0.021">
+    <testcase classname="role changes take effect immediately a deactivated user is refused even with a valid token" name="role changes take effect immediately a deactivated user is refused even with a valid token" time="0.023">
     </testcase>
   </testsuite>
-  <testsuite name="parseCsv" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:26" time="0.19" tests="16">
-    <testcase classname="parseCsv handles quotes, escaped quotes, commas and CRLF" name="parseCsv handles quotes, escaped quotes, commas and CRLF" time="0">
+  <testsuite name="attendance percentage (REQ-RPT-04)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:22" time="0.183" tests="24">
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:26,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:0,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 100" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:26,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:0,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 100" time="0.001">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:13,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:13,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 50" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:13,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:13,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 50" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:20,&quot;late&quot;:0,&quot;halfDay&quot;:2,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 80.77" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:20,&quot;late&quot;:0,&quot;halfDay&quot;:2,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 80.77" time="0.001">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:6,&quot;onLeave&quot;:2,&quot;lateDeductions&quot;:0} over 26 working days is 76.92" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:6,&quot;onLeave&quot;:2,&quot;lateDeductions&quot;:0} over 26 working days is 76.92" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:4,&quot;halfDay&quot;:0,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 84.62" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:4,&quot;halfDay&quot;:0,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 84.62" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:1,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:2,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 33.33" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:1,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:2,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 33.33" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:2,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:1,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 66.67" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:2,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:1,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 66.67" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) is 0 when there are no working days" name="attendance percentage (REQ-RPT-04) is 0 when there are no working days" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) a half day is worth half and a late deduction takes half a day off" name="attendance percentage (REQ-RPT-04) a half day is worth half and a late deduction takes half a day off" time="0.001">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) stays within 0 and 100" name="attendance percentage (REQ-RPT-04) stays within 0 and 100" time="0">
+    </testcase>
+    <testcase classname="attendance percentage (REQ-RPT-04) the 75 % defaulter boundary: 18/24 is exactly 75" name="attendance percentage (REQ-RPT-04) the 75 % defaulter boundary: 18/24 is exactly 75" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) PRESENT -&gt; P" name="muster codes (REQ-RPT-02) PRESENT -&gt; P" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) LATE -&gt; L" name="muster codes (REQ-RPT-02) LATE -&gt; L" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) HALF_DAY -&gt; HD" name="muster codes (REQ-RPT-02) HALF_DAY -&gt; HD" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) ABSENT -&gt; A" name="muster codes (REQ-RPT-02) ABSENT -&gt; A" time="0.001">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) ON_LEAVE -&gt; OL" name="muster codes (REQ-RPT-02) ON_LEAVE -&gt; OL" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) HOLIDAY -&gt; H" name="muster codes (REQ-RPT-02) HOLIDAY -&gt; H" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) WEEKLY_OFF -&gt; WO" name="muster codes (REQ-RPT-02) WEEKLY_OFF -&gt; WO" time="0">
+    </testcase>
+    <testcase classname="muster codes (REQ-RPT-02) PENDING -&gt; P" name="muster codes (REQ-RPT-02) PENDING -&gt; P" time="0">
+    </testcase>
+    <testcase classname="CSV export (REQ-RPT-03) quotes commas, quotes and newlines" name="CSV export (REQ-RPT-03) quotes commas, quotes and newlines" time="0">
+    </testcase>
+    <testcase classname="CSV export (REQ-RPT-03) neutralises spreadsheet formulas but keeps plain negative numbers" name="CSV export (REQ-RPT-03) neutralises spreadsheet formulas but keeps plain negative numbers" time="0.001">
+    </testcase>
+    <testcase classname="CSV export (REQ-RPT-03) builds rows with CRLF endings" name="CSV export (REQ-RPT-03) builds rows with CRLF endings" time="0">
+    </testcase>
+    <testcase classname="PDF export produces a PDF, including across several pages" name="PDF export produces a PDF, including across several pages" time="0.023">
+    </testcase>
+    <testcase classname="OpenAPI spec documents every route group with the envelope and security" name="OpenAPI spec documents every route group with the envelope and security" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="parseCsv" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:22" time="0.19" tests="16">
+    <testcase classname="parseCsv handles quotes, escaped quotes, commas and CRLF" name="parseCsv handles quotes, escaped quotes, commas and CRLF" time="0.001">
     </testcase>
     <testcase classname="parseCsv skips blank lines and handles a missing trailing newline" name="parseCsv skips blank lines and handles a missing trailing newline" time="0">
     </testcase>
@@ -423,37 +473,37 @@
     </testcase>
     <testcase classname="normalizeDesignation rejects unknown" name="normalizeDesignation rejects unknown" time="0">
     </testcase>
-    <testcase classname="validateCsvRows (REQ-FAC-04) accepts a valid row" name="validateCsvRows (REQ-FAC-04) accepts a valid row" time="0.002">
+    <testcase classname="validateCsvRows (REQ-FAC-04) accepts a valid row" name="validateCsvRows (REQ-FAC-04) accepts a valid row" time="0.001">
     </testcase>
     <testcase classname="validateCsvRows (REQ-FAC-04) reports row-level errors with the file line number" name="validateCsvRows (REQ-FAC-04) reports row-level errors with the file line number" time="0.001">
     </testcase>
-    <testcase classname="validateCsvRows (REQ-FAC-04) rejects name with digits" name="validateCsvRows (REQ-FAC-04) rejects name with digits" time="0">
+    <testcase classname="validateCsvRows (REQ-FAC-04) rejects name with digits" name="validateCsvRows (REQ-FAC-04) rejects name with digits" time="0.001">
     </testcase>
     <testcase classname="validateCsvRows (REQ-FAC-04) rejects phone starting with 5" name="validateCsvRows (REQ-FAC-04) rejects phone starting with 5" time="0">
     </testcase>
-    <testcase classname="validateCsvRows (REQ-FAC-04) rejects impossible date" name="validateCsvRows (REQ-FAC-04) rejects impossible date" time="0.001">
+    <testcase classname="validateCsvRows (REQ-FAC-04) rejects impossible date" name="validateCsvRows (REQ-FAC-04) rejects impossible date" time="0">
     </testcase>
     <testcase classname="validateCsvRows (REQ-FAC-04) rejects existing email" name="validateCsvRows (REQ-FAC-04) rejects existing email" time="0">
     </testcase>
-    <testcase classname="validateCsvRows (REQ-FAC-04) flags duplicate emails inside the file" name="validateCsvRows (REQ-FAC-04) flags duplicate emails inside the file" time="0">
+    <testcase classname="validateCsvRows (REQ-FAC-04) flags duplicate emails inside the file" name="validateCsvRows (REQ-FAC-04) flags duplicate emails inside the file" time="0.001">
     </testcase>
-    <testcase classname="validateCsvRows (REQ-FAC-04) accepts today as the joining date (boundary)" name="validateCsvRows (REQ-FAC-04) accepts today as the joining date (boundary)" time="0.001">
+    <testcase classname="validateCsvRows (REQ-FAC-04) accepts today as the joining date (boundary)" name="validateCsvRows (REQ-FAC-04) accepts today as the joining date (boundary)" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="full name (EP/BVA, REQ-FAC-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:26" time="0.178" tests="41">
+  <testsuite name="full name (EP/BVA, REQ-FAC-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:22" time="0.305" tests="41">
     <testcase classname="full name (EP/BVA, REQ-FAC-01) A -&gt; false" name="full name (EP/BVA, REQ-FAC-01) A -&gt; false" time="0.001">
     </testcase>
-    <testcase classname="full name (EP/BVA, REQ-FAC-01) Ab -&gt; true" name="full name (EP/BVA, REQ-FAC-01) Ab -&gt; true" time="0">
+    <testcase classname="full name (EP/BVA, REQ-FAC-01) Ab -&gt; true" name="full name (EP/BVA, REQ-FAC-01) Ab -&gt; true" time="0.001">
     </testcase>
     <testcase classname="full name (EP/BVA, REQ-FAC-01) Dr. A. Kumar -&gt; true" name="full name (EP/BVA, REQ-FAC-01) Dr. A. Kumar -&gt; true" time="0">
     </testcase>
-    <testcase classname="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; true" name="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; true" time="0.001">
+    <testcase classname="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; true" name="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; true" time="0">
     </testcase>
     <testcase classname="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; false" name="full name (EP/BVA, REQ-FAC-01) AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -&gt; false" time="0">
     </testcase>
     <testcase classname="full name (EP/BVA, REQ-FAC-01) Asha 2 -&gt; false" name="full name (EP/BVA, REQ-FAC-01) Asha 2 -&gt; false" time="0">
     </testcase>
-    <testcase classname="full name (EP/BVA, REQ-FAC-01) Asha-Rao -&gt; false" name="full name (EP/BVA, REQ-FAC-01) Asha-Rao -&gt; false" time="0">
+    <testcase classname="full name (EP/BVA, REQ-FAC-01) Asha-Rao -&gt; false" name="full name (EP/BVA, REQ-FAC-01) Asha-Rao -&gt; false" time="0.001">
     </testcase>
     <testcase classname="phone (EP) 9876543210 -&gt; true" name="phone (EP) 9876543210 -&gt; true" time="0">
     </testcase>
@@ -467,45 +517,45 @@
     </testcase>
     <testcase classname="phone (EP) 98765abcde -&gt; false" name="phone (EP) 98765abcde -&gt; false" time="0">
     </testcase>
-    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;AB&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; true" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;AB&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; true" time="0">
+    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;AB&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; true" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;AB&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; true" time="0.001">
     </testcase>
     <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;A&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" time="0">
     </testcase>
     <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;ABCDEF&quot;} -&gt; true" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;ABCDEF&quot;} -&gt; true" time="0">
     </testcase>
-    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" time="0.001">
+    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&quot;,&quot;code&quot;:&quot;CS&quot;} -&gt; false" time="0">
     </testcase>
     <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;C&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;C&quot;} -&gt; false" time="0">
     </testcase>
-    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;ABCDEFG&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;ABCDEFG&quot;} -&gt; false" time="0">
+    <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;ABCDEFG&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;ABCDEFG&quot;} -&gt; false" time="0.001">
     </testcase>
     <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;cse&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;cse&quot;} -&gt; false" time="0">
     </testcase>
     <testcase classname="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;CS1&quot;} -&gt; false" name="department schema (REQ-DEPT-01) {&quot;name&quot;:&quot;Valid&quot;,&quot;code&quot;:&quot;CS1&quot;} -&gt; false" time="0">
     </testcase>
-    <testcase classname="grace period (REQ-RULE-01) -1 -&gt; false" name="grace period (REQ-RULE-01) -1 -&gt; false" time="0.001">
+    <testcase classname="grace period (REQ-RULE-01) -1 -&gt; false" name="grace period (REQ-RULE-01) -1 -&gt; false" time="0">
     </testcase>
     <testcase classname="grace period (REQ-RULE-01) 0 -&gt; true" name="grace period (REQ-RULE-01) 0 -&gt; true" time="0">
     </testcase>
     <testcase classname="grace period (REQ-RULE-01) 15 -&gt; true" name="grace period (REQ-RULE-01) 15 -&gt; true" time="0">
     </testcase>
-    <testcase classname="grace period (REQ-RULE-01) 60 -&gt; true" name="grace period (REQ-RULE-01) 60 -&gt; true" time="0">
+    <testcase classname="grace period (REQ-RULE-01) 60 -&gt; true" name="grace period (REQ-RULE-01) 60 -&gt; true" time="0.001">
     </testcase>
     <testcase classname="grace period (REQ-RULE-01) 61 -&gt; false" name="grace period (REQ-RULE-01) 61 -&gt; false" time="0">
     </testcase>
     <testcase classname="grace period (REQ-RULE-01) 10.5 -&gt; false" name="grace period (REQ-RULE-01) 10.5 -&gt; false" time="0">
     </testcase>
-    <testcase classname="date of joining must not be in the future allows today and rejects tomorrow, using Asia/Kolkata calendar day" name="date of joining must not be in the future allows today and rejects tomorrow, using Asia/Kolkata calendar day" time="0.002">
+    <testcase classname="date of joining must not be in the future allows today and rejects tomorrow, using Asia/Kolkata calendar day" name="date of joining must not be in the future allows today and rejects tomorrow, using Asia/Kolkata calendar day" time="0.001">
     </testcase>
     <testcase classname="date of joining must not be in the future validates calendar dates" name="date of joining must not be in the future validates calendar dates" time="0">
     </testcase>
-    <testcase classname="shift rules accepts the default shift" name="shift rules accepts the default shift" time="0.001">
+    <testcase classname="shift rules accepts the default shift" name="shift rules accepts the default shift" time="0">
     </testcase>
     <testcase classname="shift rules rejects {&quot;startTime&quot;:&quot;9:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" name="shift rules rejects {&quot;startTime&quot;:&quot;9:00&quot;,&quot;endTime&quot;:&quot;17:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" time="0">
     </testcase>
     <testcase classname="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;24:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" name="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;24:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" time="0">
     </testcase>
-    <testcase classname="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" name="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" time="0.001">
+    <testcase classname="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" name="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;09:00&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" time="0">
     </testcase>
     <testcase classname="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;08:59&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" name="shift rules rejects {&quot;startTime&quot;:&quot;09:00&quot;,&quot;endTime&quot;:&quot;08:59&quot;,&quot;workingDays&quot;:[1,2,3,4,5,6]}" time="0">
     </testcase>
@@ -524,60 +574,10 @@
     <testcase classname="query and holiday schemas validates holidays" name="query and holiday schemas validates holidays" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="attendance percentage (REQ-RPT-04)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:26" time="0.164" tests="24">
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:26,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:0,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 100" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:26,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:0,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 100" time="0">
+  <testsuite name="check-in window 07:00-12:00 (REQ-ATT-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:22" time="0.163" tests="22">
+    <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 06:59 allowed=false" name="check-in window 07:00-12:00 (REQ-ATT-02) at 06:59 allowed=false" time="0.001">
     </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:13,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:13,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 50" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:13,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:13,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 50" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:20,&quot;late&quot;:0,&quot;halfDay&quot;:2,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 80.77" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:20,&quot;late&quot;:0,&quot;halfDay&quot;:2,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 80.77" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:6,&quot;onLeave&quot;:2,&quot;lateDeductions&quot;:0} over 26 working days is 76.92" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:6,&quot;onLeave&quot;:2,&quot;lateDeductions&quot;:0} over 26 working days is 76.92" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:4,&quot;halfDay&quot;:0,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 84.62" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:18,&quot;late&quot;:4,&quot;halfDay&quot;:0,&quot;absent&quot;:4,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 26 working days is 84.62" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:1,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:2,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 33.33" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:1,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:2,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 33.33" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) {&quot;present&quot;:2,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:1,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 66.67" name="attendance percentage (REQ-RPT-04) {&quot;present&quot;:2,&quot;late&quot;:0,&quot;halfDay&quot;:0,&quot;absent&quot;:1,&quot;onLeave&quot;:0,&quot;lateDeductions&quot;:0} over 3 working days is 66.67" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) is 0 when there are no working days" name="attendance percentage (REQ-RPT-04) is 0 when there are no working days" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) a half day is worth half and a late deduction takes half a day off" name="attendance percentage (REQ-RPT-04) a half day is worth half and a late deduction takes half a day off" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) stays within 0 and 100" name="attendance percentage (REQ-RPT-04) stays within 0 and 100" time="0">
-    </testcase>
-    <testcase classname="attendance percentage (REQ-RPT-04) the 75 % defaulter boundary: 18/24 is exactly 75" name="attendance percentage (REQ-RPT-04) the 75 % defaulter boundary: 18/24 is exactly 75" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) PRESENT -&gt; P" name="muster codes (REQ-RPT-02) PRESENT -&gt; P" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) LATE -&gt; L" name="muster codes (REQ-RPT-02) LATE -&gt; L" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) HALF_DAY -&gt; HD" name="muster codes (REQ-RPT-02) HALF_DAY -&gt; HD" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) ABSENT -&gt; A" name="muster codes (REQ-RPT-02) ABSENT -&gt; A" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) ON_LEAVE -&gt; OL" name="muster codes (REQ-RPT-02) ON_LEAVE -&gt; OL" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) HOLIDAY -&gt; H" name="muster codes (REQ-RPT-02) HOLIDAY -&gt; H" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) WEEKLY_OFF -&gt; WO" name="muster codes (REQ-RPT-02) WEEKLY_OFF -&gt; WO" time="0">
-    </testcase>
-    <testcase classname="muster codes (REQ-RPT-02) PENDING -&gt; P" name="muster codes (REQ-RPT-02) PENDING -&gt; P" time="0">
-    </testcase>
-    <testcase classname="CSV export (REQ-RPT-03) quotes commas, quotes and newlines" name="CSV export (REQ-RPT-03) quotes commas, quotes and newlines" time="0">
-    </testcase>
-    <testcase classname="CSV export (REQ-RPT-03) neutralises spreadsheet formulas but keeps plain negative numbers" name="CSV export (REQ-RPT-03) neutralises spreadsheet formulas but keeps plain negative numbers" time="0">
-    </testcase>
-    <testcase classname="CSV export (REQ-RPT-03) builds rows with CRLF endings" name="CSV export (REQ-RPT-03) builds rows with CRLF endings" time="0.001">
-    </testcase>
-    <testcase classname="PDF export produces a PDF, including across several pages" name="PDF export produces a PDF, including across several pages" time="0.022">
-    </testcase>
-    <testcase classname="OpenAPI spec documents every route group with the envelope and security" name="OpenAPI spec documents every route group with the envelope and security" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="check-in window 07:00-12:00 (REQ-ATT-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:26" time="0.147" tests="22">
-    <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 06:59 allowed=false" name="check-in window 07:00-12:00 (REQ-ATT-02) at 06:59 allowed=false" time="0">
-    </testcase>
-    <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 07:00 allowed=true" name="check-in window 07:00-12:00 (REQ-ATT-02) at 07:00 allowed=true" time="0.001">
+    <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 07:00 allowed=true" name="check-in window 07:00-12:00 (REQ-ATT-02) at 07:00 allowed=true" time="0">
     </testcase>
     <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 09:00 allowed=true" name="check-in window 07:00-12:00 (REQ-ATT-02) at 09:00 allowed=true" time="0">
     </testcase>
@@ -587,19 +587,19 @@
     </testcase>
     <testcase classname="check-in window 07:00-12:00 (REQ-ATT-02) at 12:01 allowed=false" name="check-in window 07:00-12:00 (REQ-ATT-02) at 12:01 allowed=false" time="0">
     </testcase>
-    <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) requires a check-in first" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) requires a check-in first" time="0.001">
+    <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) requires a check-in first" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) requires a check-in first" time="0">
     </testcase>
     <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 09:00 allowed=false" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 09:00 allowed=false" time="0">
     </testcase>
     <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 09:01 allowed=true" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 09:01 allowed=true" time="0">
     </testcase>
-    <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:00 allowed=true" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:00 allowed=true" time="0">
+    <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:00 allowed=true" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:00 allowed=true" time="0.001">
     </testcase>
     <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:01 allowed=false" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) check-out at 23:01 allowed=false" time="0">
     </testcase>
     <testcase classname="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) rejects a check-out before the check-in" name="check-out window and ordering (REQ-ATT-02, REQ-ATT-05) rejects a check-out before the check-in" time="0">
     </testcase>
-    <testcase classname="late deduction (REQ-RULE-06) with 0 earlier lates this late deduction=false" name="late deduction (REQ-RULE-06) with 0 earlier lates this late deduction=false" time="0.001">
+    <testcase classname="late deduction (REQ-RULE-06) with 0 earlier lates this late deduction=false" name="late deduction (REQ-RULE-06) with 0 earlier lates this late deduction=false" time="0">
     </testcase>
     <testcase classname="late deduction (REQ-RULE-06) with 1 earlier lates this late deduction=false" name="late deduction (REQ-RULE-06) with 1 earlier lates this late deduction=false" time="0">
     </testcase>
@@ -609,7 +609,7 @@
     </testcase>
     <testcase classname="late deduction (REQ-RULE-06) with 4 earlier lates this late deduction=false" name="late deduction (REQ-RULE-06) with 4 earlier lates this late deduction=false" time="0">
     </testcase>
-    <testcase classname="late deduction (REQ-RULE-06) with 5 earlier lates this late deduction=true" name="late deduction (REQ-RULE-06) with 5 earlier lates this late deduction=true" time="0">
+    <testcase classname="late deduction (REQ-RULE-06) with 5 earlier lates this late deduction=true" name="late deduction (REQ-RULE-06) with 5 earlier lates this late deduction=true" time="0.001">
     </testcase>
     <testcase classname="late deduction (REQ-RULE-06) is disabled when the limit is 0" name="late deduction (REQ-RULE-06) is disabled when the limit is 0" time="0">
     </testcase>
@@ -620,7 +620,21 @@
     <testcase classname="nightly schedule runs at 23:59 IST the same day, or the next day once past it" name="nightly schedule runs at 23:59 IST the same day, or the next day once past it" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="working-day counting" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.116" tests="45">
+  <testsuite name="reset token (REQ-AUTH-03)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.112" tests="6">
+    <testcase classname="reset token (REQ-AUTH-03) expires 30 minutes after creation" name="reset token (REQ-AUTH-03) expires 30 minutes after creation" time="0.001">
+    </testcase>
+    <testcase classname="reset token (REQ-AUTH-03) is usable one millisecond before expiry" name="reset token (REQ-AUTH-03) is usable one millisecond before expiry" time="0">
+    </testcase>
+    <testcase classname="reset token (REQ-AUTH-03) is not usable at or after expiry" name="reset token (REQ-AUTH-03) is not usable at or after expiry" time="0">
+    </testcase>
+    <testcase classname="reset token (REQ-AUTH-03) is single use" name="reset token (REQ-AUTH-03) is single use" time="0.001">
+    </testcase>
+    <testcase classname="reset token (REQ-AUTH-03) generates unique 96-character hex tokens" name="reset token (REQ-AUTH-03) generates unique 96-character hex tokens" time="0">
+    </testcase>
+    <testcase classname="reset token (REQ-AUTH-03) hashes deterministically and depends on the secret" name="reset token (REQ-AUTH-03) hashes deterministically and depends on the secret" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="working-day counting" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.119" tests="45">
     <testcase classname="working-day counting skips Sundays and holidays" name="working-day counting skips Sundays and holidays" time="0.001">
     </testcase>
     <testcase classname="working-day counting adds days across month ends" name="working-day counting adds days across month ends" time="0">
@@ -629,15 +643,15 @@
     </testcase>
     <testcase classname="length boundaries (REQ-LEAVE-02) accepts exactly 15 working days" name="length boundaries (REQ-LEAVE-02) accepts exactly 15 working days" time="0">
     </testcase>
-    <testcase classname="length boundaries (REQ-LEAVE-02) rejects 16 working days" name="length boundaries (REQ-LEAVE-02) rejects 16 working days" time="0">
+    <testcase classname="length boundaries (REQ-LEAVE-02) rejects 16 working days" name="length boundaries (REQ-LEAVE-02) rejects 16 working days" time="0.001">
     </testcase>
-    <testcase classname="length boundaries (REQ-LEAVE-02) rejects a range with no working days" name="length boundaries (REQ-LEAVE-02) rejects a range with no working days" time="0.001">
+    <testcase classname="length boundaries (REQ-LEAVE-02) rejects a range with no working days" name="length boundaries (REQ-LEAVE-02) rejects a range with no working days" time="0">
     </testcase>
     <testcase classname="date window and format allows a start 30 days back but not 31" name="date window and format allows a start 30 days back but not 31" time="0">
     </testcase>
     <testcase classname="date window and format allows a start 365 days ahead but not 366" name="date window and format allows a start 365 days ahead but not 366" time="0">
     </testcase>
-    <testcase classname="date window and format rejects end before start, bad dates and cross-year ranges" name="date window and format rejects end before start, bad dates and cross-year ranges" time="0">
+    <testcase classname="date window and format rejects end before start, bad dates and cross-year ranges" name="date window and format rejects end before start, bad dates and cross-year ranges" time="0.001">
     </testcase>
     <testcase classname="reason length too short" name="reason length too short" time="0">
     </testcase>
@@ -649,17 +663,17 @@
     </testcase>
     <testcase classname="reason length padding is trimmed" name="reason length padding is trimmed" time="0">
     </testcase>
-    <testcase classname="half day (REQ-LEAVE-03) counts 0.5 for a single day" name="half day (REQ-LEAVE-03) counts 0.5 for a single day" time="0">
+    <testcase classname="half day (REQ-LEAVE-03) counts 0.5 for a single day" name="half day (REQ-LEAVE-03) counts 0.5 for a single day" time="0.001">
     </testcase>
-    <testcase classname="half day (REQ-LEAVE-03) rejects a multi-day half-day leave and a non-working day" name="half day (REQ-LEAVE-03) rejects a multi-day half-day leave and a non-working day" time="0.001">
+    <testcase classname="half day (REQ-LEAVE-03) rejects a multi-day half-day leave and a non-working day" name="half day (REQ-LEAVE-03) rejects a multi-day half-day leave and a non-working day" time="0">
     </testcase>
     <testcase classname="overlap and balance flags an overlap" name="overlap and balance flags an overlap" time="0">
     </testcase>
-    <testcase classname="overlap and balance allows exactly the remaining balance and rejects one more" name="overlap and balance allows exactly the remaining balance and rejects one more" time="0">
+    <testcase classname="overlap and balance allows exactly the remaining balance and rejects one more" name="overlap and balance allows exactly the remaining balance and rejects one more" time="0.001">
     </testcase>
     <testcase classname="overlap and balance unlimited leave types ignore balance" name="overlap and balance unlimited leave types ignore balance" time="0">
     </testcase>
-    <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; PENDING is allowed" name="state machine (REQ-LEAVE-04) DRAFT -&gt; PENDING is allowed" time="0.001">
+    <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; PENDING is allowed" name="state machine (REQ-LEAVE-04) DRAFT -&gt; PENDING is allowed" time="0">
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) PENDING -&gt; APPROVED is allowed" name="state machine (REQ-LEAVE-04) PENDING -&gt; APPROVED is allowed" time="0">
     </testcase>
@@ -671,7 +685,7 @@
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; DRAFT is refused" name="state machine (REQ-LEAVE-04) DRAFT -&gt; DRAFT is refused" time="0">
     </testcase>
-    <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; APPROVED is refused" name="state machine (REQ-LEAVE-04) DRAFT -&gt; APPROVED is refused" time="0">
+    <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; APPROVED is refused" name="state machine (REQ-LEAVE-04) DRAFT -&gt; APPROVED is refused" time="0.001">
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) DRAFT -&gt; REJECTED is refused" name="state machine (REQ-LEAVE-04) DRAFT -&gt; REJECTED is refused" time="0">
     </testcase>
@@ -687,7 +701,7 @@
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) APPROVED -&gt; APPROVED is refused" name="state machine (REQ-LEAVE-04) APPROVED -&gt; APPROVED is refused" time="0">
     </testcase>
-    <testcase classname="state machine (REQ-LEAVE-04) APPROVED -&gt; REJECTED is refused" name="state machine (REQ-LEAVE-04) APPROVED -&gt; REJECTED is refused" time="0.001">
+    <testcase classname="state machine (REQ-LEAVE-04) APPROVED -&gt; REJECTED is refused" name="state machine (REQ-LEAVE-04) APPROVED -&gt; REJECTED is refused" time="0">
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) REJECTED -&gt; DRAFT is refused" name="state machine (REQ-LEAVE-04) REJECTED -&gt; DRAFT is refused" time="0">
     </testcase>
@@ -695,7 +709,7 @@
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) REJECTED -&gt; APPROVED is refused" name="state machine (REQ-LEAVE-04) REJECTED -&gt; APPROVED is refused" time="0">
     </testcase>
-    <testcase classname="state machine (REQ-LEAVE-04) REJECTED -&gt; REJECTED is refused" name="state machine (REQ-LEAVE-04) REJECTED -&gt; REJECTED is refused" time="0">
+    <testcase classname="state machine (REQ-LEAVE-04) REJECTED -&gt; REJECTED is refused" name="state machine (REQ-LEAVE-04) REJECTED -&gt; REJECTED is refused" time="0.001">
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) REJECTED -&gt; CANCELLED is refused" name="state machine (REQ-LEAVE-04) REJECTED -&gt; CANCELLED is refused" time="0">
     </testcase>
@@ -709,31 +723,41 @@
     </testcase>
     <testcase classname="state machine (REQ-LEAVE-04) CANCELLED -&gt; CANCELLED is refused" name="state machine (REQ-LEAVE-04) CANCELLED -&gt; CANCELLED is refused" time="0">
     </testcase>
-    <testcase classname="state machine (REQ-LEAVE-04) approved leave can be cancelled only before its start date" name="state machine (REQ-LEAVE-04) approved leave can be cancelled only before its start date" time="0.001">
+    <testcase classname="state machine (REQ-LEAVE-04) approved leave can be cancelled only before its start date" name="state machine (REQ-LEAVE-04) approved leave can be cancelled only before its start date" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="clock" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.107" tests="4">
-    <testcase classname="clock freezes time" name="clock freezes time" time="0">
+  <testsuite name="date window (REQ-REG-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.108" tests="9">
+    <testcase classname="date window (REQ-REG-01) accepts today and exactly 7 days back" name="date window (REQ-REG-01) accepts today and exactly 7 days back" time="0.001">
     </testcase>
-    <testcase classname="clock accepts a custom clock and can be reset to system time" name="clock accepts a custom clock and can be reset to system time" time="0.001">
+    <testcase classname="date window (REQ-REG-01) rejects 8 days back, the future and invalid dates" name="date window (REQ-REG-01) rejects 8 days back, the future and invalid dates" time="0.001">
     </testcase>
-    <testcase classname="loadConfig fails fast and names the missing variables" name="loadConfig fails fast and names the missing variables" time="0.007">
+    <testcase classname="reason length (REQ-REG-01) 9 characters valid=false" name="reason length (REQ-REG-01) 9 characters valid=false" time="0">
     </testcase>
-    <testcase classname="loadConfig returns a typed config with defaults" name="loadConfig returns a typed config with defaults" time="0.001">
+    <testcase classname="reason length (REQ-REG-01) 10 characters valid=true" name="reason length (REQ-REG-01) 10 characters valid=true" time="0">
+    </testcase>
+    <testcase classname="reason length (REQ-REG-01) 300 characters valid=true" name="reason length (REQ-REG-01) 300 characters valid=true" time="0">
+    </testcase>
+    <testcase classname="reason length (REQ-REG-01) 301 characters valid=false" name="reason length (REQ-REG-01) 301 characters valid=false" time="0.001">
+    </testcase>
+    <testcase classname="times needs at least one time, in HH:mm, with check-out after check-in" name="times needs at least one time, in HH:mm, with check-out after check-in" time="0">
+    </testcase>
+    <testcase classname="monthly limit (REQ-REG-02) allows the 3rd request and refuses the 4th" name="monthly limit (REQ-REG-02) allows the 3rd request and refuses the 4th" time="0">
+    </testcase>
+    <testcase classname="monthly limit (REQ-REG-02) reports input errors before the limit" name="monthly limit (REQ-REG-02) reports input errors before the limit" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="employee ID pattern anchors" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.145" tests="14">
-    <testcase classname="employee ID pattern anchors rejects a prefix or suffix around a valid ID" name="employee ID pattern anchors rejects a prefix or suffix around a valid ID" time="0.001">
+  <testsuite name="employee ID pattern anchors" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.125" tests="14">
+    <testcase classname="employee ID pattern anchors rejects a prefix or suffix around a valid ID" name="employee ID pattern anchors rejects a prefix or suffix around a valid ID" time="0">
     </testcase>
-    <testcase classname="canTransitionLeave details blocks cancelling approved leave that starts today, with a message" name="canTransitionLeave details blocks cancelling approved leave that starts today, with a message" time="0">
+    <testcase classname="canTransitionLeave details blocks cancelling approved leave that starts today, with a message" name="canTransitionLeave details blocks cancelling approved leave that starts today, with a message" time="0.001">
     </testcase>
-    <testcase classname="canTransitionLeave details allows cancelling approved leave that starts tomorrow" name="canTransitionLeave details allows cancelling approved leave that starts tomorrow" time="0.001">
+    <testcase classname="canTransitionLeave details allows cancelling approved leave that starts tomorrow" name="canTransitionLeave details allows cancelling approved leave that starts tomorrow" time="0">
     </testcase>
     <testcase classname="canTransitionLeave details does not apply the start-date rule to a pending cancel or an approve" name="canTransitionLeave details does not apply the start-date rule to a pending cancel or an approve" time="0">
     </testcase>
     <testcase classname="canTransitionLeave details explains an illegal transition in lower case" name="canTransitionLeave details explains an illegal transition in lower case" time="0">
     </testcase>
-    <testcase classname="validateRegularization details accepts a valid request" name="validateRegularization details accepts a valid request" time="0">
+    <testcase classname="validateRegularization details accepts a valid request" name="validateRegularization details accepts a valid request" time="0.001">
     </testcase>
     <testcase classname="validateRegularization details reports a malformed date" name="validateRegularization details reports a malformed date" time="0">
     </testcase>
@@ -743,7 +767,7 @@
     </testcase>
     <testcase classname="validateRegularization details trims the reason before measuring it" name="validateRegularization details trims the reason before measuring it" time="0">
     </testcase>
-    <testcase classname="validateRegularization details requires at least one time" name="validateRegularization details requires at least one time" time="0.001">
+    <testcase classname="validateRegularization details requires at least one time" name="validateRegularization details requires at least one time" time="0">
     </testcase>
     <testcase classname="validateRegularization details rejects malformed times with anchored pattern" name="validateRegularization details rejects malformed times with anchored pattern" time="0">
     </testcase>
@@ -752,14 +776,14 @@
     <testcase classname="validateRegularization details enforces the monthly limit with a message" name="validateRegularization details enforces the monthly limit with a message" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="arrival boundaries (REQ-RULE-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.121" tests="35">
-    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 08:59 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 08:59 is ON_TIME" time="0.001">
+  <testsuite name="arrival boundaries (REQ-RULE-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.111" tests="35">
+    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 08:59 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 08:59 is ON_TIME" time="0">
     </testcase>
     <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:00 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 09:00 is ON_TIME" time="0">
     </testcase>
-    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:15 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 09:15 is ON_TIME" time="0">
+    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:15 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 09:15 is ON_TIME" time="0.001">
     </testcase>
-    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:15:59 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 09:15:59 is ON_TIME" time="0.001">
+    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:15:59 is ON_TIME" name="arrival boundaries (REQ-RULE-02) check-in at 09:15:59 is ON_TIME" time="0">
     </testcase>
     <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 09:16 is LATE" name="arrival boundaries (REQ-RULE-02) check-in at 09:16 is LATE" time="0">
     </testcase>
@@ -769,9 +793,9 @@
     </testcase>
     <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 10:31 is HALF_DAY" name="arrival boundaries (REQ-RULE-02) check-in at 10:31 is HALF_DAY" time="0">
     </testcase>
-    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 11:59 is HALF_DAY" name="arrival boundaries (REQ-RULE-02) check-in at 11:59 is HALF_DAY" time="0">
+    <testcase classname="arrival boundaries (REQ-RULE-02) check-in at 11:59 is HALF_DAY" name="arrival boundaries (REQ-RULE-02) check-in at 11:59 is HALF_DAY" time="0.001">
     </testcase>
-    <testcase classname="arrival boundaries (REQ-RULE-02) follows a changed grace period" name="arrival boundaries (REQ-RULE-02) follows a changed grace period" time="0.001">
+    <testcase classname="arrival boundaries (REQ-RULE-02) follows a changed grace period" name="arrival boundaries (REQ-RULE-02) follows a changed grace period" time="0">
     </testcase>
     <testcase classname="arrival boundaries (REQ-RULE-02) uses the shift start, not a fixed 09:00" name="arrival boundaries (REQ-RULE-02) uses the shift start, not a fixed 09:00" time="0">
     </testcase>
@@ -783,7 +807,7 @@
     </testcase>
     <testcase classname="worked-hours boundaries (REQ-RULE-03) 241 minutes worked is HALF_DAY" name="worked-hours boundaries (REQ-RULE-03) 241 minutes worked is HALF_DAY" time="0">
     </testcase>
-    <testcase classname="worked-hours boundaries (REQ-RULE-03) 419 minutes worked is HALF_DAY" name="worked-hours boundaries (REQ-RULE-03) 419 minutes worked is HALF_DAY" time="0">
+    <testcase classname="worked-hours boundaries (REQ-RULE-03) 419 minutes worked is HALF_DAY" name="worked-hours boundaries (REQ-RULE-03) 419 minutes worked is HALF_DAY" time="0.001">
     </testcase>
     <testcase classname="worked-hours boundaries (REQ-RULE-03) 420 minutes worked is PRESENT" name="worked-hours boundaries (REQ-RULE-03) 420 minutes worked is PRESENT" time="0">
     </testcase>
@@ -795,9 +819,9 @@
     </testcase>
     <testcase classname="combined daily status on time and a full day is Present" name="combined daily status on time and a full day is Present" time="0">
     </testcase>
-    <testcase classname="combined daily status exactly 7 hours is Present and 6h59 is Half Day (6:59 / 7:00 boundary)" name="combined daily status exactly 7 hours is Present and 6h59 is Half Day (6:59 / 7:00 boundary)" time="0">
+    <testcase classname="combined daily status exactly 7 hours is Present and 6h59 is Half Day (6:59 / 7:00 boundary)" name="combined daily status exactly 7 hours is Present and 6h59 is Half Day (6:59 / 7:00 boundary)" time="0.001">
     </testcase>
-    <testcase classname="combined daily status exactly 4 hours is Half Day and 3h59 is Absent (3:59 / 4:00 boundary)" name="combined daily status exactly 4 hours is Half Day and 3h59 is Absent (3:59 / 4:00 boundary)" time="0.001">
+    <testcase classname="combined daily status exactly 4 hours is Half Day and 3h59 is Absent (3:59 / 4:00 boundary)" name="combined daily status exactly 4 hours is Half Day and 3h59 is Absent (3:59 / 4:00 boundary)" time="0">
     </testcase>
     <testcase classname="combined daily status a late arrival with a full day is Late" name="combined daily status a late arrival with a full day is Late" time="0">
     </testcase>
@@ -824,10 +848,20 @@
     <testcase classname="day types take precedence (REQ-RULE-05) a half-day leave with punches is judged on the punches" name="day types take precedence (REQ-RULE-05) a half-day leave with punches is judged on the punches" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="employee ID generation (REQ-FAC-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.108" tests="5">
+  <testsuite name="clock" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.11" tests="4">
+    <testcase classname="clock freezes time" name="clock freezes time" time="0.001">
+    </testcase>
+    <testcase classname="clock accepts a custom clock and can be reset to system time" name="clock accepts a custom clock and can be reset to system time" time="0.001">
+    </testcase>
+    <testcase classname="loadConfig fails fast and names the missing variables" name="loadConfig fails fast and names the missing variables" time="0.008">
+    </testcase>
+    <testcase classname="loadConfig returns a typed config with defaults" name="loadConfig returns a typed config with defaults" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="employee ID generation (REQ-FAC-02)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.11" tests="5">
     <testcase classname="employee ID generation (REQ-FAC-02) starts at FAC-0001" name="employee ID generation (REQ-FAC-02) starts at FAC-0001" time="0">
     </testcase>
-    <testcase classname="employee ID generation (REQ-FAC-02) increments the highest existing number" name="employee ID generation (REQ-FAC-02) increments the highest existing number" time="0.001">
+    <testcase classname="employee ID generation (REQ-FAC-02) increments the highest existing number" name="employee ID generation (REQ-FAC-02) increments the highest existing number" time="0">
     </testcase>
     <testcase classname="employee ID generation (REQ-FAC-02) pads to 4 digits and grows beyond" name="employee ID generation (REQ-FAC-02) pads to 4 digits and grows beyond" time="0">
     </testcase>
@@ -836,86 +870,52 @@
     <testcase classname="employee ID generation (REQ-FAC-02) parses numbers and rejects bad formats" name="employee ID generation (REQ-FAC-02) parses numbers and rejects bad formats" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="date window (REQ-REG-01)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.108" tests="9">
-    <testcase classname="date window (REQ-REG-01) accepts today and exactly 7 days back" name="date window (REQ-REG-01) accepts today and exactly 7 days back" time="0.001">
-    </testcase>
-    <testcase classname="date window (REQ-REG-01) rejects 8 days back, the future and invalid dates" name="date window (REQ-REG-01) rejects 8 days back, the future and invalid dates" time="0">
-    </testcase>
-    <testcase classname="reason length (REQ-REG-01) 9 characters valid=false" name="reason length (REQ-REG-01) 9 characters valid=false" time="0.001">
-    </testcase>
-    <testcase classname="reason length (REQ-REG-01) 10 characters valid=true" name="reason length (REQ-REG-01) 10 characters valid=true" time="0">
-    </testcase>
-    <testcase classname="reason length (REQ-REG-01) 300 characters valid=true" name="reason length (REQ-REG-01) 300 characters valid=true" time="0">
-    </testcase>
-    <testcase classname="reason length (REQ-REG-01) 301 characters valid=false" name="reason length (REQ-REG-01) 301 characters valid=false" time="0.001">
-    </testcase>
-    <testcase classname="times needs at least one time, in HH:mm, with check-out after check-in" name="times needs at least one time, in HH:mm, with check-out after check-in" time="0">
-    </testcase>
-    <testcase classname="monthly limit (REQ-REG-02) allows the 3rd request and refuses the 4th" name="monthly limit (REQ-REG-02) allows the 3rd request and refuses the 4th" time="0">
-    </testcase>
-    <testcase classname="monthly limit (REQ-REG-02) reports input errors before the limit" name="monthly limit (REQ-REG-02) reports input errors before the limit" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="lockout (REQ-AUTH-05)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.119" tests="11">
+  <testsuite name="lockout (REQ-AUTH-05)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.104" tests="11">
     <testcase classname="lockout (REQ-AUTH-05) uses 5 attempts and 15 minutes" name="lockout (REQ-AUTH-05) uses 5 attempts and 15 minutes" time="0.001">
     </testcase>
-    <testcase classname="lockout (REQ-AUTH-05) previous failures 0 -&gt; 1 attempts, locked=false" name="lockout (REQ-AUTH-05) previous failures 0 -&gt; 1 attempts, locked=false" time="0">
+    <testcase classname="lockout (REQ-AUTH-05) previous failures 0 -&gt; 1 attempts, locked=false" name="lockout (REQ-AUTH-05) previous failures 0 -&gt; 1 attempts, locked=false" time="0.001">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) previous failures 3 -&gt; 4 attempts, locked=false" name="lockout (REQ-AUTH-05) previous failures 3 -&gt; 4 attempts, locked=false" time="0">
     </testcase>
-    <testcase classname="lockout (REQ-AUTH-05) previous failures 4 -&gt; 5 attempts, locked=true" name="lockout (REQ-AUTH-05) previous failures 4 -&gt; 5 attempts, locked=true" time="0.001">
+    <testcase classname="lockout (REQ-AUTH-05) previous failures 4 -&gt; 5 attempts, locked=true" name="lockout (REQ-AUTH-05) previous failures 4 -&gt; 5 attempts, locked=true" time="0">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) previous failures 5 -&gt; 6 attempts, locked=true" name="lockout (REQ-AUTH-05) previous failures 5 -&gt; 6 attempts, locked=true" time="0">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) locks for exactly 15 minutes" name="lockout (REQ-AUTH-05) locks for exactly 15 minutes" time="0">
     </testcase>
-    <testcase classname="lockout (REQ-AUTH-05) restarts the counter after a lock has expired" name="lockout (REQ-AUTH-05) restarts the counter after a lock has expired" time="0">
+    <testcase classname="lockout (REQ-AUTH-05) restarts the counter after a lock has expired" name="lockout (REQ-AUTH-05) restarts the counter after a lock has expired" time="0.001">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) does not reset the counter while still locked" name="lockout (REQ-AUTH-05) does not reset the counter while still locked" time="0">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) isLocked is false when never locked" name="lockout (REQ-AUTH-05) isLocked is false when never locked" time="0">
     </testcase>
-    <testcase classname="lockout (REQ-AUTH-05) isLocked is true before expiry" name="lockout (REQ-AUTH-05) isLocked is true before expiry" time="0.001">
+    <testcase classname="lockout (REQ-AUTH-05) isLocked is true before expiry" name="lockout (REQ-AUTH-05) isLocked is true before expiry" time="0">
     </testcase>
     <testcase classname="lockout (REQ-AUTH-05) isLocked is false at the exact expiry instant" name="lockout (REQ-AUTH-05) isLocked is false at the exact expiry instant" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="reset token (REQ-AUTH-03)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:27" time="0.113" tests="6">
-    <testcase classname="reset token (REQ-AUTH-03) expires 30 minutes after creation" name="reset token (REQ-AUTH-03) expires 30 minutes after creation" time="0.001">
-    </testcase>
-    <testcase classname="reset token (REQ-AUTH-03) is usable one millisecond before expiry" name="reset token (REQ-AUTH-03) is usable one millisecond before expiry" time="0">
-    </testcase>
-    <testcase classname="reset token (REQ-AUTH-03) is not usable at or after expiry" name="reset token (REQ-AUTH-03) is not usable at or after expiry" time="0">
-    </testcase>
-    <testcase classname="reset token (REQ-AUTH-03) is single use" name="reset token (REQ-AUTH-03) is single use" time="0">
-    </testcase>
-    <testcase classname="reset token (REQ-AUTH-03) generates unique 96-character hex tokens" name="reset token (REQ-AUTH-03) generates unique 96-character hex tokens" time="0.001">
-    </testcase>
-    <testcase classname="reset token (REQ-AUTH-03) hashes deterministically and depends on the secret" name="reset token (REQ-AUTH-03) hashes deterministically and depends on the secret" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="validatePassword (REQ-AUTH-06)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T18:33:28" time="0.107" tests="13">
+  <testsuite name="validatePassword (REQ-AUTH-06)" errors="0" failures="0" skipped="0" timestamp="2026-11-22T19:02:23" time="0.116" tests="13">
     <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 7 -&gt; valid=false" name="validatePassword (REQ-AUTH-06) length boundaries length 7 -&gt; valid=false" time="0.001">
     </testcase>
-    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 8 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 8 -&gt; valid=true" time="0">
+    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 8 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 8 -&gt; valid=true" time="0.001">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 9 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 9 -&gt; valid=true" time="0">
     </testcase>
-    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 63 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 63 -&gt; valid=true" time="0">
+    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 63 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 63 -&gt; valid=true" time="0.001">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 64 -&gt; valid=true" name="validatePassword (REQ-AUTH-06) length boundaries length 64 -&gt; valid=true" time="0">
     </testcase>
-    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 65 -&gt; valid=false" name="validatePassword (REQ-AUTH-06) length boundaries length 65 -&gt; valid=false" time="0.001">
+    <testcase classname="validatePassword (REQ-AUTH-06) length boundaries length 65 -&gt; valid=false" name="validatePassword (REQ-AUTH-06) length boundaries length 65 -&gt; valid=false" time="0">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) length boundaries reports min and max messages" name="validatePassword (REQ-AUTH-06) length boundaries reports min and max messages" time="0">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) character classes no uppercase is rejected" name="validatePassword (REQ-AUTH-06) character classes no uppercase is rejected" time="0">
     </testcase>
-    <testcase classname="validatePassword (REQ-AUTH-06) character classes no lowercase is rejected" name="validatePassword (REQ-AUTH-06) character classes no lowercase is rejected" time="0">
+    <testcase classname="validatePassword (REQ-AUTH-06) character classes no lowercase is rejected" name="validatePassword (REQ-AUTH-06) character classes no lowercase is rejected" time="0.001">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) character classes no digit is rejected" name="validatePassword (REQ-AUTH-06) character classes no digit is rejected" time="0">
     </testcase>
-    <testcase classname="validatePassword (REQ-AUTH-06) character classes no special is rejected" name="validatePassword (REQ-AUTH-06) character classes no special is rejected" time="0.001">
+    <testcase classname="validatePassword (REQ-AUTH-06) character classes no special is rejected" name="validatePassword (REQ-AUTH-06) character classes no special is rejected" time="0">
     </testcase>
     <testcase classname="validatePassword (REQ-AUTH-06) character classes accepts a strong password" name="validatePassword (REQ-AUTH-06) character classes accepts a strong password" time="0">
     </testcase>

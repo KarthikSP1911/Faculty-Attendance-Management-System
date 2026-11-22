@@ -16,9 +16,9 @@
 | Screenshots | [07_Screenshots](07_Screenshots) |
 
 ## Results (from the final run, see the execution summary for details)
-- **Designed test cases:** 255. **Executed:** 252, **passed:** 252, **failed:** 0. Three were not executed: TC-REG-015 and TC-LEAVE-034 (marked manual) and TC-NFR-012 (Lighthouse run, not performed).
+- **Designed test cases:** 255. **Executed:** 254, **passed:** 254, **failed:** 0. One was not executed: TC-NFR-012 (Lighthouse scoring, which could not be run in this environment).
 - **Jest:** 440 tests in 21 suites, all passing; coverage 98.25% lines.
-- **Playwright:** 156 tests across Chromium, Firefox, WebKit and an iPhone 14 profile: 120 passed, 0 failed, 36 skipped (the TC-NFR-008 viewport sweep runs on Chromium only, so it is skipped in the other three projects).
+- **Playwright:** 164 tests across Chromium, Firefox, WebKit and an iPhone 14 profile: 126 passed, 0 failed, 38 skipped (the TC-NFR-008 viewport sweep runs on Chromium only, and TC-REG-015 skips in the last two projects once the few allowed recent dates are used up; it passed in Chromium and Firefox).
 - **Mutation testing (StrykerJS):** 89.95% score on the pure rule files (baseline 86.19% before targeted killer tests).
 - **Accessibility:** automated axe scan of the login page and the three dashboards found no serious or critical WCAG 2.1 A/AA violations. This does not replace a manual accessibility review.
 

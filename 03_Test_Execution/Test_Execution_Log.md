@@ -1,8 +1,8 @@
 # Test Execution Log
 
-- Run date (latest artefact mtime): 2026-11-22T18:43:46.121Z
-- Report generated: 2026-11-22T18:44:17.717Z
-- Git commit: 3e225eb (+ uncommitted working-tree changes)
+- Run date (latest artefact mtime): 2026-11-22T19:05:18.723Z
+- Report generated: 2026-11-22T19:05:56.106Z
+- Git commit: 1904947 (+ uncommitted working-tree changes)
 - Environment: Node v24.18.0, Windows_NT 10.0.26300 (win32/x64), PostgreSQL 18 in Docker
 - All test data is synthetic.
 
@@ -152,7 +152,7 @@ Mapping note: results for Jest-based cases are **file-level** (JUnit carries no 
 | TC-REG-012 | ST | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-REG-013 | ST | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-REG-014 | DT | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
-| TC-REG-015 | ST | Integration | manual | NOT EXECUTED | manual |
+| TC-REG-015 | ST | Integration | apps/web/e2e/specs/manual-cases.spec.ts | PASS | Playwright: 4/4 test run(s) OK (chromium, firefox, webkit, iphone-14) in apps/web/test-results/results.json |
 | TC-REG-016 | EP | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-LEAVE-001 | EP | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-LEAVE-002 | EP | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
@@ -187,7 +187,7 @@ Mapping note: results for Jest-based cases are **file-level** (JUnit carries no 
 | TC-LEAVE-031 | ST | Unit | unit/validateLeaveRequest.test.ts | PASS | file-level: 45/45 tests passed in unit/validateLeaveRequest.test.ts |
 | TC-LEAVE-032 | EP | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-LEAVE-033 | ST | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
-| TC-LEAVE-034 | EG | Integration | manual | NOT EXECUTED | manual |
+| TC-LEAVE-034 | EG | Integration | apps/web/e2e/specs/manual-cases.spec.ts | PASS | Playwright: 4/4 test run(s) OK (chromium, firefox, webkit, iphone-14) in apps/web/test-results/results.json |
 | TC-LEAVE-035 | DT | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-LEAVE-036 | DT | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |
 | TC-LEAVE-037 | DT | Integration | integration/leave.test.ts | PASS | file-level: 26/26 tests passed in integration/leave.test.ts |

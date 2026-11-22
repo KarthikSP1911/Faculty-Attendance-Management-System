@@ -136,6 +136,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure"
@@ -161,6 +162,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure",
@@ -201,6 +203,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure",
@@ -241,6 +244,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure",
@@ -281,6 +285,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure",
@@ -321,6 +326,7 @@
         "timeout": 90000,
         "use": {
           "baseURL": "http://localhost:3000",
+          "actionTimeout": 15000,
           "trace": "on-first-retry",
           "screenshot": "only-on-failure",
           "video": "retain-on-failure",
@@ -400,12 +406,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 879,
+                  "duration": 830,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:30.771Z",
+                  "startTime": "2026-11-22T19:02:26.982Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -434,12 +440,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 790,
+                  "duration": 801,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:31.787Z",
+                  "startTime": "2026-11-22T19:02:27.941Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -468,12 +474,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 766,
+                  "duration": 758,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:32.593Z",
+                  "startTime": "2026-11-22T19:02:28.760Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -510,12 +516,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 941,
+                  "duration": 945,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:33.901Z",
+                  "startTime": "2026-11-22T19:02:30.063Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -544,12 +550,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 874,
+                  "duration": 892,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:34.956Z",
+                  "startTime": "2026-11-22T19:02:31.129Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -578,12 +584,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 818,
+                  "duration": 824,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:35.844Z",
+                  "startTime": "2026-11-22T19:02:32.029Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -612,12 +618,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 851,
+                  "duration": 854,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:36.670Z",
+                  "startTime": "2026-11-22T19:02:32.861Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -646,12 +652,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 817,
+                  "duration": 809,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:37.532Z",
+                  "startTime": "2026-11-22T19:02:33.725Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -680,12 +686,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 854,
+                  "duration": 827,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:38.357Z",
+                  "startTime": "2026-11-22T19:02:34.545Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -714,12 +720,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 864,
+                  "duration": 881,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:39.221Z",
+                  "startTime": "2026-11-22T19:02:35.383Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -748,12 +754,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 895,
+                  "duration": 894,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:40.094Z",
+                  "startTime": "2026-11-22T19:02:36.273Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -782,12 +788,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 823,
+                  "duration": 774,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:41.001Z",
+                  "startTime": "2026-11-22T19:02:37.177Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -816,12 +822,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1160,
+                  "duration": 1105,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:41.835Z",
+                  "startTime": "2026-11-22T19:02:37.963Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -850,12 +856,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1119,
+                  "duration": 1094,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:43.023Z",
+                  "startTime": "2026-11-22T19:02:39.094Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -884,12 +890,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1182,
+                  "duration": 844,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:44.158Z",
+                  "startTime": "2026-11-22T19:02:40.201Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -918,12 +924,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 801,
+                  "duration": 817,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:45.355Z",
+                  "startTime": "2026-11-22T19:02:41.058Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -960,12 +966,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1085,
+                  "duration": 888,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:46.621Z",
+                  "startTime": "2026-11-22T19:02:42.334Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -983,12 +989,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4135,
+                  "duration": 3968,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:17.115Z",
+                  "startTime": "2026-11-22T19:03:13.084Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1006,12 +1012,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2056,
+                  "duration": 1921,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:09.021Z",
+                  "startTime": "2026-11-22T19:04:04.795Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1029,12 +1035,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2082,
+                  "duration": 1877,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:47.133Z",
+                  "startTime": "2026-11-22T19:04:42.855Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1063,12 +1069,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 706,
+                  "duration": 662,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:47.814Z",
+                  "startTime": "2026-11-22T19:02:43.328Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1086,12 +1092,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1570,
+                  "duration": 1442,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:21.934Z",
+                  "startTime": "2026-11-22T19:03:17.751Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1109,12 +1115,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1447,
+                  "duration": 1226,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:11.189Z",
+                  "startTime": "2026-11-22T19:04:06.833Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1132,12 +1138,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 985,
+                  "duration": 1016,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:49.328Z",
+                  "startTime": "2026-11-22T19:04:44.819Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1171,12 +1177,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 674,
+                  "duration": 668,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:48.530Z",
+                  "startTime": "2026-11-22T19:02:44.000Z",
                   "annotations": [
                     {
                       "type": "window",
@@ -1204,12 +1210,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1165,
+                  "duration": 1093,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:23.529Z",
+                  "startTime": "2026-11-22T19:03:19.210Z",
                   "annotations": [
                     {
                       "type": "window",
@@ -1237,12 +1243,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1151,
+                  "duration": 1059,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:12.648Z",
+                  "startTime": "2026-11-22T19:04:08.070Z",
                   "annotations": [
                     {
                       "type": "window",
@@ -1270,12 +1276,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1295,
+                  "duration": 1221,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:50.327Z",
+                  "startTime": "2026-11-22T19:04:45.844Z",
                   "annotations": [
                     {
                       "type": "window",
@@ -1309,12 +1315,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1783,
+                  "duration": 1788,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:49.212Z",
+                  "startTime": "2026-11-22T19:02:44.677Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1332,12 +1338,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3083,
+                  "duration": 2953,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:24.710Z",
+                  "startTime": "2026-11-22T19:03:20.318Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1355,12 +1361,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2697,
+                  "duration": 2704,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:13.807Z",
+                  "startTime": "2026-11-22T19:04:09.140Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1378,12 +1384,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2787,
+                  "duration": 2619,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:51.634Z",
+                  "startTime": "2026-11-22T19:04:47.075Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1412,12 +1418,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2626,
+                  "duration": 2543,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:51.008Z",
+                  "startTime": "2026-11-22T19:02:46.474Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1435,12 +1441,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3873,
+                  "duration": 3828,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:27.806Z",
+                  "startTime": "2026-11-22T19:03:23.284Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1458,12 +1464,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3694,
+                  "duration": 3789,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:16.513Z",
+                  "startTime": "2026-11-22T19:04:11.854Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1481,12 +1487,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3768,
+                  "duration": 3684,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:54.430Z",
+                  "startTime": "2026-11-22T19:04:49.703Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1496,7 +1502,7 @@
           ],
           "id": "d0e91a627f907f57ce69-32492ed0c655799c49d9",
           "file": "specs/journeys.spec.ts",
-          "line": 72,
+          "line": 70,
           "column": 1
         },
         {
@@ -1515,321 +1521,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1208,
+                  "duration": 1148,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:53.642Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1799,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:34:31.692Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1561,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:35:20.226Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "iphone-14",
-              "projectName": "iphone-14",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1448,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:35:58.209Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d0e91a627f907f57ce69-d782387e74ebaeb16055",
-          "file": "specs/journeys.spec.ts",
-          "line": 97,
-          "column": 1
-        },
-        {
-          "title": "J7 admin reports table and CSV export",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 509,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:33:54.858Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 880,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:34:33.508Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 793,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:35:21.798Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "iphone-14",
-              "projectName": "iphone-14",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 779,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:35:59.668Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d0e91a627f907f57ce69-16c69b015b9271c79fc8",
-          "file": "specs/journeys.spec.ts",
-          "line": 108,
-          "column": 1
-        },
-        {
-          "title": "J8 role guard: faculty cannot open admin pages",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 186,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:33:55.375Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 792,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:34:34.420Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 751,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:35:22.606Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "iphone-14",
-              "projectName": "iphone-14",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 735,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:36:00.458Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d0e91a627f907f57ce69-541bb358d7b8877ad59b",
-          "file": "specs/journeys.spec.ts",
-          "line": 117,
-          "column": 1
-        },
-        {
-          "title": "J9 navigation: back control and notifications bell",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 360,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-22T18:33:55.573Z",
+                  "startTime": "2026-11-22T19:02:49.031Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1852,7 +1549,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:35.239Z",
+                  "startTime": "2026-11-22T19:03:27.127Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1870,12 +1567,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1316,
+                  "duration": 1514,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:23.396Z",
+                  "startTime": "2026-11-22T19:04:15.653Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1893,12 +1590,321 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1099,
+                  "duration": 1679,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:01.204Z",
+                  "startTime": "2026-11-22T19:04:53.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d0e91a627f907f57ce69-d782387e74ebaeb16055",
+          "file": "specs/journeys.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "J7 admin reports table and CSV export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 568,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:02:50.190Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:28.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:17.177Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "iphone-14",
+              "projectName": "iphone-14",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:55.085Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d0e91a627f907f57ce69-16c69b015b9271c79fc8",
+          "file": "specs/journeys.spec.ts",
+          "line": 106,
+          "column": 1
+        },
+        {
+          "title": "J8 role guard: faculty cannot open admin pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:02:50.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:29.977Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:17.985Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "iphone-14",
+              "projectName": "iphone-14",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:55.972Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d0e91a627f907f57ce69-541bb358d7b8877ad59b",
+          "file": "specs/journeys.spec.ts",
+          "line": 115,
+          "column": 1
+        },
+        {
+          "title": "J9 navigation: back control and notifications bell",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 312,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:02:50.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1620,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:31.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:19.227Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "iphone-14",
+              "projectName": "iphone-14",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:56.629Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1908,7 +1914,7 @@
           ],
           "id": "d0e91a627f907f57ce69-04156313a063aa62ba08",
           "file": "specs/journeys.spec.ts",
-          "line": 123,
+          "line": 121,
           "column": 1
         }
       ]
@@ -1935,12 +1941,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2900,
+                  "duration": 2925,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:56.003Z",
+                  "startTime": "2026-11-22T19:02:51.355Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1958,12 +1964,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5875,
+                  "duration": 5059,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:37.050Z",
+                  "startTime": "2026-11-22T19:03:32.785Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1981,12 +1987,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4827,
+                  "duration": 4657,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:24.823Z",
+                  "startTime": "2026-11-22T19:04:20.227Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2004,12 +2010,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4926,
+                  "duration": 4833,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:02.396Z",
+                  "startTime": "2026-11-22T19:04:57.703Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2038,12 +2044,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 268,
+                  "duration": 285,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:58.914Z",
+                  "startTime": "2026-11-22T19:02:54.290Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2061,12 +2067,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 950,
+                  "duration": 1004,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:42.960Z",
+                  "startTime": "2026-11-22T19:03:37.862Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2084,12 +2090,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 772,
+                  "duration": 788,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:29.671Z",
+                  "startTime": "2026-11-22T19:04:24.899Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2107,12 +2113,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 741,
+                  "duration": 743,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:07.339Z",
+                  "startTime": "2026-11-22T19:05:02.551Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2122,7 +2128,7 @@
           ],
           "id": "0feeb77b66858a45c79a-7cdaafceb2d2a31ce01c",
           "file": "specs/manual-cases.spec.ts",
-          "line": 73,
+          "line": 70,
           "column": 3
         },
         {
@@ -2141,12 +2147,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 335,
+                  "duration": 337,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:59.195Z",
+                  "startTime": "2026-11-22T19:02:54.589Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2164,12 +2170,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 919,
+                  "duration": 930,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:43.948Z",
+                  "startTime": "2026-11-22T19:03:38.885Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2187,12 +2193,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 750,
+                  "duration": 777,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:30.460Z",
+                  "startTime": "2026-11-22T19:04:25.701Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2210,12 +2216,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 694,
+                  "duration": 712,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:08.092Z",
+                  "startTime": "2026-11-22T19:05:03.307Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2225,7 +2231,7 @@
           ],
           "id": "0feeb77b66858a45c79a-efaab31f52963e45bdf7",
           "file": "specs/manual-cases.spec.ts",
-          "line": 73,
+          "line": 70,
           "column": 3
         },
         {
@@ -2244,12 +2250,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 341,
+                  "duration": 371,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:59.544Z",
+                  "startTime": "2026-11-22T19:02:54.940Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2267,12 +2273,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1073,
+                  "duration": 896,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:44.902Z",
+                  "startTime": "2026-11-22T19:03:39.832Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2290,12 +2296,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 778,
+                  "duration": 740,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:31.223Z",
+                  "startTime": "2026-11-22T19:04:26.493Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2313,12 +2319,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 706,
+                  "duration": 745,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:08.798Z",
+                  "startTime": "2026-11-22T19:05:04.035Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2328,7 +2334,7 @@
           ],
           "id": "0feeb77b66858a45c79a-abd8a55b4fed16743603",
           "file": "specs/manual-cases.spec.ts",
-          "line": 73,
+          "line": 70,
           "column": 3
         },
         {
@@ -2347,12 +2353,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14,
+                  "duration": 15,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:33:59.901Z",
+                  "startTime": "2026-11-22T19:02:55.329Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2370,12 +2376,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 38,
+                  "duration": 20,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:46.013Z",
+                  "startTime": "2026-11-22T19:03:40.750Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2393,12 +2399,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14,
+                  "duration": 18,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:32.016Z",
+                  "startTime": "2026-11-22T19:04:27.248Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2416,12 +2422,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 18,
+                  "duration": 16,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:09.519Z",
+                  "startTime": "2026-11-22T19:05:04.793Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2431,7 +2437,7 @@
           ],
           "id": "0feeb77b66858a45c79a-901619d33cf02b57a1b5",
           "file": "specs/manual-cases.spec.ts",
-          "line": 90,
+          "line": 87,
           "column": 1
         },
         {
@@ -2450,12 +2456,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 374,
+                  "duration": 394,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:08.345Z",
+                  "startTime": "2026-11-22T19:03:04.026Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2473,12 +2479,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 973,
+                  "duration": 1071,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:46.499Z",
+                  "startTime": "2026-11-22T19:03:41.143Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2496,12 +2502,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1021,
+                  "duration": 1003,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:32.322Z",
+                  "startTime": "2026-11-22T19:04:27.591Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2519,12 +2525,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 928,
+                  "duration": 774,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:09.890Z",
+                  "startTime": "2026-11-22T19:05:05.120Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2534,7 +2540,7 @@
           ],
           "id": "0feeb77b66858a45c79a-f555265df24e6c5bf2fd",
           "file": "specs/manual-cases.spec.ts",
-          "line": 172,
+          "line": 169,
           "column": 1
         },
         {
@@ -2553,12 +2559,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 267,
+                  "duration": 254,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:08.733Z",
+                  "startTime": "2026-11-22T19:03:04.435Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2576,12 +2582,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1198,
+                  "duration": 1085,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:47.495Z",
+                  "startTime": "2026-11-22T19:03:42.239Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2599,12 +2605,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 847,
+                  "duration": 794,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:33.363Z",
+                  "startTime": "2026-11-22T19:04:28.613Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2622,12 +2628,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 964,
+                  "duration": 774,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:10.838Z",
+                  "startTime": "2026-11-22T19:05:05.915Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2637,7 +2643,7 @@
           ],
           "id": "0feeb77b66858a45c79a-9bd432564f147b15b63a",
           "file": "specs/manual-cases.spec.ts",
-          "line": 177,
+          "line": 174,
           "column": 1
         },
         {
@@ -2656,12 +2662,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 762,
+                  "duration": 745,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:09.013Z",
+                  "startTime": "2026-11-22T19:03:04.703Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2679,12 +2685,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1914,
+                  "duration": 1764,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:48.722Z",
+                  "startTime": "2026-11-22T19:03:43.352Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2702,12 +2708,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1761,
+                  "duration": 2002,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:34.227Z",
+                  "startTime": "2026-11-22T19:04:29.426Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2725,12 +2731,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1823,
+                  "duration": 1620,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:11.827Z",
+                  "startTime": "2026-11-22T19:05:06.704Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2740,7 +2746,7 @@
           ],
           "id": "0feeb77b66858a45c79a-a068540a6ef2f01c9df3",
           "file": "specs/manual-cases.spec.ts",
-          "line": 184,
+          "line": 181,
           "column": 1
         },
         {
@@ -2759,12 +2765,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1101,
+                  "duration": 1041,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:09.797Z",
+                  "startTime": "2026-11-22T19:03:05.468Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2788,12 +2794,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2100,
+                  "duration": 1891,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:50.679Z",
+                  "startTime": "2026-11-22T19:03:45.148Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2817,12 +2823,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1597,
+                  "duration": 1754,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:36.008Z",
+                  "startTime": "2026-11-22T19:04:31.451Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2846,12 +2852,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1373,
+                  "duration": 1488,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:13.674Z",
+                  "startTime": "2026-11-22T19:05:08.351Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2867,7 +2873,7 @@
           ],
           "id": "0feeb77b66858a45c79a-6f3bcc753b2eebc7ad1f",
           "file": "specs/manual-cases.spec.ts",
-          "line": 228,
+          "line": 225,
           "column": 1
         },
         {
@@ -2886,12 +2892,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1297,
+                  "duration": 1278,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:10.920Z",
+                  "startTime": "2026-11-22T19:03:06.527Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2915,12 +2921,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2582,
+                  "duration": 2209,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:52.808Z",
+                  "startTime": "2026-11-22T19:03:47.067Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2944,12 +2950,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1817,
+                  "duration": 1659,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:37.633Z",
+                  "startTime": "2026-11-22T19:04:33.234Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2973,12 +2979,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1626,
+                  "duration": 1615,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:15.067Z",
+                  "startTime": "2026-11-22T19:05:09.871Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -2994,7 +3000,7 @@
           ],
           "id": "0feeb77b66858a45c79a-09edc7ac8bf24cd2bb39",
           "file": "specs/manual-cases.spec.ts",
-          "line": 235,
+          "line": 232,
           "column": 3
         },
         {
@@ -3013,12 +3019,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1346,
+                  "duration": 1654,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:12.233Z",
+                  "startTime": "2026-11-22T19:03:07.822Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3042,12 +3048,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2364,
+                  "duration": 2323,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:55.421Z",
+                  "startTime": "2026-11-22T19:03:49.309Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3071,12 +3077,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2174,
+                  "duration": 1955,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:39.473Z",
+                  "startTime": "2026-11-22T19:04:34.908Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3100,12 +3106,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1829,
+                  "duration": 1793,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:16.711Z",
+                  "startTime": "2026-11-22T19:05:11.508Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3121,7 +3127,7 @@
           ],
           "id": "0feeb77b66858a45c79a-5d672cb7f34eeee28172",
           "file": "specs/manual-cases.spec.ts",
-          "line": 235,
+          "line": 232,
           "column": 3
         },
         {
@@ -3140,12 +3146,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1294,
+                  "duration": 1282,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:13.595Z",
+                  "startTime": "2026-11-22T19:03:09.503Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3169,12 +3175,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2973,
+                  "duration": 2340,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:57.813Z",
+                  "startTime": "2026-11-22T19:03:51.669Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3198,12 +3204,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1855,
+                  "duration": 1787,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:41.667Z",
+                  "startTime": "2026-11-22T19:04:36.883Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3227,12 +3233,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1734,
+                  "duration": 1684,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:18.562Z",
+                  "startTime": "2026-11-22T19:05:13.318Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -3248,7 +3254,7 @@
           ],
           "id": "0feeb77b66858a45c79a-aa82847574312df4259a",
           "file": "specs/manual-cases.spec.ts",
-          "line": 235,
+          "line": 232,
           "column": 3
         },
         {
@@ -3267,12 +3273,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 824,
+                  "duration": 788,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:14.906Z",
+                  "startTime": "2026-11-22T19:03:10.803Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3290,12 +3296,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1674,
+                  "duration": 1916,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:00.821Z",
+                  "startTime": "2026-11-22T19:03:54.048Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3313,12 +3319,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1204,
+                  "duration": 1132,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:43.542Z",
+                  "startTime": "2026-11-22T19:04:38.689Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3336,12 +3342,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1112,
+                  "duration": 1083,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:20.321Z",
+                  "startTime": "2026-11-22T19:05:15.026Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3351,7 +3357,7 @@
           ],
           "id": "0feeb77b66858a45c79a-efe64434b0020a5ea257",
           "file": "specs/manual-cases.spec.ts",
-          "line": 244,
+          "line": 241,
           "column": 1
         },
         {
@@ -3370,12 +3376,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 520,
+                  "duration": 258,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:34:15.762Z",
+                  "startTime": "2026-11-22T19:03:11.614Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3393,12 +3399,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1022,
+                  "duration": 877,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:02.530Z",
+                  "startTime": "2026-11-22T19:03:56.014Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3416,12 +3422,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1259,
+                  "duration": 1197,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:35:44.787Z",
+                  "startTime": "2026-11-22T19:04:39.849Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3439,12 +3445,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 686,
+                  "duration": 682,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-22T18:36:21.463Z",
+                  "startTime": "2026-11-22T19:05:16.129Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -3454,7 +3460,253 @@
           ],
           "id": "0feeb77b66858a45c79a-6ec9567ec976d7c27886",
           "file": "specs/manual-cases.spec.ts",
-          "line": 256,
+          "line": 253,
+          "column": 1
+        },
+        {
+          "title": "TC-LEAVE-034 approving an already approved leave is refused with 409",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 212,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:11.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1199,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:56.945Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:41.070Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "iphone-14",
+              "projectName": "iphone-14",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:05:16.835Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0feeb77b66858a45c79a-7c4f6a3da894d12aa454",
+          "file": "specs/manual-cases.spec.ts",
+          "line": 265,
+          "column": 1
+        },
+        {
+          "title": "TC-REG-015 reviewing an already reviewed regularization request returns 409 INVALID_TRANSITION",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 216,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:12.121Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:03:58.202Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "no free weekday in the last 7 days (a request already exists for each); re-run after reseeding",
+                  "location": {
+                    "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
+                    "line": 300,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 359,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:04:41.529Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "no free weekday in the last 7 days (a request already exists for each); re-run after reseeding",
+                      "location": {
+                        "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
+                        "line": 300,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            },
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "no free weekday in the last 7 days (a request already exists for each); re-run after reseeding",
+                  "location": {
+                    "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
+                    "line": 300,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "iphone-14",
+              "projectName": "iphone-14",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-22T19:05:17.488Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "no free weekday in the last 7 days (a request already exists for each); re-run after reseeding",
+                      "location": {
+                        "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
+                        "line": 300,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0feeb77b66858a45c79a-4b456f731fe1e7e077d0",
+          "file": "specs/manual-cases.spec.ts",
+          "line": 288,
           "column": 1
         }
       ],
@@ -3462,7 +3714,7 @@
         {
           "title": "TC-NFR-008 responsive layout has no horizontal scroll",
           "file": "specs/manual-cases.spec.ts",
-          "line": 101,
+          "line": 98,
           "column": 6,
           "specs": [
             {
@@ -3481,12 +3733,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 290,
+                      "duration": 343,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:33:59.932Z",
+                      "startTime": "2026-11-22T19:02:55.366Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3501,7 +3753,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3514,19 +3766,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 13,
+                      "duration": 6,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.094Z",
+                      "startTime": "2026-11-22T19:03:40.794Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3544,7 +3796,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3562,14 +3814,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.047Z",
+                      "startTime": "2026-11-22T19:04:27.285Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3587,7 +3839,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3600,19 +3852,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 9,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.564Z",
+                      "startTime": "2026-11-22T19:05:04.826Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3625,7 +3877,7 @@
               ],
               "id": "0feeb77b66858a45c79a-ce91b70a0b34f58fc2a7",
               "file": "specs/manual-cases.spec.ts",
-              "line": 108,
+              "line": 105,
               "column": 5
             },
             {
@@ -3644,12 +3896,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 887,
+                      "duration": 907,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:00.240Z",
+                      "startTime": "2026-11-22T19:02:55.732Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3664,7 +3916,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3677,19 +3929,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 6,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.139Z",
+                      "startTime": "2026-11-22T19:03:40.834Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3707,7 +3959,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3720,19 +3972,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.072Z",
+                      "startTime": "2026-11-22T19:04:27.314Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3750,7 +4002,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3768,14 +4020,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.612Z",
+                      "startTime": "2026-11-22T19:05:04.853Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3788,7 +4040,7 @@
               ],
               "id": "0feeb77b66858a45c79a-d6c7366ae453ec8d6d4e",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -3807,12 +4059,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 780,
+                      "duration": 888,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:01.145Z",
+                      "startTime": "2026-11-22T19:02:56.667Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3827,7 +4079,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3840,19 +4092,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 7,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.178Z",
+                      "startTime": "2026-11-22T19:03:40.874Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3870,7 +4122,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3883,19 +4135,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 4,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.098Z",
+                      "startTime": "2026-11-22T19:04:27.339Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3913,7 +4165,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -3931,14 +4183,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.643Z",
+                      "startTime": "2026-11-22T19:05:04.883Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -3951,7 +4203,7 @@
               ],
               "id": "0feeb77b66858a45c79a-e2ede82c60e3cdbfcdf4",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -3970,12 +4222,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 813,
+                      "duration": 839,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:01.940Z",
+                      "startTime": "2026-11-22T19:02:57.575Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3990,7 +4242,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4003,19 +4255,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 5,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.219Z",
+                      "startTime": "2026-11-22T19:03:40.905Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4033,7 +4285,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4046,19 +4298,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.123Z",
+                      "startTime": "2026-11-22T19:04:27.366Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4076,7 +4328,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4089,19 +4341,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 4,
+                      "duration": 3,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.671Z",
+                      "startTime": "2026-11-22T19:05:04.915Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4114,7 +4366,7 @@
               ],
               "id": "0feeb77b66858a45c79a-4ca2c5bc969497333a75",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -4133,12 +4385,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 211,
+                      "duration": 246,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:02.768Z",
+                      "startTime": "2026-11-22T19:02:58.433Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4153,7 +4405,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4166,19 +4418,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 7,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.260Z",
+                      "startTime": "2026-11-22T19:03:40.934Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4196,7 +4448,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4209,19 +4461,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.149Z",
+                      "startTime": "2026-11-22T19:04:27.391Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4239,7 +4491,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4257,14 +4509,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.697Z",
+                      "startTime": "2026-11-22T19:05:04.936Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4277,7 +4529,7 @@
               ],
               "id": "0feeb77b66858a45c79a-401c9da257faf69e5322",
               "file": "specs/manual-cases.spec.ts",
-              "line": 108,
+              "line": 105,
               "column": 5
             },
             {
@@ -4296,12 +4548,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 815,
+                      "duration": 825,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:02.995Z",
+                      "startTime": "2026-11-22T19:02:58.696Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4316,7 +4568,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4329,19 +4581,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 7,
+                      "duration": 6,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.296Z",
+                      "startTime": "2026-11-22T19:03:40.961Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4359,7 +4611,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4372,19 +4624,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 4,
+                      "duration": 5,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.171Z",
+                      "startTime": "2026-11-22T19:04:27.415Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4402,7 +4654,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4415,19 +4667,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 5,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.723Z",
+                      "startTime": "2026-11-22T19:05:04.958Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4440,7 +4692,7 @@
               ],
               "id": "0feeb77b66858a45c79a-1d29b59e70e9e3bf995a",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -4459,12 +4711,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 821,
+                      "duration": 788,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:03.826Z",
+                      "startTime": "2026-11-22T19:02:59.536Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4479,7 +4731,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4497,14 +4749,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.332Z",
+                      "startTime": "2026-11-22T19:03:40.993Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4522,7 +4774,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4540,14 +4792,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.195Z",
+                      "startTime": "2026-11-22T19:04:27.445Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4565,7 +4817,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4583,14 +4835,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.748Z",
+                      "startTime": "2026-11-22T19:05:04.982Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4603,7 +4855,7 @@
               ],
               "id": "0feeb77b66858a45c79a-4f2410b3c84878c25d6b",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -4622,12 +4874,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 812,
+                      "duration": 805,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:04.661Z",
+                      "startTime": "2026-11-22T19:03:00.340Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4642,7 +4894,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4660,14 +4912,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.361Z",
+                      "startTime": "2026-11-22T19:03:41.020Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4685,7 +4937,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4698,19 +4950,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.217Z",
+                      "startTime": "2026-11-22T19:04:27.467Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4728,7 +4980,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4746,14 +4998,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.773Z",
+                      "startTime": "2026-11-22T19:05:05.004Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4766,7 +5018,7 @@
               ],
               "id": "0feeb77b66858a45c79a-43b525f76f6516bf1d1c",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -4785,12 +5037,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 329,
+                      "duration": 323,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:05.486Z",
+                      "startTime": "2026-11-22T19:03:01.161Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4805,7 +5057,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4818,19 +5070,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 5,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.390Z",
+                      "startTime": "2026-11-22T19:03:41.045Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4848,7 +5100,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4861,19 +5113,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.239Z",
+                      "startTime": "2026-11-22T19:04:27.493Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4891,7 +5143,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4904,19 +5156,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 4,
+                      "duration": 3,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.796Z",
+                      "startTime": "2026-11-22T19:05:05.028Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -4929,7 +5181,7 @@
               ],
               "id": "0feeb77b66858a45c79a-fdbbd51e1e19fb52cc74",
               "file": "specs/manual-cases.spec.ts",
-              "line": 108,
+              "line": 105,
               "column": 5
             },
             {
@@ -4948,12 +5200,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 811,
+                      "duration": 791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:05.830Z",
+                      "startTime": "2026-11-22T19:03:01.500Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4968,7 +5220,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -4986,14 +5238,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.424Z",
+                      "startTime": "2026-11-22T19:03:41.071Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5011,7 +5263,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5024,19 +5276,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.260Z",
+                      "startTime": "2026-11-22T19:04:27.519Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5054,7 +5306,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5067,19 +5319,19 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 4,
+                      "duration": 3,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.820Z",
+                      "startTime": "2026-11-22T19:05:05.052Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5092,7 +5344,7 @@
               ],
               "id": "0feeb77b66858a45c79a-8120ea69e884547f292b",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -5111,12 +5363,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 842,
+                      "duration": 829,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:06.658Z",
+                      "startTime": "2026-11-22T19:03:02.306Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5131,7 +5383,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5149,14 +5401,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.448Z",
+                      "startTime": "2026-11-22T19:03:41.095Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5174,7 +5426,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5187,19 +5439,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.281Z",
+                      "startTime": "2026-11-22T19:04:27.544Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5217,7 +5469,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5235,14 +5487,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.844Z",
+                      "startTime": "2026-11-22T19:05:05.074Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5255,7 +5507,7 @@
               ],
               "id": "0feeb77b66858a45c79a-574e0f411e6059b41a4e",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             },
             {
@@ -5274,12 +5526,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 818,
+                      "duration": 862,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:07.513Z",
+                      "startTime": "2026-11-22T19:03:03.148Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -5294,7 +5546,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5307,19 +5559,19 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 5,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:34:46.473Z",
+                      "startTime": "2026-11-22T19:03:41.120Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5337,7 +5589,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5350,19 +5602,19 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "skipped",
-                      "duration": 3,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:35:32.302Z",
+                      "startTime": "2026-11-22T19:04:27.567Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5380,7 +5632,7 @@
                       "description": "viewport sweep runs on the chromium project only",
                       "location": {
                         "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                        "line": 103,
+                        "line": 100,
                         "column": 10
                       }
                     }
@@ -5398,14 +5650,14 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-22T18:36:09.866Z",
+                      "startTime": "2026-11-22T19:05:05.098Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "description": "viewport sweep runs on the chromium project only",
                           "location": {
                             "file": "C:\\Users\\karth\\Downloads\\Faculty Attendence Management System\\apps\\web\\e2e\\specs\\manual-cases.spec.ts",
-                            "line": 103,
+                            "line": 100,
                             "column": 10
                           }
                         }
@@ -5418,7 +5670,7 @@
               ],
               "id": "0feeb77b66858a45c79a-a4aefcda709d985751e4",
               "file": "specs/manual-cases.spec.ts",
-              "line": 117,
+              "line": 114,
               "column": 7
             }
           ]
@@ -5428,10 +5680,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-22T18:33:30.206Z",
-    "duration": 172510.393,
-    "expected": 120,
-    "skipped": 36,
+    "startTime": "2026-11-22T19:02:26.432Z",
+    "duration": 172202.53,
+    "expected": 126,
+    "skipped": 38,
     "unexpected": 0,
     "flaky": 0
   }

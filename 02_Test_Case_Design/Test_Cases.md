@@ -150,7 +150,7 @@ Defaults assumed: shift 09:00-17:00 Mon-Sat (Sunday weekly off), grace 15 min, l
 | TC-REG-012 | REQ-REG-03 | ST | Pending request, HOD of same department | PATCH review APPROVED with comment | `Verified with biometric log` | 200; day status recomputed; faculty notified | I | H | integration/leave.test.ts |
 | TC-REG-013 | REQ-REG-03 | ST | Pending request | review REJECTED with comment | - | 200; attendance unchanged | I | H | integration/leave.test.ts |
 | TC-REG-014 | REQ-REG-03 | DT | Pending request | review by other-department HOD, faculty, department HOD, admin | roles | other HOD/faculty 403; own-department HOD and admin allowed | I | H | integration/leave.test.ts |
-| TC-REG-015 | REQ-REG-03 | ST | Request already APPROVED or REJECTED | review again | any decision | 409 INVALID_TRANSITION "already approved/rejected" | I | M | manual |
+| TC-REG-015 | REQ-REG-03 | ST | Request already APPROVED or REJECTED | review again | any decision | 409 INVALID_TRANSITION "already approved/rejected" | I | M | apps/web/e2e/specs/manual-cases.spec.ts |
 | TC-REG-016 | REQ-REG-03 | EP | Approval for a day with no attendance record | approve with in 09:10, out 17:00 | requested times | record created; status recomputed; audit entry for the correction | I | M | integration/leave.test.ts |
 | TC-LEAVE-001 | REQ-LEAVE-01 | EP | Authenticated | GET leave types | - | four types listed (CL, SL, EL, On Duty); 401 when unauthenticated | I | M | integration/leave.test.ts |
 | TC-LEAVE-002 | REQ-LEAVE-01 | EP | New faculty | read balances | current year | CL 12, SL 10, EL 15 created from quotas | I | H | integration/leave.test.ts |
@@ -185,7 +185,7 @@ Defaults assumed: shift 09:00-17:00 Mon-Sat (Sunday weekly off), grace 15 min, l
 | TC-LEAVE-031 | REQ-LEAVE-04 | ST | Cancelled request | any transition | CANCELLED -> PENDING etc. | refused (terminal) | U | M | unit/validateLeaveRequest.test.ts |
 | TC-LEAVE-032 | REQ-LEAVE-04 | EP | Pending request | reject without comment; reject with comment | empty comment | comment required; with comment the faculty is notified | I | M | integration/leave.test.ts |
 | TC-LEAVE-033 | REQ-LEAVE-04 | ST | Faculty | save a draft then submit later | draft payload | draft stored; later submit makes it Pending | I | M | integration/leave.test.ts |
-| TC-LEAVE-034 | REQ-LEAVE-04 | EG | Approved leave | approve it again via API | second approval | refused (HTTP 409) | I | M | manual |
+| TC-LEAVE-034 | REQ-LEAVE-04 | EG | Approved leave | approve it again via API | second approval | refused (HTTP 409) | I | M | apps/web/e2e/specs/manual-cases.spec.ts |
 | TC-LEAVE-035 | REQ-LEAVE-05 | DT | Pending request | faculty tries to approve; HOD of another department tries | roles | 403 for both | I | H | integration/leave.test.ts |
 | TC-LEAVE-036 | REQ-LEAVE-05 | DT | Pending request in CSE; CSE HOD | approve | HOD of same department | 200; balance reduced by the leave days | I | H | integration/leave.test.ts |
 | TC-LEAVE-037 | REQ-LEAVE-05 | DT | Pending request in CSE | approve by ECE HOD | other department | 403 | I | H | integration/leave.test.ts |

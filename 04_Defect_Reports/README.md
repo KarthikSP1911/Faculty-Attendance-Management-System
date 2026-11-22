@@ -25,4 +25,5 @@ Recorded in the build handoff; none affect product behaviour.
 | DEV-04 | TypeScript version choice (reason not recorded in the handoff) | TypeScript pinned to ~5.9 |
 | DEV-05 | `scarf` install scripts | Kept blocked |
 | DEV-06 | New spec `manual-cases.spec.ts`: the chromium-only skip used a callback that Playwright does not pass test info to, so TC-NFR-008 errored in all four projects on the first run | Replaced with a `beforeEach` that calls `test.skip` using `testInfo.project.name`; re-run green |
-| DEV-07 | TC-LEAVE-042 hit the 90 s test timeout once in the first run after the spec was added; it passed on every re-run (alone and in the full suites) | Not reproduced; recorded here for transparency, no change made |
+| DEV-07 | TC-LEAVE-042 and J4 failed intermittently (a 90 s timeout, later "row not found"): the test picked a random future date that sometimes overlapped an existing leave, so the server rejected the request and the row never appeared | `LeavePage.applyOnFreeDate` retries with another date on overlap and fails clearly on any other error; Playwright `actionTimeout` set to 15 s so a stuck step names itself |
+| DEV-08 | J5 failed once in WebKit at the login redirect in one full run; it passed on every re-run and in the next full runs | Not reproduced; recorded for transparency, no change made |
