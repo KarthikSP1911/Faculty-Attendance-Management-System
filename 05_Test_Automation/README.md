@@ -15,7 +15,7 @@ All test data is synthetic. Run numbers are in `06_Test_Reports` (not repeated h
 
 ## Jest
 
-- `jest.config.js`: ts-jest, node env, 240 s timeout (Neon latency), coverage thresholds 85% lines / 80% branches, junit report to `reports/junit`.
+- `jest.config.js`: ts-jest, node env, 60 s timeout, coverage thresholds 85% lines / 80% branches, junit report to `reports/junit`.
 - `jest.unit.config.js`: unit tests only, 10 s timeout, no thresholds; used by Stryker.
 - `pdfkit` is mapped to its standalone CJS bundle (Jest cannot load its ESM `fontkit`).
 - Helpers in `tests/helpers`: `env.ts`, `db.ts` (`resetDb`, `createUser`), `fixtures.ts`, `time.ts`.

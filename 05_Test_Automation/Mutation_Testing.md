@@ -25,7 +25,7 @@ The baseline meets the 70% target and the 85 "high" threshold.
 ## Survivors and killer tests
 Most survivors are error-message string literals and regex anchors. `tests/unit/mutationKillers.test.ts` (14 tests, passing) was added to assert exact messages, the `^`/`$` anchors of the employee ID and HH:mm patterns, and the approved-leave cancel boundary (start date today vs tomorrow).
 
-**After score: not re-measured.** The second Stryker run was stopped to save time, so no after-score is claimed. Re-run `npm run test:mutation` to measure it.
+**After score (measured, full run 7 min 12 s):** mutation score **89.95%** (covered-code score 90.95%): 567 killed, 6 timeout, 57 survived, 7 no coverage, 213 compile errors (ignored). Up from 86.19% before the killer tests. Biggest gains: `regularizationRules.ts` 80.00 to 100.00, `employeeId.ts` 72.73 to 90.91, `leaveRules.ts` 82.01 to 87.05. `csvImport.ts` (81.88) and `utils/dates.ts` (84.85) are the weakest files. The report is in `06_Test_Reports/mutation/`.
 
 Known unkillable survivor: `employeeId.ts` `n > max` to `n >= max` is an equivalent mutant (same result).
 

@@ -8,10 +8,10 @@ Badges are static labels; real numbers live in [06 Test Reports](06_Test_Reports
 **Team:** _Name(s), roll number(s), class, section — to be filled_
 
 ## Objectives
-Build FAMS (Next.js + Express + Prisma on Neon PostgreSQL) and a full testing portfolio around it: test plan, test design techniques (EP, BVA, decision tables, state transition), defect reports, Jest/Supertest, Playwright and StrykerJS mutation testing.
+Build FAMS (Next.js + Express + Prisma on PostgreSQL (Docker)) and a full testing portfolio around it: test plan, test design techniques (EP, BVA, decision tables, state transition), defect reports, Jest/Supertest, Playwright and StrykerJS mutation testing.
 
 ## Setup
-1. Copy `.env.example` to `apps/api/.env` and paste your Neon URLs.
+1. `docker compose up -d db`, then copy `.env.example` to `apps/api/.env` (defaults match the container) and set the JWT secrets.
 2. `npm install`
 3. `npm run db:migrate && npm run db:seed`
 4. `npm run dev`
@@ -21,7 +21,7 @@ Build FAMS (Next.js + Express + Prisma on Neon PostgreSQL) and a full testing po
 flowchart LR
   B[Browser] --> W["apps/web: Next.js 15, port 3000"]
   W -- "/api/v1 rewrite" --> A["apps/api: Express 5 + Prisma, port 4000"]
-  A --> DB[(Neon PostgreSQL)]
+  A --> DB[(PostgreSQL, Docker)]
   A --> J[Absent job]
   T1[Jest + Supertest] -.-> A
   T2[Playwright] -.-> W
@@ -42,7 +42,18 @@ flowchart LR
 See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for a walkthrough.
 
 ## Portfolio
-[01 Test Plan](01_Test_Plan) · [02 Test Case Design](02_Test_Case_Design) · [03 Execution](03_Test_Execution) · [04 Defects](04_Defect_Reports) · [05 Automation](05_Test_Automation) · [06 Reports](06_Test_Reports) · [07 Screenshots](07_Screenshots)
+| Folder | Contents |
+|---|---|
+| [01_Test_Plan](01_Test_Plan) | Test plan, assumptions, requirements traceability matrix |
+| [02_Test_Case_Design](02_Test_Case_Design) | Equivalence partitioning, BVA, decision tables, state transition, master test case list |
+| [03_Test_Execution](03_Test_Execution) | Execution log (actual results per case) and execution summary |
+| [04_Defect_Reports](04_Defect_Reports) | Defect reports DEF-001, DEF-002 and tooling issues |
+| [05_Test_Automation](05_Test_Automation) | Jest, Supertest, Playwright and StrykerJS setup and mutation results |
+| [06_Test_Reports](06_Test_Reports) | Test report summary, coverage, Playwright, mutation and JUnit reports |
+| [07_Screenshots](07_Screenshots) | Application and report screenshots |
+| [Conclusion.md](Conclusion.md) | Summary, results, limitations, lessons learned |
+
+Regenerate the execution log and reports after a test run: `npm run reports`.
 
 ## Demo credentials (synthetic seed data)
 | Role | Email | Password |
