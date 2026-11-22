@@ -7,13 +7,13 @@ on:
   schedule:
     - cron: '0 3 * * 1' # weekly mutation run (Mondays 03:00 UTC)
 
-# Secrets (Settings > Secrets > Actions): TEST_DATABASE_URL, TEST_DIRECT_URL (include &schema=fams_test),
-# JWT_ACCESS_SECRET, JWT_REFRESH_SECRET. Never echo them.
+# Secrets (Settings > Secrets > Actions): JWT_ACCESS_SECRET, JWT_REFRESH_SECRET. Never echo them.
+# The database is a throwaway Postgres service container (public schema for E2E, fams_test for Jest).
 env:
-  DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
-  DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
-  TEST_DATABASE_URL: ${{ secrets.TEST_DATABASE_URL }}
-  TEST_DIRECT_URL: ${{ secrets.TEST_DIRECT_URL }}
+  DATABASE_URL: postgresql://fams:fams@localhost:5432/fams?schema=public
+  DIRECT_URL: postgresql://fams:fams@localhost:5432/fams?schema=public
+  TEST_DATABASE_URL: postgresql://fams:fams@localhost:5432/fams?schema=fams_test
+  TEST_DIRECT_URL: postgresql://fams:fams@localhost:5432/fams?schema=fams_test
   JWT_ACCESS_SECRET: ${{ secrets.JWT_ACCESS_SECRET }}
   JWT_REFRESH_SECRET: ${{ secrets.JWT_REFRESH_SECRET }}
   CLIENT_URL: http://localhost:3000
@@ -23,6 +23,20 @@ jobs:
     if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: fams
+          POSTGRES_PASSWORD: fams
+          POSTGRES_DB: fams
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U fams -d fams"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -30,9 +44,15 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
-      - name: Migrate test schema
+      - name: Migrate public schema (E2E)
         run: npx prisma migrate deploy
         working-directory: apps/api
+      - name: Migrate test schema (Jest)
+        run: npx prisma migrate deploy
+        working-directory: apps/api
+        env:
+          DATABASE_URL: ${{ env.TEST_DATABASE_URL }}
+          DIRECT_URL: ${{ env.TEST_DIRECT_URL }}
       - name: Jest (unit + integration, coverage thresholds enforced)
         run: npm test
       - name: Build

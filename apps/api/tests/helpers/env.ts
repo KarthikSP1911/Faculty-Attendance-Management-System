@@ -3,7 +3,7 @@ import 'dotenv/config';
 // Safety guard: tests must never touch the main database.
 const testUrl = process.env.TEST_DATABASE_URL;
 if (!testUrl) {
-  throw new Error('TEST_DATABASE_URL is missing. Create a Neon "test" branch and set TEST_DATABASE_URL / TEST_DIRECT_URL.');
+  throw new Error('TEST_DATABASE_URL is missing. Set TEST_DATABASE_URL / TEST_DIRECT_URL (same Postgres, schema=fams_test); see .env.example.');
 }
 if (process.env.DATABASE_URL && process.env.DATABASE_URL === testUrl) {
   throw new Error('TEST_DATABASE_URL equals DATABASE_URL. Refusing to run tests against the main database.');

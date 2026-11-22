@@ -4,7 +4,7 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['<rootDir>/tests'],
   setupFiles: ['<rootDir>/tests/helpers/env.ts'],
-  testTimeout: 240000,
+  testTimeout: 60000,
   // pdfkit's ESM-only fontkit cannot be loaded by Jest; its standalone CJS bundle can.
   moduleNameMapper: { '^pdfkit$': '<rootDir>/../../node_modules/pdfkit/js/pdfkit.standalone.js' },
   globalSetup: '<rootDir>/tests/helpers/globalLock.js',

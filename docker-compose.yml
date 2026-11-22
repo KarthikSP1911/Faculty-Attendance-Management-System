@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:18
+    container_name: fams-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fams
+      POSTGRES_PASSWORD: fams
+      POSTGRES_DB: fams
+    ports:
+      - "5432:5432"
+    volumes:
+      - fams_pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fams -d fams"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  fams_pgdata:
