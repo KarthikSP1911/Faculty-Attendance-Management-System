@@ -6,12 +6,12 @@ All data in this project is synthetic.
 
 | ID | Title | Severity | Status | Report |
 |---|---|---|---|---|
-| DEF-001 | Faculty dashboard logs a React duplicate-key error in the leave balances list | Low | Fixed (commit hash pending) | [DEF-001](DEF-001_Duplicate_React_key_in_leave_balances.md) |
-| DEF-002 | Admin dashboard pending-leave and pending-regularization tiles link to a missing page | Medium | Fixed (commit hash pending) | [DEF-002](DEF-002_Admin_KPI_tiles_link_to_missing_page.md) |
+| DEF-001 | Faculty dashboard logs a React duplicate-key error in the leave balances list | Low | Fixed (525af7a) | [DEF-001](DEF-001_Duplicate_React_key_in_leave_balances.md) |
+| DEF-002 | Admin dashboard pending-leave and pending-regularization tiles link to a missing page | Medium | Fixed (525af7a) | [DEF-002](DEF-002_Admin_KPI_tiles_link_to_missing_page.md) |
 
 Both were found while verifying the UI refresh (2026-11-22) and each has a regression test in `apps/web/e2e/specs/manual-cases.spec.ts`. The Jest suites (440 tests) found no product defects.
 
-A defect report is only added when it has a reproducible failing test or run, a fix commit hash and a regression test that exists in the repo. The commit hashes for DEF-001 and DEF-002 are left as placeholders until the fixes are committed. Use [DEFECT_TEMPLATE.md](DEFECT_TEMPLATE.md).
+A defect report is only added when it has a reproducible failing test or run, a fix commit hash and a regression test that exists in the repo. Use [DEFECT_TEMPLATE.md](DEFECT_TEMPLATE.md).
 
 ## Development issues (tooling, not product defects)
 

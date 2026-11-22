@@ -5,7 +5,7 @@
 | Severity | Low |
 | Found in | Faculty dashboard (`/faculty/dashboard`), leave balances card |
 | How found | Next.js dev overlay ("1 Issue") while checking the faculty dashboard in the browser, 2026-11-22 |
-| Status | Fixed (fix is in the working tree; commit hash to be added when committed) |
+| Status | Fixed (commit 525af7a) |
 
 ## Steps to reproduce
 1. Start the web app in dev mode (`npm run dev --workspace apps/web`).
@@ -24,7 +24,7 @@ The list used `b.id` as the React key, but the dashboard API returns balances wi
 ## Fix
 Key the list on `b.leaveType.code`, which is unique per leave type.
 
-Commit: `<pending: add hash after commit>`
+Commit: `525af7a` (feat(web): Fluent-style UI refresh ...)
 
 ## Regression test
 File: `apps/web/e2e/specs/manual-cases.spec.ts`, test name: `REG-DEF-001 faculty dashboard logs no duplicate-key React console error`.

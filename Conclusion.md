@@ -30,7 +30,6 @@ Two real defects, both found while verifying the UI and both fixed with a regres
 - Mutation testing covers only the pure rule files, not routes or UI.
 - The check-in/check-out journey depends on the real server clock (07:00–12:00 IST window) and cannot be frozen from the browser.
 - Lighthouse performance scoring was not run.
-- Fix commit hashes for DEF-001 and DEF-002 are placeholders until the changes are committed.
 
 ## What we learned
 - Boundary and decision-table design found the cases that matter most (late cut-off, half-day threshold, token expiry), and mutation testing showed which assertions were too weak (error messages, regex anchors).
