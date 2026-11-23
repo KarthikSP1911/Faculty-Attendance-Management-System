@@ -1,22 +1,22 @@
 # Test Execution Summary
 
 - Run date (latest artefact mtime): 2026-11-22T19:05:18.723Z
-- Report generated: 2026-11-22T19:05:56.106Z
-- Git commit: 1904947 (+ uncommitted working-tree changes)
+- Report generated: 2026-11-23T07:12:28.644Z
+- Git commit: 8406b94 (+ uncommitted working-tree changes)
 - Environment: Node v24.18.0, Windows_NT 10.0.26300 (win32/x64), PostgreSQL 18 in Docker
 - All test data is synthetic.
 
 ## Totals (designed test cases)
 | Designed | Executed | Pass | Fail | Not executed | Pass rate (of executed) |
 |---|---|---|---|---|---|
-| 255 | 254 | 254 | 0 | 1 | 100.00% |
+| 255 | 255 | 255 | 0 | 0 | 100.00% |
 
 ## By level
 | Level | Designed | Executed | Pass | Fail | Not executed | Pass rate (executed) |
 |---|---|---|---|---|---|---|
 | End-to-end | 2 | 2 | 2 | 0 | 0 | 100.00% |
 | Integration | 115 | 115 | 115 | 0 | 0 | 100.00% |
-| Manual | 6 | 5 | 5 | 0 | 1 | 100.00% |
+| Manual | 6 | 6 | 6 | 0 | 0 | 100.00% |
 | U/I | 31 | 31 | 31 | 0 | 0 | 100.00% |
 | Unit | 101 | 101 | 101 | 0 | 0 | 100.00% |
 
@@ -26,7 +26,7 @@
 | BVA | 77 | 77 | 77 | 0 | 0 | 100.00% |
 | DT | 34 | 34 | 34 | 0 | 0 | 100.00% |
 | EG | 34 | 34 | 34 | 0 | 0 | 100.00% |
-| EP | 88 | 87 | 87 | 0 | 1 | 100.00% |
+| EP | 88 | 88 | 88 | 0 | 0 | 100.00% |
 | ST | 22 | 22 | 22 | 0 | 0 | 100.00% |
 
 ## By requirement prefix
@@ -40,7 +40,7 @@
 | FAC | 28 | 28 | 28 | 0 | 0 | 100.00% |
 | HOL | 7 | 7 | 7 | 0 | 0 | 100.00% |
 | LEAVE | 42 | 42 | 42 | 0 | 0 | 100.00% |
-| NFR | 12 | 11 | 11 | 0 | 1 | 100.00% |
+| NFR | 12 | 12 | 12 | 0 | 0 | 100.00% |
 | NOT | 5 | 5 | 5 | 0 | 0 | 100.00% |
 | RBAC | 14 | 14 | 14 | 0 | 0 | 100.00% |
 | REG | 16 | 16 | 16 | 0 | 0 | 100.00% |
@@ -51,10 +51,7 @@
 None.
 
 ## Not executed
-| ID | Level | Reason |
-|---|---|---|
-| TC-NFR-012 | Manual | manual |
-
+None.
 ## Raw suite totals (straight from the artefacts)
 | Suite | Tests | Failures | Skipped | Duration |
 |---|---|---|---|---|

@@ -20,5 +20,6 @@ All screenshots show **synthetic demo data** (no real people). The application s
 | report-jest-coverage.png | Jest coverage report (see `06_Test_Reports/jest-coverage`) |
 | report-playwright.png | Playwright HTML report (see `06_Test_Reports/playwright-report`) |
 | report-mutation.png | StrykerJS mutation report (see `06_Test_Reports/mutation`) |
+| report-lighthouse-landing.png | Lighthouse report for the landing page (see `06_Test_Reports/lighthouse`) |
 
 Regenerate: start the API and web app, then `npm run screenshots` (application screens) and `node scripts/capture-reports.mjs` (report pictures).

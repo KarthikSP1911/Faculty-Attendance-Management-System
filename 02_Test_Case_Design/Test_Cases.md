@@ -262,4 +262,4 @@ Defaults assumed: shift 09:00-17:00 Mon-Sat (Sunday weekly off), grace 15 min, l
 | TC-NFR-009 | REQ-NFR-03 | EP | Web app running | toggle dark mode | theme toggle | all pages readable | M | L | manual |
 | TC-NFR-010 | REQ-NFR-03 | EP | Web app running | navigate login and check-in with keyboard only | Tab/Enter | all controls reachable, visible focus | M | M | manual |
 | TC-NFR-011 | REQ-NFR-03 | EP | Web app running | run an accessibility checker on key pages | - | no WCAG 2.1 AA violations reported | M | M | manual |
-| TC-NFR-012 | REQ-NFR-04 | EP | Web app built | run Lighthouse | production build | scores recorded in the test report folder; target >= 90 | M | M | manual |
+| TC-NFR-012 | REQ-NFR-04 | EP | Web app built | run Lighthouse | production build | scores recorded in the test report folder; target >= 90 | M | M | scripts/run-lighthouse.mjs (npm run lighthouse) |

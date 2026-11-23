@@ -1,8 +1,8 @@
 # Test Execution Log
 
 - Run date (latest artefact mtime): 2026-11-22T19:05:18.723Z
-- Report generated: 2026-11-22T19:05:56.106Z
-- Git commit: 1904947 (+ uncommitted working-tree changes)
+- Report generated: 2026-11-23T07:12:28.644Z
+- Git commit: 8406b94 (+ uncommitted working-tree changes)
 - Environment: Node v24.18.0, Windows_NT 10.0.26300 (win32/x64), PostgreSQL 18 in Docker
 - All test data is synthetic.
 
@@ -264,4 +264,4 @@ Mapping note: results for Jest-based cases are **file-level** (JUnit carries no 
 | TC-NFR-009 | EP | Manual | manual | PASS | Playwright: 8/8 test run(s) OK (chromium, firefox, webkit, iphone-14) in apps/web/test-results/results.json |
 | TC-NFR-010 | EP | Manual | manual | PASS | Playwright: 4/4 test run(s) OK (chromium, firefox, webkit, iphone-14) in apps/web/test-results/results.json |
 | TC-NFR-011 | EP | Manual | manual | PASS | Playwright: 16/16 test run(s) OK (chromium, firefox, webkit, iphone-14) in apps/web/test-results/results.json |
-| TC-NFR-012 | EP | Manual | manual | NOT EXECUTED | manual |
+| TC-NFR-012 | EP | Manual | scripts/run-lighthouse.mjs (npm run lighthouse) | PASS | Lighthouse (production build): landing perf 91/a11y 100/bp 96/seo 100; login perf 94/a11y 100/bp 96/seo 100 (06_Test_Reports/lighthouse) |

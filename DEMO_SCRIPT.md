@@ -35,14 +35,15 @@ Folder map (same order as the assignment): [01 Test Plan](01_Test_Plan) · [02 T
 
 - **Application and scope:** student/faculty attendance management; modules are auth, faculty, departments, attendance, leave, regularization, holidays, reports, notifications, audit (see the requirements traceability matrix in 01).
 - **Techniques (02):** equivalence partitioning, boundary value analysis, decision tables, state transition, error guessing; 255 designed cases in `Test_Cases.md`.
-- **Execution (03):** `Test_Execution_Summary.md`: 254 of 255 executed, 254 passed, 0 failed; TC-NFR-012 (Lighthouse) not executed.
+- **Execution (03):** `Test_Execution_Summary.md`: 255 of 255 executed, all passed, 0 failed.
 - **Automation (05, 06):** Jest + Supertest 440 tests (98.25% line coverage); Playwright 164 tests on four browser profiles (126 passed, 0 failed, 38 skipped by design); StrykerJS mutation score 89.95% (baseline 86.19%). Open `06_Test_Reports/jest-coverage/index.html`, `06_Test_Reports/playwright-report/index.html`, `06_Test_Reports/mutation/mutation.html`.
-- **Defects (04):** DEF-001 (React duplicate key on faculty dashboard) and DEF-002 (admin tiles linking to a missing page): each has reproduction steps, root cause, fix commit and a regression test (`REG-DEF-001`, `REG-DEF-002` in `apps/web/e2e/specs/manual-cases.spec.ts`).
+- **Defects (04):** DEF-001 (React duplicate key on faculty dashboard), DEF-002 (admin tiles linking to a missing page) and DEF-003 (landing page Lighthouse performance 34): each has reproduction steps, root cause, fix commit and a regression check (`REG-DEF-001`, `REG-DEF-002` in `apps/web/e2e/specs/manual-cases.spec.ts`; `npm run lighthouse` for DEF-003).
+- **Lighthouse (TC-NFR-012):** `06_Test_Reports/lighthouse/Lighthouse_Summary.md`; landing 91-92 and login 94-95 performance, 100 accessibility.
 - **Live regeneration:** `npm run reports` rebuilds the execution log and report copies from the latest runs; `npm run screenshots` refreshes the screenshots.
 - API docs: http://localhost:4000/api/docs
 
 ## 5. Likely viva questions (short answers)
 - *Why these techniques?* EP/BVA for inputs with ranges (late cut-off, 7 h present, token expiry); decision tables for the attendance status rules; state transition for leave, regularization and refresh tokens.
 - *How do you know the tests are good?* Mutation testing: 89.95% of injected faults on the rule files are caught; survivors are listed in `05_Test_Automation/Mutation_Testing.md`.
-- *What could not be tested?* Lighthouse scoring (TC-NFR-012); the server clock cannot be frozen from the browser, so the check-in journey asserts the blocked state outside 07:00-12:00 IST; mutation testing covers only the pure rule files.
+- *What could not be tested?* The dashboards were not Lighthouse-audited (they need a login); the server clock cannot be frozen from the browser, so the check-in journey asserts the blocked state outside 07:00-12:00 IST; mutation testing covers only the pure rule files.
 - *Where is the evidence?* The execution log maps every case to an automated test; Jest results are file-level because test names do not carry case IDs.
