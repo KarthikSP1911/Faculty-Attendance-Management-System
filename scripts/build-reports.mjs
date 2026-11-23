@@ -181,6 +181,23 @@ for (const tc of cases) {
     tc.evidence = 'file-level: ' + parts.map((p) => `${p.r.passed}/${p.r.total} tests passed in ${p.f}`).join('; ');
     continue;
   }
+  if (tc.id === 'TC-NFR-012') {
+    // Lighthouse (scripts/run-lighthouse.mjs writes 06_Test_Reports/lighthouse/<page>.json)
+    const lhDir = path.join(ROOT, '06_Test_Reports', 'lighthouse');
+    const lhFiles = exists(lhDir) ? fs.readdirSync(lhDir).filter((f) => f.endsWith('.json')) : [];
+    if (lhFiles.length) {
+      const res = lhFiles.map((f) => {
+        const l = JSON.parse(fs.readFileSync(path.join(lhDir, f), 'utf8'));
+        const sc = Object.fromEntries(Object.entries(l.categories).map(([k, v]) => [k, Math.round(v.score * 100)]));
+        return { page: f.replace('.json', ''), sc };
+      });
+      const low = res.filter((r) => Object.values(r.sc).some((v) => v < 90));
+      tc.result = low.length ? 'FAIL' : 'PASS';
+      tc.failMsgs = low.map((r) => `${r.page}: ${JSON.stringify(r.sc)}`);
+      tc.evidence = 'Lighthouse (production build): ' + res.map((r) => `${r.page} perf ${r.sc.performance}/a11y ${r.sc.accessibility}/bp ${r.sc['best-practices']}/seo ${r.sc.seo}`).join('; ') + ' (06_Test_Reports/lighthouse)';
+      continue;
+    }
+  }
   tc.result = 'NOT EXECUTED';
   tc.evidence = /manual/i.test(tc.file) || tc.lvl === 'M' ? 'manual' : /planned/i.test(tc.file) ? 'planned' : 'no automated result found';
 }

@@ -10,6 +10,7 @@ const jobs = [
   ['06_Test_Reports/jest-coverage/index.html', 'report-jest-coverage.png'],
   ['06_Test_Reports/playwright-report/index.html', 'report-playwright.png'],
   ['06_Test_Reports/mutation/mutation.html', 'report-mutation.png'],
+  ['06_Test_Reports/lighthouse/landing.html', 'report-lighthouse-landing.png'],
 ];
 
 const browser = await chromium.launch();

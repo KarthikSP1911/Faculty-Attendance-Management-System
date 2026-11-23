@@ -17,6 +17,7 @@
     "test": "npm test --workspace apps/api",
     "test:e2e": "npm run test:e2e --workspace apps/web",
     "reports": "node scripts/build-reports.mjs",
+    "lighthouse": "node scripts/run-lighthouse.mjs",
     "test:mutation": "npm run test:mutation --workspace apps/api",
     "test:mutation:changed": "npm run test:mutation:changed --workspace apps/api",
     "db:migrate": "npm run db:migrate --workspace apps/api",

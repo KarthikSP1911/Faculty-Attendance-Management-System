@@ -65,7 +65,7 @@ export default function LandingPage() {
               </dl>
             </div>
             <div className="animate-slide-up [animation-delay:120ms] [animation-fill-mode:backwards]">
-              <Image src="/hero-dashboard.svg" alt="Illustration of the FAMS dashboard with attendance cards, a chart and a check-in button" width={960} height={640} priority unoptimized className="h-auto w-full drop-shadow-xl" />
+              <Image src="/hero-dashboard.svg" alt="Illustration of the FAMS dashboard with attendance cards, a chart and a check-in button" width={960} height={640} priority unoptimized className="h-auto w-full" />
             </div>
           </div>
         </section>
